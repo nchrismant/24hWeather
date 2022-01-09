@@ -1,0 +1,7 @@
+digraph "PHPMailer\PHPMailer\PHPMailer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{PHPMailer\\PHPMailer\l\\PHPMailer\n|+ CHARSET_ASCII\l+ CHARSET_ISO88591\l+ CHARSET_UTF8\l+ CONTENT_TYPE_PLAINTEXT\l+ CONTENT_TYPE_TEXT_CALENDAR\l+ CONTENT_TYPE_TEXT_HTML\l+ CONTENT_TYPE_MULTIPART\l_ALTERNATIVE\l+ CONTENT_TYPE_MULTIPART\l_MIXED\l+ CONTENT_TYPE_MULTIPART\l_RELATED\l+ ENCODING_7BIT\let 71 de plus...\l+ $validator\l# $MIMEBody\l# $MIMEHeader\l# $mailHeader\l# $oauth\l# $SingleToArray\l# $smtp\l# $to\l# $cc\l# $bcc\l# $ReplyTo\let 16 de plus...\l# $IcalMethods\l# $LE\l|+ __construct()\l+ __destruct()\l+ isHTML()\l+ isSMTP()\l+ isMail()\l+ isSendmail()\l+ isQmail()\l+ addAddress()\l+ addCC()\l+ addBCC()\let 67 de plus...\l+ parseAddresses()\l+ validateAddress()\l+ idnSupported()\l+ rfcDate()\l+ isValidHost()\l+ _mime_types()\l+ filenameToType()\l+ mb_pathinfo()\l+ normalizeBreaks()\l+ stripTrailingWSP()\l+ getLE()\l+ hasLineLongerThanMax()\l+ quotedString()\l# edebug()\l# addOrEnqueueAnAddress()\l# addAnAddress()\l# sendmailSend()\l# mailSend()\l# smtpSend()\l# generateId()\l# getBoundary()\l# endBoundary()\l# setMessageType()\let 8 de plus...\l# isShellSafe()\l# isPermittedPath()\l# fileIsAccessible()\l# setLE()\l- mailPassthru()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

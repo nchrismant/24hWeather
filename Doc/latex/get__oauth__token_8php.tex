@@ -1,0 +1,32 @@
+\hypertarget{get__oauth__token_8php}{}\doxysection{Référence du fichier class/\+Mail/\+PHPMailer/get\+\_\+oauth\+\_\+token.php}
+\label{get__oauth__token_8php}\index{class/Mail/PHPMailer/get\_oauth\_token.php@{class/Mail/PHPMailer/get\_oauth\_token.php}}
+\doxysubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_p_h_p_mailer}{PHPMailer}}
+\item 
+namespace \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer\textbackslash{}\+PHPMailer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{PHPMailer\textbackslash{}\+PHPMailer\+::if}} (!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}code\textquotesingle{}\mbox{]}) \&\&!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}provider\textquotesingle{}\mbox{]}))
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_ada87c468b30991892ebe71b6500c87b3}{PHPMailer\textbackslash{}\+PHPMailer\+::\$provider\+Name}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(array\+\_\+key\+\_\+exists(\textquotesingle{}provider\textquotesingle{}, \$\+\_\+\+GET)) elseif(array\+\_\+key\+\_\+exists( \textquotesingle{}provider\textquotesingle{}, \$\+\_\+\+SESSION)) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!in\+\_\+array(\$provider\+Name, \mbox{[}\textquotesingle{}Google\textquotesingle{}, \textquotesingle{}Microsoft\textquotesingle{}, \textquotesingle{}Yahoo\textquotesingle{}\mbox{]})) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_a3839f8d22c0570b8b2f4d300e298c581}{PHPMailer\textbackslash{}\+PHPMailer\+::\$client\+Id}} = \textquotesingle{}RANDOMCHARS-\/-\/-\/-\/-\/duv1n2.\+apps.\+googleusercontent.\+com\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af482db451ee45911e1b54ce698ecb03e}{PHPMailer\textbackslash{}\+PHPMailer\+::\$client\+Secret}} = \textquotesingle{}RANDOMCHARS-\/-\/-\/-\/-\/l\+Gyj\+Pc\+RtvP\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af79f83de423b4f9261189cbe9783cfe5}{PHPMailer\textbackslash{}\+PHPMailer\+::\$redirect\+Uri}} = (isset(\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}HTTPS\textquotesingle{}\mbox{]}) ? \textquotesingle{}https\+://\textquotesingle{} \+: \textquotesingle{}http\+://\textquotesingle{}) . \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}HTTP\+\_\+\+HOST\textquotesingle{}\mbox{]} . \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}PHP\+\_\+\+SELF\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_ad663f2715dfb40365dfb0053698a60f7}{PHPMailer\textbackslash{}\+PHPMailer\+::\$params}}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}{PHPMailer\textbackslash{}\+PHPMailer\+::\$options}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af804adbb612579f4ecd8817bf4a76cef}{PHPMailer\textbackslash{}\+PHPMailer\+::\$provider}} = null
+\item 
+switch( \$provider\+Name) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(null===\$provider) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}code\textquotesingle{}\mbox{]})) elseif(empty(\$\+\_\+\+GET\mbox{[}\textquotesingle{}state\textquotesingle{}\mbox{]})$\vert$$\vert$(\$\+\_\+\+GET\mbox{[}\textquotesingle{}state\textquotesingle{}\mbox{]} !==\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}oauth2state\textquotesingle{}\mbox{]})) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aebed84322c7489eb053bf89ff705d881}{PHPMailer\textbackslash{}\+PHPMailer\+::else}}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_a212e357213ce9cac83ffe491ce5a461a}{PHPMailer\textbackslash{}\+PHPMailer\+::\$token}}
+\end{DoxyCompactItemize}

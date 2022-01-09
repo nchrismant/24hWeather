@@ -1,0 +1,7 @@
+digraph "PHPMailer\PHPMailer\SMTP"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{PHPMailer\\PHPMailer\\SMTP\n|+ VERSION\l+ LE\l+ DEFAULT_PORT\l+ MAX_LINE_LENGTH\l+ MAX_REPLY_LENGTH\l+ DEBUG_OFF\l+ DEBUG_CLIENT\l+ DEBUG_SERVER\l+ DEBUG_CONNECTION\l+ DEBUG_LOWLEVEL\l+ $do_debug\l+ $Debugoutput\l+ $do_verp\l+ $Timeout\l+ $Timelimit\l# $smtp_transaction_id\l_patterns\l# $helo_rply\l# $server_caps\l# $last_reply\l|+ connect()\l+ startTLS()\l+ authenticate()\l+ connected()\l+ close()\l+ data()\l+ hello()\l+ mail()\l+ quit()\l+ recipient()\let 19 de plus...\l# edebug()\l# getSMTPConnection()\l# hmac()\l# sendHello()\l# parseHelloFields()\l# sendCommand()\l# get_lines()\l# setError()\l# errorHandler()\l# recordLastTransactionID()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,7 @@
+digraph "PHPMailer\PHPMailer\POP3"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{PHPMailer\\PHPMailer\\POP3\n|+ VERSION\l+ DEFAULT_PORT\l+ DEFAULT_TIMEOUT\l+ $do_debug\l+ $host\l+ $port\l+ $tval\l+ $username\l+ $password\l+ LE\l+ DEBUG_OFF\l+ DEBUG_SERVER\l+ DEBUG_CLIENT\l# $pop_conn\l# $connected\l# $errors\l|+ authorise()\l+ connect()\l+ login()\l+ disconnect()\l+ getErrors()\l+ popBeforeSmtp()\l# getResponse()\l# sendString()\l# checkResponse()\l# setError()\l# catchWarning()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

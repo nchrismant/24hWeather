@@ -1,0 +1,7 @@
+digraph "Météo\User\UserImg"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Météo\\User\\UserImg\n|- $id_img\l- $id\l- $img_name\l- $img\l|+ getId_img()\l+ setId_img()\l+ getId()\l+ setId()\l+ getImg_name()\l+ setImg_name()\l+ getImg()\l+ setImg()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

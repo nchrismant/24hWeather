@@ -1,0 +1,106 @@
+\hypertarget{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660}{}\doxysection{Référence de la classe Composer\+Autoloader\+Inite12172dbb9c19d4e7c9d150800a80660}
+\label{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660}\index{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660@{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660}}
+
+
+Graphe de collaboration de Composer\+Autoloader\+Inite12172dbb9c19d4e7c9d150800a80660\+:
+% FIG 0
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a4429b78e00f3a6b52479db7ac6e52f20}{load\+Class\+Loader}} (\$class)
+\item 
+static \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_af48d96a33f066cf42a7a6507f5310190}{get\+Loader}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{\$loader}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_af48d96a33f066cf42a7a6507f5310190}\label{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_af48d96a33f066cf42a7a6507f5310190}} 
+\index{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660@{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660}!getLoader@{getLoader}}
+\index{getLoader@{getLoader}!ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660@{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660}}
+\doxysubsubsection{\texorpdfstring{getLoader()}{getLoader()}}
+{\footnotesize\ttfamily static Composer\+Autoloader\+Inite12172dbb9c19d4e7c9d150800a80660\+::get\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Renvoie}
+\textbackslash{}\+Composer\textbackslash{}\+Autoload\textbackslash{}\+Class\+Loader 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{21         \textcolor{keywordflow}{if} (\textcolor{keyword}{null} !== self::\$loader) \{}
+\DoxyCodeLine{22             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{self::\$loader}};}
+\DoxyCodeLine{23         \}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         spl\_autoload\_register(array(\textcolor{stringliteral}{'ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660'}, \textcolor{stringliteral}{'loadClassLoader'}), \textcolor{keyword}{true}, \textcolor{keyword}{true});}
+\DoxyCodeLine{26         self::\$loader = \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{\$loader}} = new \(\backslash\)Composer\(\backslash\)Autoload\(\backslash\)ClassLoader(\(\backslash\)dirname(\(\backslash\)dirname(\_\_FILE\_\_)));}
+\DoxyCodeLine{27         spl\_autoload\_unregister(array(\textcolor{stringliteral}{'ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660'}, \textcolor{stringliteral}{'loadClassLoader'}));}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \$useStaticLoader = PHP\_VERSION\_ID >= 50600 \&\& !defined(\textcolor{stringliteral}{'HHVM\_VERSION'}) \&\& (!function\_exists(\textcolor{stringliteral}{'zend\_loader\_file\_encoded'}) || !zend\_loader\_file\_encoded());}
+\DoxyCodeLine{30         \textcolor{keywordflow}{if} (\$useStaticLoader) \{}
+\DoxyCodeLine{31             require \_\_DIR\_\_ . \textcolor{stringliteral}{'/autoload\_static.php'};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33             call\_user\_func(\(\backslash\)\mbox{\hyperlink{namespace_composer}{Composer}}\(\backslash\)Autoload\(\backslash\)ComposerStaticInite12172dbb9c19d4e7c9d150800a80660::getInitializer(\mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{\$loader}}));}
+\DoxyCodeLine{34         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{35             \$map = require \_\_DIR\_\_ . \textcolor{stringliteral}{'/autoload\_namespaces.php'};}
+\DoxyCodeLine{36             \textcolor{keywordflow}{foreach} (\$map as \$namespace => \$path) \{}
+\DoxyCodeLine{37                 \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{\$loader}}-\/>set(\$namespace, \$path);}
+\DoxyCodeLine{38             \}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40             \$map = require \_\_DIR\_\_ . \textcolor{stringliteral}{'/autoload\_psr4.php'};}
+\DoxyCodeLine{41             \textcolor{keywordflow}{foreach} (\$map as \$namespace => \$path) \{}
+\DoxyCodeLine{42                 \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{\$loader}}-\/>setPsr4(\$namespace, \$path);}
+\DoxyCodeLine{43             \}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45             \$classMap = require \_\_DIR\_\_ . \textcolor{stringliteral}{'/autoload\_classmap.php'};}
+\DoxyCodeLine{46             \textcolor{keywordflow}{if} (\$classMap) \{}
+\DoxyCodeLine{47                 \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{\$loader}}-\/>addClassMap(\$classMap);}
+\DoxyCodeLine{48             \}}
+\DoxyCodeLine{49         \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{\$loader}}-\/>register(\textcolor{keyword}{true});}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{\$loader}};}
+\DoxyCodeLine{54     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}{\$loader}}.
+
+\mbox{\Hypertarget{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a4429b78e00f3a6b52479db7ac6e52f20}\label{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a4429b78e00f3a6b52479db7ac6e52f20}} 
+\index{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660@{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660}!loadClassLoader@{loadClassLoader}}
+\index{loadClassLoader@{loadClassLoader}!ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660@{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660}}
+\doxysubsubsection{\texorpdfstring{loadClassLoader()}{loadClassLoader()}}
+{\footnotesize\ttfamily static Composer\+Autoloader\+Inite12172dbb9c19d4e7c9d150800a80660\+::load\+Class\+Loader (\begin{DoxyParamCaption}\item[{}]{\$class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11         \textcolor{keywordflow}{if} (\textcolor{stringliteral}{'Composer\(\backslash\)Autoload\(\backslash\)ClassLoader'} === \$class) \{}
+\DoxyCodeLine{12             require \_\_DIR\_\_ . \textcolor{stringliteral}{'/ClassLoader.php'};}
+\DoxyCodeLine{13         \}}
+\DoxyCodeLine{14     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}\label{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_a3ba627e3d4c02ea5cc1c688a92d451d2}} 
+\index{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660@{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660}!\$loader@{\$loader}}
+\index{\$loader@{\$loader}!ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660@{ComposerAutoloaderInite12172dbb9c19d4e7c9d150800a80660}}
+\doxysubsubsection{\texorpdfstring{\$loader}{$loader}}
+{\footnotesize\ttfamily Composer\+Autoloader\+Inite12172dbb9c19d4e7c9d150800a80660\+::\$loader\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_composer_autoloader_inite12172dbb9c19d4e7c9d150800a80660_af48d96a33f066cf42a7a6507f5310190}{get\+Loader()}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+vendor/composer/\mbox{\hyperlink{autoload__real_8php}{autoload\+\_\+real.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,212 @@
+\hypertarget{profil_8php}{}\doxysection{Référence du fichier profil.\+php}
+\label{profil_8php}\index{profil.php@{profil.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{profil_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = Connection\+::get\+PDO()
+\item 
+\mbox{\hyperlink{profil_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}{Auth}}(\$pdo)
+\item 
+\mbox{\hyperlink{profil_8php_ae8876a14058f368335baccf35af4a22b}{\$table}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}{User\+Table}}(\$pdo)
+\item 
+\mbox{\hyperlink{profil_8php_acd996952a57e422a7a396c792ff0c862}{\$user\+Img\+Table}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table}{User\+Img\+Table}}(\$pdo)
+\item 
+\mbox{\hyperlink{profil_8php_a723f4aa391c095714562c224bd4f9a59}{\$user\+Table}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}{User\+Table}}(\$pdo)
+\item 
+\mbox{\hyperlink{profil_8php_a8351bfeddebcd903605223718e1890a7}{\$favoris\+Table}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table}{Favoris\+Table}}(\$pdo)
+\item 
+\mbox{\hyperlink{profil_8php_a7c88c8dfcf14e98d581073a25966ec09}{\$weather}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather}{Open\+Weather}}(\textquotesingle{}94c6cf0868fa5cb930a5e2d71baf0dbf\textquotesingle{})
+\item 
+\mbox{\hyperlink{profil_8php_abe4cc9788f52e49485473dc699537388}{try}}
+\item 
+catch(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_exception_1_1_forbidden_exception}{Forbidden\+Exception}} \$e) \mbox{\hyperlink{profil_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}} = \$auth-\/$>$user()
+\item 
+\mbox{\hyperlink{profil_8php_a371b0a8f0626a754803a16f5509888b3}{\$user\+Img}} = \$user\+Img\+Table-\/$>$get\+User\+Img(\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}auth\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{profil_8php_adae4b56e6d7ab1229a05a30c962b4677}{\$events}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table}{Events\+Table}}(\$pdo)
+\item 
+\mbox{\hyperlink{profil_8php_a1a01a3db951be231d9c66fbf28b5e0eb}{\$events\+With\+Rappel}} = \$events-\/$>$get\+Eventswith\+Rappeland\+Mail()
+\item 
+\mbox{\hyperlink{profil_8php_a6ba6e82c39e80d5d00afeb6f4383a549}{\$month}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month}{Month}}(\$\+\_\+\+GET\mbox{[}\textquotesingle{}month\textquotesingle{}\mbox{]} ?? null, \$\+\_\+\+GET\mbox{[}\textquotesingle{}year\textquotesingle{}\mbox{]} ?? null)
+\item 
+\mbox{\hyperlink{profil_8php_a50a00e7de77365e00b117e73aa82fb9b}{\$start}} = \$month-\/$>$get\+Starting\+Day()
+\item 
+\mbox{\hyperlink{profil_8php_af7963ddd01c957441ea616739387d7e4}{\$weeks}} = \$month-\/$>$get\+Weeks()
+\item 
+\mbox{\hyperlink{profil_8php_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}} = \$start-\/$>$modify(\textquotesingle{}+\textquotesingle{} . (6 + 7 $\ast$ (\$weeks -\/ 1)) . \textquotesingle{} days\textquotesingle{})
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}fav\textquotesingle{}\mbox{]})) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}addlat\textquotesingle{}\mbox{]}, \$\+\_\+\+GET\mbox{[} \textquotesingle{}addlon\textquotesingle{}\mbox{]})) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!empty(\$\+\_\+\+POST)) \mbox{\hyperlink{profil_8php_a802c34fc4180be49b382b73d98cea8d9}{\$title}} = \char`\"{}Mon profil -\/ 24h Weather\char`\"{}
+\item 
+\mbox{\hyperlink{profil_8php_a87b032cba06009e3467abf1c8018d960}{\$description}} = \char`\"{}Créez un compte afin d\textquotesingle{}obtenir des avantages exclusifs !\char`\"{}
+\item 
+\mbox{\hyperlink{profil_8php_a9fbd95bfcdf27d802a8c7938529a61ba}{\$keywords}} = \char`\"{}weather meteo 24/24 7/7\char`\"{}
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!empty(\$user\+Img)) \mbox{\hyperlink{profil_8php_a3843d2646571f2dcfc583a3d9774d872}{else}}
+\item 
+\mbox{\hyperlink{profil_8php_a81694d175030a6b4ccf9e90abe51c882}{if}} (isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}success\textquotesingle{}\mbox{]}))
+\item 
+for(\$i=0; \$i$<$ \$month-\/$>$get\+Weeks(); \$i++) \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}} = \$favoris\+Table-\/$>$get\+User\+Favoris(\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}auth\textquotesingle{}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{profil_8php_a20d7415a9c3391b32d7fe2136fce6e2c}\label{profil_8php_a20d7415a9c3391b32d7fe2136fce6e2c}} 
+\index{profil.php@{profil.php}!\$auth@{\$auth}}
+\index{\$auth@{\$auth}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$auth}{$auth}}
+{\footnotesize\ttfamily \$auth = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}{Auth}}(\$pdo)}
+
+\mbox{\Hypertarget{profil_8php_a87b032cba06009e3467abf1c8018d960}\label{profil_8php_a87b032cba06009e3467abf1c8018d960}} 
+\index{profil.php@{profil.php}!\$description@{\$description}}
+\index{\$description@{\$description}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$description}{$description}}
+{\footnotesize\ttfamily \$description = \char`\"{}Créez un compte afin d\textquotesingle{}obtenir des avantages exclusifs !\char`\"{}}
+
+\mbox{\Hypertarget{profil_8php_ac2040b96cd66d4d79b1d9fe0027d2f9b}\label{profil_8php_ac2040b96cd66d4d79b1d9fe0027d2f9b}} 
+\index{profil.php@{profil.php}!\$end@{\$end}}
+\index{\$end@{\$end}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$end}{$end}}
+{\footnotesize\ttfamily \$end = \$start-\/$>$modify(\textquotesingle{}+\textquotesingle{} . (6 + 7 $\ast$ (\$weeks -\/ 1)) . \textquotesingle{} days\textquotesingle{})}
+
+
+
+Référencé par \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_a4a424b86108eaafe1d8369db737cc47f}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}base64\+Encode\+Wrap\+MB()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a3c0a96e8c2f6916d70a2c7e9a6a31f52}{Météo\textbackslash{}\+Validator\textbackslash{}before\+Time()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aaa6d614d79672ae5427fb4afe35201d4}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}get\+Events\+Between\+By\+Day()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae47342601e3fd981afc034d12aa321f8}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}get\+Weeks()}}.
+
+\mbox{\Hypertarget{profil_8php_adae4b56e6d7ab1229a05a30c962b4677}\label{profil_8php_adae4b56e6d7ab1229a05a30c962b4677}} 
+\index{profil.php@{profil.php}!\$events@{\$events}}
+\index{\$events@{\$events}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$events}{$events}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (!empty( \$events\+With\+Rappel)) \$events = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table}{Events\+Table}}(\$pdo)}
+
+\mbox{\Hypertarget{profil_8php_a1a01a3db951be231d9c66fbf28b5e0eb}\label{profil_8php_a1a01a3db951be231d9c66fbf28b5e0eb}} 
+\index{profil.php@{profil.php}!\$eventsWithRappel@{\$eventsWithRappel}}
+\index{\$eventsWithRappel@{\$eventsWithRappel}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$eventsWithRappel}{$eventsWithRappel}}
+{\footnotesize\ttfamily \$events\+With\+Rappel = \$events-\/$>$get\+Eventswith\+Rappeland\+Mail()}
+
+\mbox{\Hypertarget{profil_8php_a4e4a69280563056d11101b25ed00ac6d}\label{profil_8php_a4e4a69280563056d11101b25ed00ac6d}} 
+\index{profil.php@{profil.php}!\$favoris@{\$favoris}}
+\index{\$favoris@{\$favoris}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$favoris}{$favoris}}
+{\footnotesize\ttfamily for ( \$i=0;\$i$<$ \$month-\/$>$get\+Weeks();\$i++) \$favoris = \$favoris\+Table-\/$>$get\+User\+Favoris(\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}auth\textquotesingle{}\mbox{]})}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a0d82bcd4e8773f8afddc217c4b6c93cd}{Météo\textbackslash{}\+Favoris\+Table\textbackslash{}create\+Favoris()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_adfcf18ef623e08e2e9639f2a3c178637}{Météo\textbackslash{}\+Favoris\+Table\textbackslash{}update\+Favoris()}}.
+
+\mbox{\Hypertarget{profil_8php_a8351bfeddebcd903605223718e1890a7}\label{profil_8php_a8351bfeddebcd903605223718e1890a7}} 
+\index{profil.php@{profil.php}!\$favorisTable@{\$favorisTable}}
+\index{\$favorisTable@{\$favorisTable}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$favorisTable}{$favorisTable}}
+{\footnotesize\ttfamily \$favoris\+Table = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table}{Favoris\+Table}}(\$pdo)}
+
+\mbox{\Hypertarget{profil_8php_a9fbd95bfcdf27d802a8c7938529a61ba}\label{profil_8php_a9fbd95bfcdf27d802a8c7938529a61ba}} 
+\index{profil.php@{profil.php}!\$keywords@{\$keywords}}
+\index{\$keywords@{\$keywords}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$keywords}{$keywords}}
+{\footnotesize\ttfamily \$keywords = \char`\"{}weather meteo 24/24 7/7\char`\"{}}
+
+\mbox{\Hypertarget{profil_8php_a6ba6e82c39e80d5d00afeb6f4383a549}\label{profil_8php_a6ba6e82c39e80d5d00afeb6f4383a549}} 
+\index{profil.php@{profil.php}!\$month@{\$month}}
+\index{\$month@{\$month}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$month}{$month}}
+{\footnotesize\ttfamily \$month = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month}{Month}}(\$\+\_\+\+GET\mbox{[}\textquotesingle{}month\textquotesingle{}\mbox{]} ?? null, \$\+\_\+\+GET\mbox{[}\textquotesingle{}year\textquotesingle{}\mbox{]} ?? null)}
+
+\mbox{\Hypertarget{profil_8php_a5766efd703cef0e00bfc06b3f3acbe0e}\label{profil_8php_a5766efd703cef0e00bfc06b3f3acbe0e}} 
+\index{profil.php@{profil.php}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily \$pdo = Connection\+::get\+PDO()}
+
+\mbox{\Hypertarget{profil_8php_a50a00e7de77365e00b117e73aa82fb9b}\label{profil_8php_a50a00e7de77365e00b117e73aa82fb9b}} 
+\index{profil.php@{profil.php}!\$start@{\$start}}
+\index{\$start@{\$start}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$start}{$start}}
+{\footnotesize\ttfamily \$start = \$month-\/$>$get\+Starting\+Day()}
+
+
+
+Référencé par \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_a4a424b86108eaafe1d8369db737cc47f}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}base64\+Encode\+Wrap\+MB()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a3c0a96e8c2f6916d70a2c7e9a6a31f52}{Météo\textbackslash{}\+Validator\textbackslash{}before\+Time()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae47342601e3fd981afc034d12aa321f8}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}get\+Weeks()}}.
+
+\mbox{\Hypertarget{profil_8php_ae8876a14058f368335baccf35af4a22b}\label{profil_8php_ae8876a14058f368335baccf35af4a22b}} 
+\index{profil.php@{profil.php}!\$table@{\$table}}
+\index{\$table@{\$table}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$table}{$table}}
+{\footnotesize\ttfamily \$table = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}{User\+Table}}(\$pdo)}
+
+\mbox{\Hypertarget{profil_8php_a802c34fc4180be49b382b73d98cea8d9}\label{profil_8php_a802c34fc4180be49b382b73d98cea8d9}} 
+\index{profil.php@{profil.php}!\$title@{\$title}}
+\index{\$title@{\$title}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$title}{$title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}fav\textquotesingle{}\mbox{]})) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}addlat\textquotesingle{}\mbox{]}, \$\+\_\+\+GET\mbox{[}\textquotesingle{}addlon\textquotesingle{}\mbox{]})) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (!empty( \$\+\_\+\+POST)) \$title = \char`\"{}Mon profil -\/ 24h Weather\char`\"{}}
+
+\mbox{\Hypertarget{profil_8php_a882546ef01c6d1a322046c5ace1d991b}\label{profil_8php_a882546ef01c6d1a322046c5ace1d991b}} 
+\index{profil.php@{profil.php}!\$user@{\$user}}
+\index{\$user@{\$user}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily catch (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_exception_1_1_forbidden_exception}{Forbidden\+Exception}} \$e) \$user = \$auth-\/$>$user()}
+
+\mbox{\Hypertarget{profil_8php_a371b0a8f0626a754803a16f5509888b3}\label{profil_8php_a371b0a8f0626a754803a16f5509888b3}} 
+\index{profil.php@{profil.php}!\$userImg@{\$userImg}}
+\index{\$userImg@{\$userImg}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$userImg}{$userImg}}
+{\footnotesize\ttfamily \$user\+Img = \$user\+Img\+Table-\/$>$get\+User\+Img(\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}auth\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{profil_8php_acd996952a57e422a7a396c792ff0c862}\label{profil_8php_acd996952a57e422a7a396c792ff0c862}} 
+\index{profil.php@{profil.php}!\$userImgTable@{\$userImgTable}}
+\index{\$userImgTable@{\$userImgTable}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$userImgTable}{$userImgTable}}
+{\footnotesize\ttfamily \$user\+Img\+Table = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table}{User\+Img\+Table}}(\$pdo)}
+
+\mbox{\Hypertarget{profil_8php_a723f4aa391c095714562c224bd4f9a59}\label{profil_8php_a723f4aa391c095714562c224bd4f9a59}} 
+\index{profil.php@{profil.php}!\$userTable@{\$userTable}}
+\index{\$userTable@{\$userTable}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$userTable}{$userTable}}
+{\footnotesize\ttfamily \$user\+Table = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}{User\+Table}}(\$pdo)}
+
+\mbox{\Hypertarget{profil_8php_a7c88c8dfcf14e98d581073a25966ec09}\label{profil_8php_a7c88c8dfcf14e98d581073a25966ec09}} 
+\index{profil.php@{profil.php}!\$weather@{\$weather}}
+\index{\$weather@{\$weather}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$weather}{$weather}}
+{\footnotesize\ttfamily \$weather = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather}{Open\+Weather}}(\textquotesingle{}94c6cf0868fa5cb930a5e2d71baf0dbf\textquotesingle{})}
+
+\mbox{\Hypertarget{profil_8php_af7963ddd01c957441ea616739387d7e4}\label{profil_8php_af7963ddd01c957441ea616739387d7e4}} 
+\index{profil.php@{profil.php}!\$weeks@{\$weeks}}
+\index{\$weeks@{\$weeks}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{\$weeks}{$weeks}}
+{\footnotesize\ttfamily \$weeks = \$month-\/$>$get\+Weeks()}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae47342601e3fd981afc034d12aa321f8}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}get\+Weeks()}}.
+
+\mbox{\Hypertarget{profil_8php_a3843d2646571f2dcfc583a3d9774d872}\label{profil_8php_a3843d2646571f2dcfc583a3d9774d872}} 
+\index{profil.php@{profil.php}!else@{else}}
+\index{else@{else}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} ( \$user-\/$>$get\+Adresse()===NULL) else}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{                                          echo \textcolor{stringliteral}{"{}<img src=\(\backslash\)"{}./images/avatar.png\(\backslash\)"{} alt=\(\backslash\)"{}User\(\backslash\)"{} class=\(\backslash\)"{}rounded-\/circle\(\backslash\)"{} width=\(\backslash\)"{}150\(\backslash\)"{}/>\(\backslash\)n"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{profil_8php_a81694d175030a6b4ccf9e90abe51c882}\label{profil_8php_a81694d175030a6b4ccf9e90abe51c882}} 
+\index{profil.php@{profil.php}!if@{if}}
+\index{if@{if}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if(isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}success\textquotesingle{}\mbox{]})) (\begin{DoxyParamCaption}\item[{isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}success\textquotesingle{}\mbox{]})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{profil_8php_abe4cc9788f52e49485473dc699537388}\label{profil_8php_abe4cc9788f52e49485473dc699537388}} 
+\index{profil.php@{profil.php}!try@{try}}
+\index{try@{try}!profil.php@{profil.php}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily try}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{   \mbox{\hyperlink{profil_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}}-\/>check()}
+
+\end{DoxyCode}

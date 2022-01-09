@@ -1,0 +1,507 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event}{}\doxysection{Référence de la classe Météo\textbackslash{}Calendar\textbackslash{}Event}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event}\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+
+
+Graphe de collaboration de Météo\textbackslash{}Calendar\textbackslash{}Event\+:
+% FIG 0
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a3bbb60c0c2ba6ef3374df01c17811d6d}{get\+Id\+\_\+event}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ae12854c4130103f673178f9e243a5ea6}{set\+Id\+\_\+event}} (\$id\+\_\+event)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ac7cccafeeaa1a4f650c8ad9cd42eda07}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a261de66ddd1388abfd1260cc1f9ffed5}{set\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ab4cc7567d5546a532f3cfca35fea229e}{get\+Start}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a3089603b35923f39f648dcf794551623}{set\+Start}} (\$start)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a99c2dd3450f9e33d871dd2629a9b3b85}{get\+End}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a04a0619bc7f4cc570b0f50266ef924e8}{set\+End}} (\$end)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a8b7732ebcc3f53d4be5ad69e3ac24cc9}{get\+Motif}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4adc10c8da86b790629c732814918c57}{set\+Motif}} (\$motif)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a9660e55f1ac7a60d2f7bf2fb1b13bbfe}{get\+Id}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a784a0fa81a3033ff2b0ae0fed6a73266}{set\+Id}} (\$id)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af1bd01c13c720b02dc199178ba547d64}{get\+Date\+\_\+rappel}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad5e5065799a444f379b9d5f7fd018607}{set\+Date\+\_\+rappel}} (\$date\+\_\+rappel)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a516029fc04b834fe7f61aea742e44ca4}{get\+Id\+\_\+ville}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a30726f075efa8ee19c172eb6072eb642}{set\+Id\+\_\+ville}} (\$id\+\_\+ville)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a1e8371e6f222d247c892ab2f56de65f2}{\$id\+\_\+event}}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad3f94c8bc155ea74b126e2b7134189c0}{\$name}}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad95ad828f2e61acd7f0797ba5608a02d}{\$motif}}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af49ecfad2a3b4dcfa12d48b260c15492}{\$start}}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a275c83216c33d1355465874b3665665a}{\$end}}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af5f57cece34d9299ec698cfea00ee147}{\$date\+\_\+rappel}}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_abff7c0e10a322b60a92965e0b0e4463c}{\$id\+\_\+ville}}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4ff94914ab6edccf34da4bfd8175103e}{\$id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af1bd01c13c720b02dc199178ba547d64}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af1bd01c13c720b02dc199178ba547d64}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!getDate\_rappel@{getDate\_rappel}}
+\index{getDate\_rappel@{getDate\_rappel}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{getDate\_rappel()}{getDate\_rappel()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::get\+Date\+\_\+rappel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the value of date\+\_\+rappel 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{151     \{}
+\DoxyCodeLine{152         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af5f57cece34d9299ec698cfea00ee147}{\$this-\/>date\_rappel}};}
+\DoxyCodeLine{153     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af5f57cece34d9299ec698cfea00ee147}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$date\+\_\+rappel}}.
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aa23c1e726f63ffc9e5ee8c94a245fc4e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}create\+Event()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_ae9a2649e615984d39368816816ea0edc}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}update\+Event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a99c2dd3450f9e33d871dd2629a9b3b85}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a99c2dd3450f9e33d871dd2629a9b3b85}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!getEnd@{getEnd}}
+\index{getEnd@{getEnd}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{getEnd()}{getEnd()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::get\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the value of end 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91     \{}
+\DoxyCodeLine{92         \textcolor{keywordflow}{return} \textcolor{keyword}{new} DateTimeImmutable(\$this-\/>end);}
+\DoxyCodeLine{93     \}}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aa23c1e726f63ffc9e5ee8c94a245fc4e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}create\+Event()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_ae9a2649e615984d39368816816ea0edc}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}update\+Event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a9660e55f1ac7a60d2f7bf2fb1b13bbfe}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a9660e55f1ac7a60d2f7bf2fb1b13bbfe}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!getId@{getId}}
+\index{getId@{getId}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the value of id 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131     \{}
+\DoxyCodeLine{132         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4ff94914ab6edccf34da4bfd8175103e}{\$this-\/>id}};}
+\DoxyCodeLine{133     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4ff94914ab6edccf34da4bfd8175103e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$id}}.
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aa23c1e726f63ffc9e5ee8c94a245fc4e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}create\+Event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a3bbb60c0c2ba6ef3374df01c17811d6d}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a3bbb60c0c2ba6ef3374df01c17811d6d}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!getId\_event@{getId\_event}}
+\index{getId\_event@{getId\_event}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{getId\_event()}{getId\_event()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::get\+Id\+\_\+event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the value of id\+\_\+event 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31     \{}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a1e8371e6f222d247c892ab2f56de65f2}{\$this-\/>id\_event}};}
+\DoxyCodeLine{33     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a1e8371e6f222d247c892ab2f56de65f2}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$id\+\_\+event}}.
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_ae9a2649e615984d39368816816ea0edc}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}update\+Event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a516029fc04b834fe7f61aea742e44ca4}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a516029fc04b834fe7f61aea742e44ca4}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!getId\_ville@{getId\_ville}}
+\index{getId\_ville@{getId\_ville}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{getId\_ville()}{getId\_ville()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::get\+Id\+\_\+ville (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the value of id\+\_\+ville 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171     \{}
+\DoxyCodeLine{172         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_abff7c0e10a322b60a92965e0b0e4463c}{\$this-\/>id\_ville}};}
+\DoxyCodeLine{173     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_abff7c0e10a322b60a92965e0b0e4463c}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$id\+\_\+ville}}.
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aa23c1e726f63ffc9e5ee8c94a245fc4e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}create\+Event()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_ae9a2649e615984d39368816816ea0edc}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}update\+Event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a8b7732ebcc3f53d4be5ad69e3ac24cc9}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a8b7732ebcc3f53d4be5ad69e3ac24cc9}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!getMotif@{getMotif}}
+\index{getMotif@{getMotif}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{getMotif()}{getMotif()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::get\+Motif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the value of motif 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111     \{}
+\DoxyCodeLine{112         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad95ad828f2e61acd7f0797ba5608a02d}{\$this-\/>motif}};}
+\DoxyCodeLine{113     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad95ad828f2e61acd7f0797ba5608a02d}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$motif}}.
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aa23c1e726f63ffc9e5ee8c94a245fc4e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}create\+Event()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_ae9a2649e615984d39368816816ea0edc}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}update\+Event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ac7cccafeeaa1a4f650c8ad9cd42eda07}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ac7cccafeeaa1a4f650c8ad9cd42eda07}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!getName@{getName}}
+\index{getName@{getName}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the value of name 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51     \{}
+\DoxyCodeLine{52         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad3f94c8bc155ea74b126e2b7134189c0}{\$this-\/>name}};}
+\DoxyCodeLine{53     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad3f94c8bc155ea74b126e2b7134189c0}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$name}}.
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aa23c1e726f63ffc9e5ee8c94a245fc4e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}create\+Event()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_ae9a2649e615984d39368816816ea0edc}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}update\+Event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ab4cc7567d5546a532f3cfca35fea229e}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ab4cc7567d5546a532f3cfca35fea229e}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!getStart@{getStart}}
+\index{getStart@{getStart}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{getStart()}{getStart()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::get\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the value of start 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71     \{}
+\DoxyCodeLine{72         \textcolor{keywordflow}{return} \textcolor{keyword}{new} DateTimeImmutable(\$this-\/>start);}
+\DoxyCodeLine{73     \}}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aa23c1e726f63ffc9e5ee8c94a245fc4e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}create\+Event()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_ae9a2649e615984d39368816816ea0edc}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}update\+Event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad5e5065799a444f379b9d5f7fd018607}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad5e5065799a444f379b9d5f7fd018607}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!setDate\_rappel@{setDate\_rappel}}
+\index{setDate\_rappel@{setDate\_rappel}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{setDate\_rappel()}{setDate\_rappel()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::set\+Date\+\_\+rappel (\begin{DoxyParamCaption}\item[{}]{\$date\+\_\+rappel }\end{DoxyParamCaption})}
+
+Set the value of date\+\_\+rappel
+
+\begin{DoxyReturn}{Renvoie}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{161     \{}
+\DoxyCodeLine{162         \$this-\/>date\_rappel = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af5f57cece34d9299ec698cfea00ee147}{\$date\_rappel}};}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{164         \textcolor{keywordflow}{return} \$this;}
+\DoxyCodeLine{165     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af5f57cece34d9299ec698cfea00ee147}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$date\+\_\+rappel}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a04a0619bc7f4cc570b0f50266ef924e8}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a04a0619bc7f4cc570b0f50266ef924e8}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!setEnd@{setEnd}}
+\index{setEnd@{setEnd}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{setEnd()}{setEnd()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::set\+End (\begin{DoxyParamCaption}\item[{}]{\$end }\end{DoxyParamCaption})}
+
+Set the value of end
+
+\begin{DoxyReturn}{Renvoie}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101     \{}
+\DoxyCodeLine{102         \$this-\/>end = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a275c83216c33d1355465874b3665665a}{\$end}};}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104         \textcolor{keywordflow}{return} \$this;}
+\DoxyCodeLine{105     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a275c83216c33d1355465874b3665665a}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$end}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a784a0fa81a3033ff2b0ae0fed6a73266}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a784a0fa81a3033ff2b0ae0fed6a73266}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!setId@{setId}}
+\index{setId@{setId}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::set\+Id (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Set the value of id
+
+\begin{DoxyReturn}{Renvoie}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141     \{}
+\DoxyCodeLine{142         \$this-\/>\textcolor{keywordtype}{id} = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4ff94914ab6edccf34da4bfd8175103e}{\$id}};}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144         \textcolor{keywordflow}{return} \$this;}
+\DoxyCodeLine{145     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4ff94914ab6edccf34da4bfd8175103e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$id}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ae12854c4130103f673178f9e243a5ea6}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ae12854c4130103f673178f9e243a5ea6}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!setId\_event@{setId\_event}}
+\index{setId\_event@{setId\_event}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{setId\_event()}{setId\_event()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::set\+Id\+\_\+event (\begin{DoxyParamCaption}\item[{}]{\$id\+\_\+event }\end{DoxyParamCaption})}
+
+Set the value of id\+\_\+event
+
+\begin{DoxyReturn}{Renvoie}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41     \{}
+\DoxyCodeLine{42         \$this-\/>id\_event = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a1e8371e6f222d247c892ab2f56de65f2}{\$id\_event}};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         \textcolor{keywordflow}{return} \$this;}
+\DoxyCodeLine{45     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a1e8371e6f222d247c892ab2f56de65f2}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$id\+\_\+event}}.
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aa23c1e726f63ffc9e5ee8c94a245fc4e}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}create\+Event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a30726f075efa8ee19c172eb6072eb642}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a30726f075efa8ee19c172eb6072eb642}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!setId\_ville@{setId\_ville}}
+\index{setId\_ville@{setId\_ville}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{setId\_ville()}{setId\_ville()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::set\+Id\+\_\+ville (\begin{DoxyParamCaption}\item[{}]{\$id\+\_\+ville }\end{DoxyParamCaption})}
+
+Set the value of id\+\_\+ville
+
+\begin{DoxyReturn}{Renvoie}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{181     \{}
+\DoxyCodeLine{182         \$this-\/>id\_ville = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_abff7c0e10a322b60a92965e0b0e4463c}{\$id\_ville}};}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{184         \textcolor{keywordflow}{return} \$this;}
+\DoxyCodeLine{185     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_abff7c0e10a322b60a92965e0b0e4463c}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$id\+\_\+ville}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4adc10c8da86b790629c732814918c57}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4adc10c8da86b790629c732814918c57}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!setMotif@{setMotif}}
+\index{setMotif@{setMotif}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{setMotif()}{setMotif()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::set\+Motif (\begin{DoxyParamCaption}\item[{}]{\$motif }\end{DoxyParamCaption})}
+
+Set the value of motif
+
+\begin{DoxyReturn}{Renvoie}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121     \{}
+\DoxyCodeLine{122         \$this-\/>motif = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad95ad828f2e61acd7f0797ba5608a02d}{\$motif}};}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124         \textcolor{keywordflow}{return} \$this;}
+\DoxyCodeLine{125     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad95ad828f2e61acd7f0797ba5608a02d}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$motif}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a261de66ddd1388abfd1260cc1f9ffed5}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a261de66ddd1388abfd1260cc1f9ffed5}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!setName@{setName}}
+\index{setName@{setName}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::set\+Name (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Set the value of name
+
+\begin{DoxyReturn}{Renvoie}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61     \{}
+\DoxyCodeLine{62         \$this-\/>name = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad3f94c8bc155ea74b126e2b7134189c0}{\$name}};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64         \textcolor{keywordflow}{return} \$this;}
+\DoxyCodeLine{65     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad3f94c8bc155ea74b126e2b7134189c0}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$name}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a3089603b35923f39f648dcf794551623}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a3089603b35923f39f648dcf794551623}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!setStart@{setStart}}
+\index{setStart@{setStart}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{setStart()}{setStart()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::set\+Start (\begin{DoxyParamCaption}\item[{}]{\$start }\end{DoxyParamCaption})}
+
+Set the value of start
+
+\begin{DoxyReturn}{Renvoie}
+self 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81     \{}
+\DoxyCodeLine{82         \$this-\/>start = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af49ecfad2a3b4dcfa12d48b260c15492}{\$start}};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} \$this;}
+\DoxyCodeLine{85     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af49ecfad2a3b4dcfa12d48b260c15492}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}\$start}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af5f57cece34d9299ec698cfea00ee147}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af5f57cece34d9299ec698cfea00ee147}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!\$date\_rappel@{\$date\_rappel}}
+\index{\$date\_rappel@{\$date\_rappel}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{\$date\_rappel}{$date\_rappel}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::\$date\+\_\+rappel\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af1bd01c13c720b02dc199178ba547d64}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}get\+Date\+\_\+rappel()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad5e5065799a444f379b9d5f7fd018607}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}set\+Date\+\_\+rappel()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a275c83216c33d1355465874b3665665a}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a275c83216c33d1355465874b3665665a}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!\$end@{\$end}}
+\index{\$end@{\$end}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{\$end}{$end}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::\$end\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a04a0619bc7f4cc570b0f50266ef924e8}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}set\+End()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4ff94914ab6edccf34da4bfd8175103e}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4ff94914ab6edccf34da4bfd8175103e}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!\$id@{\$id}}
+\index{\$id@{\$id}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{\$id}{$id}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::\$id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a9660e55f1ac7a60d2f7bf2fb1b13bbfe}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}get\+Id()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a784a0fa81a3033ff2b0ae0fed6a73266}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}set\+Id()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a1e8371e6f222d247c892ab2f56de65f2}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a1e8371e6f222d247c892ab2f56de65f2}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!\$id\_event@{\$id\_event}}
+\index{\$id\_event@{\$id\_event}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{\$id\_event}{$id\_event}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::\$id\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a3bbb60c0c2ba6ef3374df01c17811d6d}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}get\+Id\+\_\+event()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ae12854c4130103f673178f9e243a5ea6}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}set\+Id\+\_\+event()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_abff7c0e10a322b60a92965e0b0e4463c}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_abff7c0e10a322b60a92965e0b0e4463c}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!\$id\_ville@{\$id\_ville}}
+\index{\$id\_ville@{\$id\_ville}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{\$id\_ville}{$id\_ville}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::\$id\+\_\+ville\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a516029fc04b834fe7f61aea742e44ca4}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}get\+Id\+\_\+ville()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a30726f075efa8ee19c172eb6072eb642}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}set\+Id\+\_\+ville()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad95ad828f2e61acd7f0797ba5608a02d}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad95ad828f2e61acd7f0797ba5608a02d}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!\$motif@{\$motif}}
+\index{\$motif@{\$motif}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{\$motif}{$motif}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::\$motif\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a8b7732ebcc3f53d4be5ad69e3ac24cc9}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}get\+Motif()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a4adc10c8da86b790629c732814918c57}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}set\+Motif()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad3f94c8bc155ea74b126e2b7134189c0}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ad3f94c8bc155ea74b126e2b7134189c0}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!\$name@{\$name}}
+\index{\$name@{\$name}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{\$name}{$name}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::\$name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_ac7cccafeeaa1a4f650c8ad9cd42eda07}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}get\+Name()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a261de66ddd1388abfd1260cc1f9ffed5}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}set\+Name()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af49ecfad2a3b4dcfa12d48b260c15492}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_af49ecfad2a3b4dcfa12d48b260c15492}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}!\$start@{\$start}}
+\index{\$start@{\$start}!Météo\textbackslash{}Calendar\textbackslash{}Event@{Météo\textbackslash{}Calendar\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{\$start}{$start}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+::\$start\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_a3089603b35923f39f648dcf794551623}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\textbackslash{}set\+Start()}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+Calendar/\mbox{\hyperlink{class_2_calendar_2_event_8php}{Event.\+php}}\end{DoxyCompactItemize}

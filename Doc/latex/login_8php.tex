@@ -1,0 +1,80 @@
+\hypertarget{login_8php}{}\doxysection{Référence du fichier login.\+php}
+\label{login_8php}\index{login.php@{login.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}}()
+\item 
+\mbox{\hyperlink{login_8php_aeba2ab722cedda53dbb7ec1a59f45550}{\$error}} = false
+\item 
+\mbox{\hyperlink{login_8php_a0cfab404fc4f58e5575b5c8da292a7d3}{\$newerror}} = false
+\item 
+\mbox{\hyperlink{login_8php_a0283d24a47d4e01fa8846cac8a63d308}{\$phpmailer}} = new \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}}()
+\item 
+\mbox{\hyperlink{login_8php_ac409786c163a1974d1e24a6767a95166}{\$mail}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_mail_1_1_mail}{Mail}}(\$phpmailer)
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!empty(\$\+\_\+\+POST)) \mbox{\hyperlink{login_8php_ae6c6dc9b738d983c3448d8d6d5653260}{\$title}} = \char`\"{}Se connecter -\/ 24h Weather\char`\"{}
+\item 
+\mbox{\hyperlink{login_8php_a87b032cba06009e3467abf1c8018d960}{\$description}} = \char`\"{}Connectez vous ou créez un compte afin d\textquotesingle{}obtenir des privilèges !\char`\"{}
+\item 
+\mbox{\hyperlink{login_8php_a9fbd95bfcdf27d802a8c7938529a61ba}{\$keywords}} = \char`\"{}weather meteo 24/24 7/7\char`\"{}
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset( \$errors\mbox{[} \textquotesingle{}newmail\textquotesingle{}\mbox{]})$\vert$$\vert$isset( \$errors\mbox{[} \textquotesingle{}newuser\textquotesingle{}\mbox{]})$\vert$$\vert$\$newerror) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset(\$errors\mbox{[}\textquotesingle{}newmail\textquotesingle{}\mbox{]})$\vert$$\vert$isset(\$errors\mbox{[}\textquotesingle{}newuser\textquotesingle{}\mbox{]})$\vert$$\vert$ \$newerror) \mbox{\hyperlink{login_8php_a5f5dee0a1ec6dccb33770ac6563bfc9f}{else}} \{ echo \char`\"{}checked=\textquotesingle{}checked\textquotesingle{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{login_8php_a87b032cba06009e3467abf1c8018d960}\label{login_8php_a87b032cba06009e3467abf1c8018d960}} 
+\index{login.php@{login.php}!\$description@{\$description}}
+\index{\$description@{\$description}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$description}{$description}}
+{\footnotesize\ttfamily \$description = \char`\"{}Connectez vous ou créez un compte afin d\textquotesingle{}obtenir des privilèges !\char`\"{}}
+
+\mbox{\Hypertarget{login_8php_aeba2ab722cedda53dbb7ec1a59f45550}\label{login_8php_aeba2ab722cedda53dbb7ec1a59f45550}} 
+\index{login.php@{login.php}!\$error@{\$error}}
+\index{\$error@{\$error}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$error}{$error}}
+{\footnotesize\ttfamily \$error = false}
+
+\mbox{\Hypertarget{login_8php_a9fbd95bfcdf27d802a8c7938529a61ba}\label{login_8php_a9fbd95bfcdf27d802a8c7938529a61ba}} 
+\index{login.php@{login.php}!\$keywords@{\$keywords}}
+\index{\$keywords@{\$keywords}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$keywords}{$keywords}}
+{\footnotesize\ttfamily \$keywords = \char`\"{}weather meteo 24/24 7/7\char`\"{}}
+
+\mbox{\Hypertarget{login_8php_ac409786c163a1974d1e24a6767a95166}\label{login_8php_ac409786c163a1974d1e24a6767a95166}} 
+\index{login.php@{login.php}!\$mail@{\$mail}}
+\index{\$mail@{\$mail}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$mail}{$mail}}
+{\footnotesize\ttfamily \$mail = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_mail_1_1_mail}{Mail}}(\$phpmailer)}
+
+\mbox{\Hypertarget{login_8php_a0cfab404fc4f58e5575b5c8da292a7d3}\label{login_8php_a0cfab404fc4f58e5575b5c8da292a7d3}} 
+\index{login.php@{login.php}!\$newerror@{\$newerror}}
+\index{\$newerror@{\$newerror}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$newerror}{$newerror}}
+{\footnotesize\ttfamily \$newerror = false}
+
+\mbox{\Hypertarget{login_8php_a0283d24a47d4e01fa8846cac8a63d308}\label{login_8php_a0283d24a47d4e01fa8846cac8a63d308}} 
+\index{login.php@{login.php}!\$phpmailer@{\$phpmailer}}
+\index{\$phpmailer@{\$phpmailer}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$phpmailer}{$phpmailer}}
+{\footnotesize\ttfamily \$phpmailer = new \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}}()}
+
+\mbox{\Hypertarget{login_8php_ae6c6dc9b738d983c3448d8d6d5653260}\label{login_8php_ae6c6dc9b738d983c3448d8d6d5653260}} 
+\index{login.php@{login.php}!\$title@{\$title}}
+\index{\$title@{\$title}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$title}{$title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (!empty( \$\+\_\+\+POST)) \$title = \char`\"{}Se connecter -\/ 24h Weather\char`\"{}}
+
+\mbox{\Hypertarget{login_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{login_8php_a598ca4e71b15a1313ec95f0df1027ca5}} 
+\index{login.php@{login.php}!\$user@{\$user}}
+\index{\$user@{\$user}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily \$user = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}}()}
+
+\mbox{\Hypertarget{login_8php_a5f5dee0a1ec6dccb33770ac6563bfc9f}\label{login_8php_a5f5dee0a1ec6dccb33770ac6563bfc9f}} 
+\index{login.php@{login.php}!else@{else}}
+\index{else@{else}!login.php@{login.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset(\$errors\mbox{[}\textquotesingle{}newmail\textquotesingle{}\mbox{]})$\vert$$\vert$isset(\$errors\mbox{[}\textquotesingle{}newuser\textquotesingle{}\mbox{]})$\vert$$\vert$ \$newerror) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (isset( \$errors\mbox{[} \textquotesingle{}newmail\textquotesingle{}\mbox{]})$\vert$$\vert$isset( \$errors\mbox{[} \textquotesingle{}newuser\textquotesingle{}\mbox{]})$\vert$$\vert$\$newerror) else \{ echo \char`\"{}checked=\textquotesingle{}checked\textquotesingle{}\char`\"{}}
+

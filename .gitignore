@@ -1,0 +1,5 @@
+class/WeatherConf.conf.php
+.htaccess
+cacert.pem
+vendor/
+uploads/

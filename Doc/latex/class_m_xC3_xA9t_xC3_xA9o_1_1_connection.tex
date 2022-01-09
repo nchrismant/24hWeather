@@ -1,0 +1,50 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_connection}{}\doxysection{Référence de la classe Météo\textbackslash{}Connection}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_connection}\index{Météo\textbackslash{}Connection@{Météo\textbackslash{}Connection}}
+
+
+Graphe de collaboration de Météo\textbackslash{}Connection\+:
+% FIG 0
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_connection_af8a0e570749484d9d1431eb247d8c30f}{get\+PDO}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_connection_af8a0e570749484d9d1431eb247d8c30f}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_connection_af8a0e570749484d9d1431eb247d8c30f}} 
+\index{Météo\textbackslash{}Connection@{Météo\textbackslash{}Connection}!getPDO@{getPDO}}
+\index{getPDO@{getPDO}!Météo\textbackslash{}Connection@{Météo\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{getPDO()}{getPDO()}}
+{\footnotesize\ttfamily static Météo\textbackslash{}\+Connection\+::get\+PDO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Récupère la connexion à la base de données
+
+\begin{DoxyReturn}{Renvoie}
+PDO 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                     : PDO }
+\DoxyCodeLine{16     \{}
+\DoxyCodeLine{17         \textcolor{comment}{/*return new PDO('mysql:dbname=mysql\_dwa;host=localhost', 'nathan', 'A123456*', [}}
+\DoxyCodeLine{18 \textcolor{comment}{            PDO::ATTR\_DEFAULT\_FETCH\_MODE => PDO::FETCH\_ASSOC,}}
+\DoxyCodeLine{19 \textcolor{comment}{            PDO::ATTR\_ERRMODE => PDO::ERRMODE\_EXCEPTION}}
+\DoxyCodeLine{20 \textcolor{comment}{        ]);*/}}
+\DoxyCodeLine{21         }
+\DoxyCodeLine{22         \textcolor{keywordflow}{return} \textcolor{keyword}{new} PDO(\textcolor{stringliteral}{'mysql:dbname='}.WeatherConf::\$pdoDB.\textcolor{stringliteral}{';host='}.WeatherConf::\$pdoHost.\textcolor{stringliteral}{''}, WeatherConf::\$pdoUser, WeatherConf::\$pdoPassword, [}
+\DoxyCodeLine{23             PDO::ATTR\_DEFAULT\_FETCH\_MODE => PDO::FETCH\_ASSOC,}
+\DoxyCodeLine{24             PDO::ATTR\_ERRMODE => PDO::ERRMODE\_EXCEPTION}
+\DoxyCodeLine{25         ]);}
+\DoxyCodeLine{26     \}}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_validator_af476b61ae2aa0804fc106a76127e64e3}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Validator\textbackslash{}validates()}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\mbox{\hyperlink{_connection_8php}{Connection.\+php}}\end{DoxyCompactItemize}

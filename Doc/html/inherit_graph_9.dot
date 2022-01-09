@@ -1,0 +1,8 @@
+digraph "Graphe hiérarchique des classes"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Météo\\User\\UserImg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img.html",tooltip=" "];
+}

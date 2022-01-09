@@ -1,0 +1,280 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month}{}\doxysection{Référence de la classe Météo\textbackslash{}Calendar\textbackslash{}Month}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month}\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+
+
+Graphe de collaboration de Météo\textbackslash{}Calendar\textbackslash{}Month\+:
+% FIG 0
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a186d5e5196d5ec7a0e40548a4bcc9cab}{\+\_\+\+\_\+construct}} (?int \$month=null, ?int \$year=null)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ad1dc6922148428e599b36d8c5fd72c17}{get\+Starting\+Day}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_aba6ac307e6c15382e86aa7ae847c5150}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae47342601e3fd981afc034d12aa321f8}{get\+Weeks}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_abe8e8eed8d48560a841c138b62717eee}{within\+Month}} (Date\+Time\+Interface \$date)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_abd7d70cb3aaf70fdb64ac192bf72cdd9}{next\+Month}} ()
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a43db332a208093151f6aa0fca0ef51a1}{previous\+Month}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae952cd73dd69f2fa239f7d094afffaa9}{\$days}} = \mbox{[}\textquotesingle{}Lundi\textquotesingle{}, \textquotesingle{}Mardi\textquotesingle{}, \textquotesingle{}Mercredi\textquotesingle{}, \textquotesingle{}Jeudi\textquotesingle{}, \textquotesingle{}Vendredi\textquotesingle{}, \textquotesingle{}Samedi\textquotesingle{}, \textquotesingle{}Dimanche\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a20716bb0fb7c21d6568abb2b61562b74}{\$months}} = \mbox{[}\textquotesingle{}Janvier\textquotesingle{}, \textquotesingle{}Février\textquotesingle{}, \textquotesingle{}Mars\textquotesingle{}, \textquotesingle{}Avril\textquotesingle{}, \textquotesingle{}Mai\textquotesingle{}, \textquotesingle{}Juin\textquotesingle{}, \textquotesingle{}Juillet\textquotesingle{}, \textquotesingle{}Aout\textquotesingle{}, \textquotesingle{}Septembre\textquotesingle{}, \textquotesingle{}Octobre\textquotesingle{}, \textquotesingle{}Novembre\textquotesingle{}, \textquotesingle{}Décembre\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a186d5e5196d5ec7a0e40548a4bcc9cab}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a186d5e5196d5ec7a0e40548a4bcc9cab}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?int}]{\$month = {\ttfamily null},  }\item[{?int}]{\$year = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{21         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}} === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{22             \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}} = intval(date(\textcolor{charliteral}{'m'}));}
+\DoxyCodeLine{23         \}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}} === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{26             \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}} = intval(date(\textcolor{charliteral}{'Y'}));}
+\DoxyCodeLine{27         \}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \textcolor{keywordflow}{if}(\$month < 1 || \$month > 12) \{}
+\DoxyCodeLine{30             \textcolor{keywordflow}{throw} new \(\backslash\)Exception(\textcolor{stringliteral}{"{}Le mois \$month n'est pas valide"{}});}
+\DoxyCodeLine{31         \}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}} < 1970) \{}
+\DoxyCodeLine{34             \textcolor{keywordflow}{throw} new \(\backslash\)Exception(\textcolor{stringliteral}{"{}L'année est inférieure à 1970"{}});}
+\DoxyCodeLine{35         \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         \$this-\/>month = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}};}
+\DoxyCodeLine{38         \$this-\/>year = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}};}
+\DoxyCodeLine{39     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\$month}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\$year}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_aba6ac307e6c15382e86aa7ae847c5150}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_aba6ac307e6c15382e86aa7ae847c5150}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         \textcolor{keywordflow}{return} \$this-\/>months[\$this-\/>month -\/ 1] . \textcolor{charliteral}{' '} . \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$this-\/>year}};}
+\DoxyCodeLine{54     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\$year}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ad1dc6922148428e599b36d8c5fd72c17}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ad1dc6922148428e599b36d8c5fd72c17}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!getStartingDay@{getStartingDay}}
+\index{getStartingDay@{getStartingDay}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{getStartingDay()}{getStartingDay()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::get\+Starting\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Récupère la date du 1er jour du mois.
+
+\begin{DoxyReturn}{Renvoie}
+Date\+Time\+Immutable 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                                      : DateTimeImmutable}
+\DoxyCodeLine{47     \{}
+\DoxyCodeLine{48         \textcolor{keywordflow}{return} \textcolor{keyword}{new} DateTimeImmutable(\textcolor{stringliteral}{"{}\{\$this-\/>year\}-\/\{\$this-\/>month\}-\/01"{}});}
+\DoxyCodeLine{49     \}}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae47342601e3fd981afc034d12aa321f8}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}get\+Weeks()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_abe8e8eed8d48560a841c138b62717eee}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}within\+Month()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae47342601e3fd981afc034d12aa321f8}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae47342601e3fd981afc034d12aa321f8}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!getWeeks@{getWeeks}}
+\index{getWeeks@{getWeeks}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{getWeeks()}{getWeeks()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::get\+Weeks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Récupère le nombre de semaines dans un mois.
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                : \textcolor{keywordtype}{int}}
+\DoxyCodeLine{62     \{}
+\DoxyCodeLine{63         \mbox{\hyperlink{profil_8php_a50a00e7de77365e00b117e73aa82fb9b}{\$start}} = \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ad1dc6922148428e599b36d8c5fd72c17}{getStartingDay}}();}
+\DoxyCodeLine{64         \mbox{\hyperlink{profil_8php_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}} = \mbox{\hyperlink{profil_8php_a50a00e7de77365e00b117e73aa82fb9b}{\$start}}-\/>modify(\textcolor{stringliteral}{'+1 month -\/1 day'});}
+\DoxyCodeLine{65         \$startWeek = intval(\mbox{\hyperlink{profil_8php_a50a00e7de77365e00b117e73aa82fb9b}{\$start}}-\/>format(\textcolor{charliteral}{'W'}));}
+\DoxyCodeLine{66         \$endWeek = intval(\mbox{\hyperlink{profil_8php_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}-\/>format(\textcolor{charliteral}{'W'}));}
+\DoxyCodeLine{67         \textcolor{keywordflow}{if}(\$endWeek === 1) \{}
+\DoxyCodeLine{68             \$endWeek = intval(\mbox{\hyperlink{profil_8php_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}-\/>modify(\textcolor{stringliteral}{'-\/ 7 days'})-\/>format(\textcolor{charliteral}{'W'})) + 1;}
+\DoxyCodeLine{69         \}}
+\DoxyCodeLine{70         \mbox{\hyperlink{profil_8php_af7963ddd01c957441ea616739387d7e4}{\$weeks}} = \$endWeek -\/ \$startWeek + 1;}
+\DoxyCodeLine{71         \textcolor{keywordflow}{if}(\mbox{\hyperlink{profil_8php_af7963ddd01c957441ea616739387d7e4}{\$weeks}} < 0) \{}
+\DoxyCodeLine{72             \mbox{\hyperlink{profil_8php_af7963ddd01c957441ea616739387d7e4}{\$weeks}} = intval(\mbox{\hyperlink{profil_8php_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}-\/>format(\textcolor{charliteral}{'W'}));}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         \textcolor{keywordflow}{return} \mbox{\hyperlink{profil_8php_af7963ddd01c957441ea616739387d7e4}{\$weeks}};}
+\DoxyCodeLine{76     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{profil_8php_ac2040b96cd66d4d79b1d9fe0027d2f9b}{\$end}}, \mbox{\hyperlink{profil_8php_a50a00e7de77365e00b117e73aa82fb9b}{\$start}}, \mbox{\hyperlink{profil_8php_af7963ddd01c957441ea616739387d7e4}{\$weeks}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ad1dc6922148428e599b36d8c5fd72c17}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}get\+Starting\+Day()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_abd7d70cb3aaf70fdb64ac192bf72cdd9}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_abd7d70cb3aaf70fdb64ac192bf72cdd9}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!nextMonth@{nextMonth}}
+\index{nextMonth@{nextMonth}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{nextMonth()}{nextMonth()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::next\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retourne le prochain mois.
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month}{Month}} 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                 : \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month}{Month}}}
+\DoxyCodeLine{95     \{}
+\DoxyCodeLine{96         \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}} = \$this-\/>month + 1;}
+\DoxyCodeLine{97         \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}} = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$this-\/>year}};}
+\DoxyCodeLine{98         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}} > 12) \{}
+\DoxyCodeLine{99             \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}} = 1;}
+\DoxyCodeLine{100             \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}} += 1;}
+\DoxyCodeLine{101         \}}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103         \textcolor{keywordflow}{return} \textcolor{keyword}{new} Month(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}});}
+\DoxyCodeLine{104     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\$month}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\$year}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a43db332a208093151f6aa0fca0ef51a1}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a43db332a208093151f6aa0fca0ef51a1}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!previousMonth@{previousMonth}}
+\index{previousMonth@{previousMonth}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{previousMonth()}{previousMonth()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::previous\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retourne le pécédent mois.
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month}{Month}} 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                                     : \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month}{Month}}}
+\DoxyCodeLine{112     \{}
+\DoxyCodeLine{113         \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}} = \$this-\/>month -\/ 1;}
+\DoxyCodeLine{114         \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}} = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$this-\/>year}};}
+\DoxyCodeLine{115         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}} < 1) \{}
+\DoxyCodeLine{116             \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}} = 12;}
+\DoxyCodeLine{117             \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}} -\/= 1;}
+\DoxyCodeLine{118         \}}
+\DoxyCodeLine{119         }
+\DoxyCodeLine{120         \textcolor{keywordflow}{return} \textcolor{keyword}{new} Month(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{\$month}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{\$year}});}
+\DoxyCodeLine{121     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\$month}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\$year}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_abe8e8eed8d48560a841c138b62717eee}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_abe8e8eed8d48560a841c138b62717eee}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!withinMonth@{withinMonth}}
+\index{withinMonth@{withinMonth}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{withinMonth()}{withinMonth()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::within\+Month (\begin{DoxyParamCaption}\item[{Date\+Time\+Interface}]{\$date }\end{DoxyParamCaption})}
+
+Regarde si la date est dans le mois actuel.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+Date\+Time\+Interface & {\em \$date} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                                                          : \textcolor{keywordtype}{bool}}
+\DoxyCodeLine{85     \{}
+\DoxyCodeLine{86         \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ad1dc6922148428e599b36d8c5fd72c17}{getStartingDay}}()-\/>format(\textcolor{stringliteral}{'Y-\/m'}) === \$date-\/>format(\textcolor{stringliteral}{'Y-\/m'});}
+\DoxyCodeLine{87     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ad1dc6922148428e599b36d8c5fd72c17}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}get\+Starting\+Day()}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae952cd73dd69f2fa239f7d094afffaa9}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_ae952cd73dd69f2fa239f7d094afffaa9}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!\$days@{\$days}}
+\index{\$days@{\$days}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{\$days}{$days}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::\$days = \mbox{[}\textquotesingle{}Lundi\textquotesingle{}, \textquotesingle{}Mardi\textquotesingle{}, \textquotesingle{}Mercredi\textquotesingle{}, \textquotesingle{}Jeudi\textquotesingle{}, \textquotesingle{}Vendredi\textquotesingle{}, \textquotesingle{}Samedi\textquotesingle{}, \textquotesingle{}Dimanche\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a63c4bfa9e795e2cdb8735809dddeed89}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!\$month@{\$month}}
+\index{\$month@{\$month}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{\$month}{$month}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::\$month}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a186d5e5196d5ec7a0e40548a4bcc9cab}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\+\_\+\+\_\+construct()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_abd7d70cb3aaf70fdb64ac192bf72cdd9}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}next\+Month()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a43db332a208093151f6aa0fca0ef51a1}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}previous\+Month()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a20716bb0fb7c21d6568abb2b61562b74}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a20716bb0fb7c21d6568abb2b61562b74}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!\$months@{\$months}}
+\index{\$months@{\$months}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{\$months}{$months}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::\$months = \mbox{[}\textquotesingle{}Janvier\textquotesingle{}, \textquotesingle{}Février\textquotesingle{}, \textquotesingle{}Mars\textquotesingle{}, \textquotesingle{}Avril\textquotesingle{}, \textquotesingle{}Mai\textquotesingle{}, \textquotesingle{}Juin\textquotesingle{}, \textquotesingle{}Juillet\textquotesingle{}, \textquotesingle{}Aout\textquotesingle{}, \textquotesingle{}Septembre\textquotesingle{}, \textquotesingle{}Octobre\textquotesingle{}, \textquotesingle{}Novembre\textquotesingle{}, \textquotesingle{}Décembre\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_afe6af043e3bfc765f8107227573da34d}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}!\$year@{\$year}}
+\index{\$year@{\$year}!Météo\textbackslash{}Calendar\textbackslash{}Month@{Météo\textbackslash{}Calendar\textbackslash{}Month}}
+\doxysubsubsection{\texorpdfstring{\$year}{$year}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\+::\$year}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a186d5e5196d5ec7a0e40548a4bcc9cab}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\+\_\+\+\_\+construct()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_aba6ac307e6c15382e86aa7ae847c5150}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}\+\_\+\+\_\+to\+String()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_abd7d70cb3aaf70fdb64ac192bf72cdd9}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}next\+Month()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_month_a43db332a208093151f6aa0fca0ef51a1}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Month\textbackslash{}previous\+Month()}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+Calendar/\mbox{\hyperlink{_month_8php}{Month.\+php}}\end{DoxyCompactItemize}

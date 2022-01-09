@@ -1,0 +1,94 @@
+\hypertarget{event_8php}{}\doxysection{Référence du fichier event.\+php}
+\label{event_8php}\index{event.php@{event.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{event_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = Connection\+::get\+PDO()
+\item 
+\mbox{\hyperlink{event_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}} = new Auth(\$pdo)
+\item 
+\mbox{\hyperlink{event_8php_ae8876a14058f368335baccf35af4a22b}{\$table}} = new User\+Table(\$pdo)
+\item 
+\mbox{\hyperlink{event_8php_acf5d5c5f65c34b6dccfd30e0313c3a0b}{try}}
+\item 
+catch(Forbidden\+Exception \$e) \mbox{\hyperlink{event_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}} = \$auth-\/$>$user()
+\item 
+\mbox{\hyperlink{event_8php_a1bcec9bbd34255927faaf155bf3a940a}{\$events}} = new Events\+Table(\$pdo)
+\item 
+catch(Not\+Found\+Exception \$e) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!empty(\$\+\_\+\+POST)) \mbox{\hyperlink{event_8php_a8bcf07f299175876797d88154fe350fc}{\$title}} = \char`\"{}\char`\"{}. htmlspecialchars(\$event-\/$>$get\+Name()) . \char`\"{} -\/ 24h Weather\char`\"{}
+\item 
+\mbox{\hyperlink{event_8php_a87b032cba06009e3467abf1c8018d960}{\$description}} = \char`\"{}Retrouvez l\textquotesingle{}évènement sur votre calendrier et consultez le !\char`\"{}
+\item 
+\mbox{\hyperlink{event_8php_a9fbd95bfcdf27d802a8c7938529a61ba}{\$keywords}} = \char`\"{}weather meteo 24/24 7/7 calendar event\char`\"{}
+\item 
+\mbox{\hyperlink{event_8php_a51e9778646e7ffc5d49118b99cfed03d}{if}} (!empty( \$event-\/$>$get\+Id\+\_\+ville() \&\&!empty( \$event-\/$>$get\+Date\+\_\+rappel())))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{event_8php_a20d7415a9c3391b32d7fe2136fce6e2c}\label{event_8php_a20d7415a9c3391b32d7fe2136fce6e2c}} 
+\index{event.php@{event.php}!\$auth@{\$auth}}
+\index{\$auth@{\$auth}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{\$auth}{$auth}}
+{\footnotesize\ttfamily \$auth = new Auth(\$pdo)}
+
+\mbox{\Hypertarget{event_8php_a87b032cba06009e3467abf1c8018d960}\label{event_8php_a87b032cba06009e3467abf1c8018d960}} 
+\index{event.php@{event.php}!\$description@{\$description}}
+\index{\$description@{\$description}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{\$description}{$description}}
+{\footnotesize\ttfamily \$description = \char`\"{}Retrouvez l\textquotesingle{}évènement sur votre calendrier et consultez le !\char`\"{}}
+
+\mbox{\Hypertarget{event_8php_a1bcec9bbd34255927faaf155bf3a940a}\label{event_8php_a1bcec9bbd34255927faaf155bf3a940a}} 
+\index{event.php@{event.php}!\$events@{\$events}}
+\index{\$events@{\$events}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{\$events}{$events}}
+{\footnotesize\ttfamily \$events = new Events\+Table(\$pdo)}
+
+\mbox{\Hypertarget{event_8php_a9fbd95bfcdf27d802a8c7938529a61ba}\label{event_8php_a9fbd95bfcdf27d802a8c7938529a61ba}} 
+\index{event.php@{event.php}!\$keywords@{\$keywords}}
+\index{\$keywords@{\$keywords}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{\$keywords}{$keywords}}
+{\footnotesize\ttfamily \$keywords = \char`\"{}weather meteo 24/24 7/7 calendar event\char`\"{}}
+
+\mbox{\Hypertarget{event_8php_a5766efd703cef0e00bfc06b3f3acbe0e}\label{event_8php_a5766efd703cef0e00bfc06b3f3acbe0e}} 
+\index{event.php@{event.php}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily \$pdo = Connection\+::get\+PDO()}
+
+\mbox{\Hypertarget{event_8php_ae8876a14058f368335baccf35af4a22b}\label{event_8php_ae8876a14058f368335baccf35af4a22b}} 
+\index{event.php@{event.php}!\$table@{\$table}}
+\index{\$table@{\$table}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{\$table}{$table}}
+{\footnotesize\ttfamily \$table = new User\+Table(\$pdo)}
+
+\mbox{\Hypertarget{event_8php_a8bcf07f299175876797d88154fe350fc}\label{event_8php_a8bcf07f299175876797d88154fe350fc}} 
+\index{event.php@{event.php}!\$title@{\$title}}
+\index{\$title@{\$title}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{\$title}{$title}}
+{\footnotesize\ttfamily catch(Not\+Found\+Exception \$e) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (!empty( \$\+\_\+\+POST)) \$title = \char`\"{}\char`\"{}. htmlspecialchars(\$event-\/$>$get\+Name()) . \char`\"{} -\/ 24h Weather\char`\"{}}
+
+\mbox{\Hypertarget{event_8php_a882546ef01c6d1a322046c5ace1d991b}\label{event_8php_a882546ef01c6d1a322046c5ace1d991b}} 
+\index{event.php@{event.php}!\$user@{\$user}}
+\index{\$user@{\$user}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily catch (Forbidden\+Exception \$e) \$user = \$auth-\/$>$user()}
+
+\mbox{\Hypertarget{event_8php_a51e9778646e7ffc5d49118b99cfed03d}\label{event_8php_a51e9778646e7ffc5d49118b99cfed03d}} 
+\index{event.php@{event.php}!if@{if}}
+\index{if@{if}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if(!empty(\$event-\/$>$get\+Id\+\_\+ville() \&\&!empty(\$event-\/$>$get\+Date\+\_\+rappel()))) (\begin{DoxyParamCaption}\item[{!}]{empty \$event-\/$>$get\+Id\+\_\+ville() \&\&!empty( \$event-\/$>$get\+Date\+\_\+rappel()) }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{event_8php_acf5d5c5f65c34b6dccfd30e0313c3a0b}\label{event_8php_acf5d5c5f65c34b6dccfd30e0313c3a0b}} 
+\index{event.php@{event.php}!try@{try}}
+\index{try@{try}!event.php@{event.php}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}id\textquotesingle{}\mbox{]})) try}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{   \mbox{\hyperlink{event_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}}-\/>check()}
+
+\end{DoxyCode}

@@ -1,0 +1,225 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}{}\doxysection{Référence de la classe Météo\textbackslash{}User\textbackslash{}User\+Table}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}\index{Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}}
+
+
+Graphe d\textquotesingle{}héritage de Météo\textbackslash{}User\textbackslash{}User\+Table\+:
+% FIG 0
+
+
+Graphe de collaboration de Météo\textbackslash{}User\textbackslash{}User\+Table\+:
+% FIG 1
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_af08e27fecfab0529b349a67aa22de050}{findby\+Username}} (string \$username)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a1499e608c7dc196bce60a565e7d65989}{findby\+Mail}} (string \$mail)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_aba3852d40f9cea30f1e2be45243b0def}{create\+User}} (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}} \$user)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a36bde857041812f5b20640491e21dc8e}{update\+User}} (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}} \$user)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a47303d3ee09a0dae7c5e51d0a0ae780e}{update\+User\+Profile}} (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}} \$user)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_afb5089a5956f9217efbc9c61cb4ecfa6}{\$table}} = \char`\"{}utilisateurs\char`\"{}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_aeec26c64e39a1870df8dfacf7e7a80fb}{\$class}} = User\+::class
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_aba3852d40f9cea30f1e2be45243b0def}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_aba3852d40f9cea30f1e2be45243b0def}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}!createUser@{createUser}}
+\index{createUser@{createUser}!Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}}
+\doxysubsubsection{\texorpdfstring{createUser()}{createUser()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\+::create\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}}}]{\$user }\end{DoxyParamCaption})}
+
+Ajoute un utilisateur dans la table utilisateurs.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}} & {\em \$user} & Données de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                            : \textcolor{keywordtype}{void}}
+\DoxyCodeLine{57     \{}
+\DoxyCodeLine{58         \mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}} = \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a9a2eccc0920c94045c4d97fd4d103816}{create}}([}
+\DoxyCodeLine{59             \textcolor{stringliteral}{'username'} => \$user-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_a965297315452259de11b496ef5c24caf}{getUsername}}(),}
+\DoxyCodeLine{60             \textcolor{stringliteral}{'mail'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getMail(),}
+\DoxyCodeLine{61             \textcolor{stringliteral}{'password'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getPassword(),}
+\DoxyCodeLine{62             \textcolor{stringliteral}{'inscription\_date'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getInscription\_date()-\/>format(\textcolor{stringliteral}{'Y-\/m-\/d H:i:s'}),}
+\DoxyCodeLine{63             \textcolor{stringliteral}{'code'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getCode()}
+\DoxyCodeLine{64         ]);}
+\DoxyCodeLine{65         \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>setId(\mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}});}
+\DoxyCodeLine{66     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}}, \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a9a2eccc0920c94045c4d97fd4d103816}{Météo\textbackslash{}\+Table\textbackslash{}\+Table\textbackslash{}create()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_a965297315452259de11b496ef5c24caf}{Météo\textbackslash{}\+User\textbackslash{}\+User\textbackslash{}get\+Username()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a1499e608c7dc196bce60a565e7d65989}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a1499e608c7dc196bce60a565e7d65989}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}!findbyMail@{findbyMail}}
+\index{findbyMail@{findbyMail}!Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}}
+\doxysubsubsection{\texorpdfstring{findbyMail()}{findbyMail()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\+::findby\+Mail (\begin{DoxyParamCaption}\item[{string}]{\$mail }\end{DoxyParamCaption})}
+
+Récupère les informations d\textquotesingle{}un utilisateur via son mail.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$mail} & \mbox{\hyperlink{namespace_m_xC3_xA9t_xC3_xA9o_1_1_mail}{Mail}} de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}} 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                              : \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}}}
+\DoxyCodeLine{39     \{}
+\DoxyCodeLine{40         \$query = \$this-\/>pdo-\/>prepare(\textcolor{stringliteral}{'SELECT * FROM '} . \$this-\/>table . \textcolor{stringliteral}{' WHERE mail = :mail'});}
+\DoxyCodeLine{41         \$query-\/>execute([\textcolor{stringliteral}{'mail'} => \mbox{\hyperlink{editpass_8php_ac409786c163a1974d1e24a6767a95166}{\$mail}}]);}
+\DoxyCodeLine{42         \$query-\/>setFetchMode(PDO::FETCH\_CLASS, \$this-\/>\textcolor{keyword}{class});}
+\DoxyCodeLine{43         \$result = \$query-\/>fetch();}
+\DoxyCodeLine{44         \textcolor{keywordflow}{if}(\$result === \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{45             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_exception_1_1_not_found_exception}{NotFoundException}}(\$this-\/>table, \mbox{\hyperlink{editpass_8php_ac409786c163a1974d1e24a6767a95166}{\$mail}});}
+\DoxyCodeLine{46         \}}
+\DoxyCodeLine{47         \textcolor{keywordflow}{return} \$result;}
+\DoxyCodeLine{48     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{editpass_8php_ac409786c163a1974d1e24a6767a95166}{\$mail}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_af08e27fecfab0529b349a67aa22de050}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_af08e27fecfab0529b349a67aa22de050}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}!findbyUsername@{findbyUsername}}
+\index{findbyUsername@{findbyUsername}!Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}}
+\doxysubsubsection{\texorpdfstring{findbyUsername()}{findbyUsername()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\+::findby\+Username (\begin{DoxyParamCaption}\item[{string}]{\$username }\end{DoxyParamCaption})}
+
+Récupère les informations d\textquotesingle{}un utilisateur via son nom d\textquotesingle{}utilisateur.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$username} & Le nom d\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}} 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20                                                      : \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}}}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         \$query = \$this-\/>pdo-\/>prepare(\textcolor{stringliteral}{'SELECT * FROM '} . \$this-\/>table . \textcolor{stringliteral}{' WHERE username = :username'});}
+\DoxyCodeLine{23         \$query-\/>execute([\textcolor{stringliteral}{'username'} => \$username]);}
+\DoxyCodeLine{24         \$query-\/>setFetchMode(PDO::FETCH\_CLASS, \$this-\/>\textcolor{keyword}{class});}
+\DoxyCodeLine{25         \$result = \$query-\/>fetch();}
+\DoxyCodeLine{26         \textcolor{keywordflow}{if}(\$result === \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{27             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_exception_1_1_not_found_exception}{NotFoundException}}(\$this-\/>table, \$username);}
+\DoxyCodeLine{28         \}}
+\DoxyCodeLine{29         \textcolor{keywordflow}{return} \$result;}
+\DoxyCodeLine{30     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a36bde857041812f5b20640491e21dc8e}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a36bde857041812f5b20640491e21dc8e}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}!updateUser@{updateUser}}
+\index{updateUser@{updateUser}!Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}}
+\doxysubsubsection{\texorpdfstring{updateUser()}{updateUser()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\+::update\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}}}]{\$user }\end{DoxyParamCaption})}
+
+Modifie un utilisateur dans la table utilisateurs.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}} & {\em \$user} & Données de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                                            : \textcolor{keywordtype}{void}}
+\DoxyCodeLine{75     \{}
+\DoxyCodeLine{76         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a5c73c2248dafe93d8819efe4ca24058f}{update}}([}
+\DoxyCodeLine{77             \textcolor{stringliteral}{'username'} => \$user-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_a965297315452259de11b496ef5c24caf}{getUsername}}(),}
+\DoxyCodeLine{78             \textcolor{stringliteral}{'mail'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getMail(),}
+\DoxyCodeLine{79             \textcolor{stringliteral}{'password'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getPassword(),}
+\DoxyCodeLine{80             \textcolor{stringliteral}{'inscription\_date'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getInscription\_date()-\/>format(\textcolor{stringliteral}{'Y-\/m-\/d H:i:s'}),}
+\DoxyCodeLine{81             \textcolor{stringliteral}{'code'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getCode(),}
+\DoxyCodeLine{82             \textcolor{stringliteral}{'activate'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getActivate(),}
+\DoxyCodeLine{83             \textcolor{stringliteral}{'recuperation'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getRecuperation(),}
+\DoxyCodeLine{84         ], \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getId());}
+\DoxyCodeLine{85     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_a965297315452259de11b496ef5c24caf}{Météo\textbackslash{}\+User\textbackslash{}\+User\textbackslash{}get\+Username()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a5c73c2248dafe93d8819efe4ca24058f}{Météo\textbackslash{}\+Table\textbackslash{}\+Table\textbackslash{}update()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a47303d3ee09a0dae7c5e51d0a0ae780e}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a47303d3ee09a0dae7c5e51d0a0ae780e}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}!updateUserProfile@{updateUserProfile}}
+\index{updateUserProfile@{updateUserProfile}!Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}}
+\doxysubsubsection{\texorpdfstring{updateUserProfile()}{updateUserProfile()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\+::update\+User\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}}}]{\$user }\end{DoxyParamCaption})}
+
+Modifie les informations du profil d\textquotesingle{}un utilisateur dans la table utilisateurs.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}} & {\em \$user} & Données de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{93                                                   : \textcolor{keywordtype}{void}}
+\DoxyCodeLine{94     \{}
+\DoxyCodeLine{95         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a5c73c2248dafe93d8819efe4ca24058f}{update}}([}
+\DoxyCodeLine{96             \textcolor{stringliteral}{'username'} => \$user-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_a965297315452259de11b496ef5c24caf}{getUsername}}(),}
+\DoxyCodeLine{97             \textcolor{stringliteral}{'mail'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getMail(),}
+\DoxyCodeLine{98             \textcolor{stringliteral}{'nom'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getNom(),}
+\DoxyCodeLine{99             \textcolor{stringliteral}{'adresse'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getAdresse(),}
+\DoxyCodeLine{100             \textcolor{stringliteral}{'telephone'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getTelephone(),}
+\DoxyCodeLine{101             \textcolor{stringliteral}{'description'} => \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getDescription()}
+\DoxyCodeLine{102         ], \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}-\/>getId());}
+\DoxyCodeLine{103     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_a965297315452259de11b496ef5c24caf}{Météo\textbackslash{}\+User\textbackslash{}\+User\textbackslash{}get\+Username()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a5c73c2248dafe93d8819efe4ca24058f}{Météo\textbackslash{}\+Table\textbackslash{}\+Table\textbackslash{}update()}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_aeec26c64e39a1870df8dfacf7e7a80fb}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_aeec26c64e39a1870df8dfacf7e7a80fb}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}!\$class@{\$class}}
+\index{\$class@{\$class}!Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}}
+\doxysubsubsection{\texorpdfstring{\$class}{$class}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\+::\$class = User\+::class\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_afb5089a5956f9217efbc9c61cb4ecfa6}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_afb5089a5956f9217efbc9c61cb4ecfa6}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}!\$table@{\$table}}
+\index{\$table@{\$table}!Météo\textbackslash{}User\textbackslash{}UserTable@{Météo\textbackslash{}User\textbackslash{}UserTable}}
+\doxysubsubsection{\texorpdfstring{\$table}{$table}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\+::\$table = \char`\"{}utilisateurs\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+User/\mbox{\hyperlink{_user_table_8php}{User\+Table.\+php}}\end{DoxyCompactItemize}

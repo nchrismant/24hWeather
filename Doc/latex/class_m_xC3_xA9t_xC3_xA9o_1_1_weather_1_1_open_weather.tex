@@ -1,0 +1,439 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather}{}\doxysection{Référence de la classe Météo\textbackslash{}Weather\textbackslash{}Open\+Weather}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather}\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+
+
+Graphe de collaboration de Météo\textbackslash{}Weather\textbackslash{}Open\+Weather\+:
+% FIG 0
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a21a9006515d6a8a17a41b5849ee40dc3}{\+\_\+\+\_\+construct}} (string \$api\+Key)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a541a0a9065003f455014aa8465e5674a}{get\+Today}} (int \$id, string \$units=\char`\"{}metric\char`\"{}, string \$lang=\char`\"{}fr\char`\"{})
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a6312a36a327bab86e3f74dde165ac1ab}{get\+IDBy\+Name}} (string \$city, string \$units=\char`\"{}metric\char`\"{}, string \$lang=\char`\"{}fr\char`\"{})
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a8de5da227255dfcab01b5e48b76f4d62}{get\+IDBy\+Coordinate}} (float \$lat, float \$lon, string \$units=\char`\"{}metric\char`\"{}, string \$lang=\char`\"{}fr\char`\"{})
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a9e89755dd194ac2b40fde67b95933e54}{get\+Forecast}} (string \$id, string \$units=\char`\"{}metric\char`\"{}, string \$lang=\char`\"{}fr\char`\"{})
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_af3becb564a0fbb51f74348f1dbacb11b}{get\+Hourly}} (float \$lat, float \$lon, string \$units=\char`\"{}metric\char`\"{}, string \$lang=\char`\"{}fr\char`\"{})
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa181bfa71a517c5ecf8377cb4fa5dcc5}{get\+User\+Coord}} (string \$ip)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a1a6cb2961c88a7b3a4972bfb8337e270}{get\+Flag}} (string \$code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{call\+API}} (string \$endpoint)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a7d2243d9949236acc259adf2a32da40c}{\$api\+Key}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a21a9006515d6a8a17a41b5849ee40dc3}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a21a9006515d6a8a17a41b5849ee40dc3}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$api\+Key }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13     \{}
+\DoxyCodeLine{14         \$this-\/>apiKey = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a7d2243d9949236acc259adf2a32da40c}{\$apiKey}};}
+\DoxyCodeLine{15     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a7d2243d9949236acc259adf2a32da40c}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}\$api\+Key}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!callAPI@{callAPI}}
+\index{callAPI@{callAPI}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{callAPI()}{callAPI()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::call\+API (\begin{DoxyParamCaption}\item[{string}]{\$endpoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Appelle l\textquotesingle{}API d\textquotesingle{}\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather}{Open\+Weather}}.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$endpoint} & Point d\textquotesingle{}arret de l\textquotesingle{}url de l\textquotesingle{}API \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202                                                : array}
+\DoxyCodeLine{203     \{}
+\DoxyCodeLine{204         \$curl = curl\_init(\textcolor{stringliteral}{"{}https://api.openweathermap.org/data/2.5/\{\$endpoint\}\&APPID=\{\$this-\/>apiKey\}"{}});}
+\DoxyCodeLine{205         curl\_setopt\_array(\$curl, [}
+\DoxyCodeLine{206             CURLOPT\_CAINFO         => dirname(\_\_DIR\_\_) . DIRECTORY\_SEPARATOR . \textcolor{stringliteral}{'..'} . DIRECTORY\_SEPARATOR . \textcolor{stringliteral}{'cacert.pem'},}
+\DoxyCodeLine{207             CURLOPT\_SSL\_VERIFYPEER => \textcolor{keyword}{true},}
+\DoxyCodeLine{208             CURLOPT\_RETURNTRANSFER => \textcolor{keyword}{true},}
+\DoxyCodeLine{209             CURLOPT\_TIMEOUT => 20,}
+\DoxyCodeLine{210         ]);}
+\DoxyCodeLine{211         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = curl\_exec(\$curl);}
+\DoxyCodeLine{212         \textcolor{keywordflow}{if}(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} === \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{213             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_exception_1_1_curl_exception}{CurlException}}(\$curl);}
+\DoxyCodeLine{214         \}}
+\DoxyCodeLine{215         \$code = curl\_getinfo(\$curl, CURLINFO\_HTTP\_CODE); }
+\DoxyCodeLine{216         \textcolor{keywordflow}{if}(\$code !== 200) \{}
+\DoxyCodeLine{217             curl\_close(\$curl);}
+\DoxyCodeLine{218             \textcolor{keywordflow}{if}(\$code === 401) \{}
+\DoxyCodeLine{219                 \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = json\_decode(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{220                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnauthorizedHTTPException(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'message'}], 401);}
+\DoxyCodeLine{221             \}}
+\DoxyCodeLine{222             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} HTTPException(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, \$code);}
+\DoxyCodeLine{223         \}}
+\DoxyCodeLine{224         curl\_close(\$curl);}
+\DoxyCodeLine{225         \textcolor{keywordflow}{return} json\_decode(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{226     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}.
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a9e89755dd194ac2b40fde67b95933e54}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+Forecast()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_af3becb564a0fbb51f74348f1dbacb11b}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+Hourly()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a8de5da227255dfcab01b5e48b76f4d62}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+IDBy\+Coordinate()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a6312a36a327bab86e3f74dde165ac1ab}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+IDBy\+Name()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a541a0a9065003f455014aa8465e5674a}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+Today()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a1a6cb2961c88a7b3a4972bfb8337e270}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a1a6cb2961c88a7b3a4972bfb8337e270}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!getFlag@{getFlag}}
+\index{getFlag@{getFlag}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{getFlag()}{getFlag()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::get\+Flag (\begin{DoxyParamCaption}\item[{string}]{\$code }\end{DoxyParamCaption})}
+
+Récupère l\textquotesingle{}url de drapeau d\textquotesingle{}un pays.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$code} & Code du pays \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169                                           : \textcolor{keywordtype}{string}}
+\DoxyCodeLine{170     \{}
+\DoxyCodeLine{171         \$curl = curl\_init(\textcolor{stringliteral}{"{}https://restcountries.com/v2/alpha/\{\$code\}"{}});}
+\DoxyCodeLine{172         curl\_setopt\_array(\$curl, [}
+\DoxyCodeLine{173             CURLOPT\_CAINFO         => dirname(\_\_DIR\_\_) . DIRECTORY\_SEPARATOR . \textcolor{stringliteral}{'..'} . DIRECTORY\_SEPARATOR . \textcolor{stringliteral}{'cacert.pem'},}
+\DoxyCodeLine{174             CURLOPT\_SSL\_VERIFYPEER => \textcolor{keyword}{true},}
+\DoxyCodeLine{175             CURLOPT\_RETURNTRANSFER => \textcolor{keyword}{true},}
+\DoxyCodeLine{176             CURLOPT\_TIMEOUT => 20,}
+\DoxyCodeLine{177         ]);}
+\DoxyCodeLine{178         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = curl\_exec(\$curl);}
+\DoxyCodeLine{179         \textcolor{keywordflow}{if}(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} === \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{180             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_exception_1_1_curl_exception}{CurlException}}(\$curl);}
+\DoxyCodeLine{181         \}}
+\DoxyCodeLine{182         \$code = curl\_getinfo(\$curl, CURLINFO\_HTTP\_CODE); }
+\DoxyCodeLine{183         \textcolor{keywordflow}{if}(\$code !== 200) \{}
+\DoxyCodeLine{184             curl\_close(\$curl);}
+\DoxyCodeLine{185             \textcolor{keywordflow}{if}(\$code === 401) \{}
+\DoxyCodeLine{186                 \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = json\_decode(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{187                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnauthorizedHTTPException(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'message'}], 401);}
+\DoxyCodeLine{188             \}}
+\DoxyCodeLine{189             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} HTTPException(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, \$code);}
+\DoxyCodeLine{190         \}}
+\DoxyCodeLine{191         curl\_close(\$curl);}
+\DoxyCodeLine{192         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = json\_decode(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{193         \textcolor{keywordflow}{return} \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'flags'}][\textcolor{stringliteral}{'svg'}];}
+\DoxyCodeLine{194     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a9e89755dd194ac2b40fde67b95933e54}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a9e89755dd194ac2b40fde67b95933e54}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!getForecast@{getForecast}}
+\index{getForecast@{getForecast}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{getForecast()}{getForecast()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::get\+Forecast (\begin{DoxyParamCaption}\item[{string}]{\$id,  }\item[{string}]{\$units = {\ttfamily \char`\"{}metric\char`\"{}},  }\item[{string}]{\$lang = {\ttfamily \char`\"{}fr\char`\"{}} }\end{DoxyParamCaption})}
+
+Récupère les prévisions météorologiques d\textquotesingle{}une ville.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$id} & ID de la ville \\
+\hline
+string & {\em \$units} & Unité de la température \\
+\hline
+string & {\em \$lang} & Langue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                                                                                        : array}
+\DoxyCodeLine{86     \{}
+\DoxyCodeLine{87         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{callAPI}}(\textcolor{stringliteral}{"{}forecast/daily?id=\{\$id\}\&cnt=8\&units=\{\$units\}\&lang=\{\$lang\}"{}});}
+\DoxyCodeLine{88         \textcolor{keywordflow}{foreach}(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'list'}] as \$day) \{}
+\DoxyCodeLine{89             \$results[] = [}
+\DoxyCodeLine{90                 \textcolor{stringliteral}{'temp'} => (int)\$day[\textcolor{stringliteral}{'temp'}][\textcolor{stringliteral}{'day'}],}
+\DoxyCodeLine{91                 \textcolor{stringliteral}{'min'} => (\textcolor{keywordtype}{int})\$day[\textcolor{stringliteral}{'temp'}][\textcolor{stringliteral}{'min'}],}
+\DoxyCodeLine{92                 \textcolor{stringliteral}{'max'} => (int)\$day[\textcolor{stringliteral}{'temp'}][\textcolor{stringliteral}{'max'}],}
+\DoxyCodeLine{93                 \textcolor{stringliteral}{'description'} => \$day[\textcolor{stringliteral}{'weather'}][0][\textcolor{stringliteral}{'description'}],}
+\DoxyCodeLine{94                 \textcolor{stringliteral}{'icon'} => \$day[\textcolor{stringliteral}{'weather'}][0][\textcolor{stringliteral}{'icon'}],}
+\DoxyCodeLine{95                 \textcolor{stringliteral}{'date'} => \textcolor{keyword}{new} \(\backslash\)DateTime(\textcolor{charliteral}{'@'} . \$day[\textcolor{stringliteral}{'dt'}])}
+\DoxyCodeLine{96             ];}
+\DoxyCodeLine{97         \}}
+\DoxyCodeLine{98         \textcolor{keywordflow}{return} \$results;}
+\DoxyCodeLine{99     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}call\+API()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_af3becb564a0fbb51f74348f1dbacb11b}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_af3becb564a0fbb51f74348f1dbacb11b}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!getHourly@{getHourly}}
+\index{getHourly@{getHourly}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{getHourly()}{getHourly()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::get\+Hourly (\begin{DoxyParamCaption}\item[{float}]{\$lat,  }\item[{float}]{\$lon,  }\item[{string}]{\$units = {\ttfamily \char`\"{}metric\char`\"{}},  }\item[{string}]{\$lang = {\ttfamily \char`\"{}fr\char`\"{}} }\end{DoxyParamCaption})}
+
+Récupère les informations météorologiques d\textquotesingle{}une ville heure par heure.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+float & {\em \$lat} & Latitude de la ville \\
+\hline
+float & {\em \$lon} & Longitude de la ville \\
+\hline
+string & {\em \$units} & Unité de la température \\
+\hline
+string & {\em \$lang} & Langue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110                                                                                                  : array}
+\DoxyCodeLine{111     \{}
+\DoxyCodeLine{112         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{callAPI}}(\textcolor{stringliteral}{"{}onecall?lat=\{\$lat\}\&lon=\{\$lon\}\&exclude=current,minutely,daily,alerts\&units=\{\$units\}\&lang=\{\$lang\}"{}});}
+\DoxyCodeLine{113         \textcolor{keywordflow}{foreach}(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'hourly'}] as \$key => \$hour) \{}
+\DoxyCodeLine{114             \textcolor{keywordflow}{if}(\$key < 25) \{}
+\DoxyCodeLine{115                 \$results[] = [}
+\DoxyCodeLine{116                     \textcolor{stringliteral}{'temp'} => (int)\$hour[\textcolor{stringliteral}{'temp'}],}
+\DoxyCodeLine{117                     \textcolor{stringliteral}{'description'} => \$hour[\textcolor{stringliteral}{'weather'}][0][\textcolor{stringliteral}{'description'}],}
+\DoxyCodeLine{118                     \textcolor{stringliteral}{'icon'} => \$hour[\textcolor{stringliteral}{'weather'}][0][\textcolor{stringliteral}{'icon'}],}
+\DoxyCodeLine{119                     \textcolor{stringliteral}{'date'} => \textcolor{keyword}{new} \(\backslash\)DateTime(\textcolor{charliteral}{'@'} . \$hour[\textcolor{stringliteral}{'dt'}])}
+\DoxyCodeLine{120                 ];}
+\DoxyCodeLine{121             \}}
+\DoxyCodeLine{122             }
+\DoxyCodeLine{123         \}}
+\DoxyCodeLine{124         \textcolor{keywordflow}{return} \$results;}
+\DoxyCodeLine{125     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}call\+API()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a8de5da227255dfcab01b5e48b76f4d62}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a8de5da227255dfcab01b5e48b76f4d62}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!getIDByCoordinate@{getIDByCoordinate}}
+\index{getIDByCoordinate@{getIDByCoordinate}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{getIDByCoordinate()}{getIDByCoordinate()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::get\+IDBy\+Coordinate (\begin{DoxyParamCaption}\item[{float}]{\$lat,  }\item[{float}]{\$lon,  }\item[{string}]{\$units = {\ttfamily \char`\"{}metric\char`\"{}},  }\item[{string}]{\$lang = {\ttfamily \char`\"{}fr\char`\"{}} }\end{DoxyParamCaption})}
+
+Récupère l\textquotesingle{}ID de la ville en fonction de ses coordonnées.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+float & {\em \$float} & Latitude de la ville \\
+\hline
+float & {\em \$float} & Longitude de la ville \\
+\hline
+float & {\em \$units} & Unité de la température \\
+\hline
+string & {\em \$lang} & Langue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                                                                                                          : \textcolor{keywordtype}{string}}
+\DoxyCodeLine{72     \{}
+\DoxyCodeLine{73         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{callAPI}}(\textcolor{stringliteral}{"{}weather?lat=\{\$lat\}\&lon=\{\$lon\}\&units=\{\$units\}\&lang=\{\$lang\}"{}});}
+\DoxyCodeLine{74         \textcolor{keywordflow}{return} \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'id'}];}
+\DoxyCodeLine{75     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}call\+API()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a6312a36a327bab86e3f74dde165ac1ab}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a6312a36a327bab86e3f74dde165ac1ab}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!getIDByName@{getIDByName}}
+\index{getIDByName@{getIDByName}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{getIDByName()}{getIDByName()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::get\+IDBy\+Name (\begin{DoxyParamCaption}\item[{string}]{\$city,  }\item[{string}]{\$units = {\ttfamily \char`\"{}metric\char`\"{}},  }\item[{string}]{\$lang = {\ttfamily \char`\"{}fr\char`\"{}} }\end{DoxyParamCaption})}
+
+Récupère l\textquotesingle{}ID de la ville en fonction de son nom.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$city} & Nom de la ville (peut être spécifié le code de pays \+: Paris,FR) \\
+\hline
+string & {\em \$units} & Unité de la température \\
+\hline
+string & {\em \$lang} & Langue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                                                                          : \textcolor{keywordtype}{string}}
+\DoxyCodeLine{57     \{}
+\DoxyCodeLine{58         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{callAPI}}(\textcolor{stringliteral}{"{}weather?q=\{\$city\}\&units=\{\$units\}\&lang=\{\$lang\}"{}});}
+\DoxyCodeLine{59         \textcolor{keywordflow}{return} \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'id'}];}
+\DoxyCodeLine{60     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}call\+API()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a541a0a9065003f455014aa8465e5674a}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a541a0a9065003f455014aa8465e5674a}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!getToday@{getToday}}
+\index{getToday@{getToday}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{getToday()}{getToday()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::get\+Today (\begin{DoxyParamCaption}\item[{int}]{\$id,  }\item[{string}]{\$units = {\ttfamily \char`\"{}metric\char`\"{}},  }\item[{string}]{\$lang = {\ttfamily \char`\"{}fr\char`\"{}} }\end{DoxyParamCaption})}
+
+Récupère les informations météorologiques du jour.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$id} & Id de la ville \\
+\hline
+string & {\em \$units} & Unité de la température \\
+\hline
+string & {\em \$lang} & Langue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                                                                  : array}
+\DoxyCodeLine{26     \{}
+\DoxyCodeLine{27         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{callAPI}}(\textcolor{stringliteral}{"{}weather?id=\{\$id\}\&units=\{\$units\}\&lang=\{\$lang\}"{}});}
+\DoxyCodeLine{28         \textcolor{keywordflow}{return} [}
+\DoxyCodeLine{29             \textcolor{stringliteral}{'name'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'name'}],}
+\DoxyCodeLine{30             \textcolor{stringliteral}{'country'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'sys'}][\textcolor{stringliteral}{'country'}],}
+\DoxyCodeLine{31             \textcolor{stringliteral}{'temp'} => (int)\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'main'}][\textcolor{stringliteral}{'temp'}],}
+\DoxyCodeLine{32             \textcolor{stringliteral}{'description'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'weather'}][0][\textcolor{stringliteral}{'description'}],}
+\DoxyCodeLine{33             \textcolor{stringliteral}{'lat'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'coord'}][\textcolor{stringliteral}{'lat'}],}
+\DoxyCodeLine{34             \textcolor{stringliteral}{'lon'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'coord'}][\textcolor{stringliteral}{'lon'}],}
+\DoxyCodeLine{35             \textcolor{stringliteral}{'icon'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'weather'}][0][\textcolor{stringliteral}{'icon'}],}
+\DoxyCodeLine{36             \textcolor{stringliteral}{'feels\_like'} => (\textcolor{keywordtype}{int})\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'main'}][\textcolor{stringliteral}{'feels\_like'}],}
+\DoxyCodeLine{37             \textcolor{stringliteral}{'min'} => (int)\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'main'}][\textcolor{stringliteral}{'temp\_min'}],}
+\DoxyCodeLine{38             \textcolor{stringliteral}{'max'} => (\textcolor{keywordtype}{int})\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'main'}][\textcolor{stringliteral}{'temp\_max'}],}
+\DoxyCodeLine{39             \textcolor{stringliteral}{'humidity'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'main'}][\textcolor{stringliteral}{'humidity'}],}
+\DoxyCodeLine{40             \textcolor{stringliteral}{'speed'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'wind'}][\textcolor{stringliteral}{'speed'}],}
+\DoxyCodeLine{41             \textcolor{stringliteral}{'visibility'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'visibility'}],}
+\DoxyCodeLine{42             \textcolor{stringliteral}{'sunrise'} => new \(\backslash\)DateTime(\textcolor{charliteral}{'@'} . \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'sys'}][\textcolor{stringliteral}{'sunrise'}]),}
+\DoxyCodeLine{43             \textcolor{stringliteral}{'sunset'} => new \(\backslash\)DateTime(\textcolor{charliteral}{'@'} . \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'sys'}][\textcolor{stringliteral}{'sunset'}]),}
+\DoxyCodeLine{44             \textcolor{stringliteral}{'date'} => new \(\backslash\)DateTime()}
+\DoxyCodeLine{45         ];}
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}call\+API()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa181bfa71a517c5ecf8377cb4fa5dcc5}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa181bfa71a517c5ecf8377cb4fa5dcc5}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!getUserCoord@{getUserCoord}}
+\index{getUserCoord@{getUserCoord}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{getUserCoord()}{getUserCoord()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::get\+User\+Coord (\begin{DoxyParamCaption}\item[{string}]{\$ip }\end{DoxyParamCaption})}
+
+Récupère les informations géographiques de l\textquotesingle{}utilisateur en fonction de son adresse IP.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$ip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133                                              : array}
+\DoxyCodeLine{134     \{}
+\DoxyCodeLine{135         \$curl = curl\_init(\textcolor{stringliteral}{"{}https://api.ipdata.co/\{\$ip\}?api-\/key=0a1f5dece9d008507a5f25c75188f757523d37cf29c15aee47b5c310"{}});}
+\DoxyCodeLine{136         curl\_setopt\_array(\$curl, [}
+\DoxyCodeLine{137             CURLOPT\_CAINFO         => dirname(\_\_DIR\_\_) . DIRECTORY\_SEPARATOR . \textcolor{stringliteral}{'..'} . DIRECTORY\_SEPARATOR . \textcolor{stringliteral}{'cacert.pem'},}
+\DoxyCodeLine{138             CURLOPT\_SSL\_VERIFYPEER => \textcolor{keyword}{true},}
+\DoxyCodeLine{139             CURLOPT\_RETURNTRANSFER => \textcolor{keyword}{true},}
+\DoxyCodeLine{140             CURLOPT\_TIMEOUT => 20,}
+\DoxyCodeLine{141         ]);}
+\DoxyCodeLine{142         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = curl\_exec(\$curl);}
+\DoxyCodeLine{143         \textcolor{keywordflow}{if}(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} === \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{144             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_exception_1_1_curl_exception}{CurlException}}(\$curl);}
+\DoxyCodeLine{145         \}}
+\DoxyCodeLine{146         \$code = curl\_getinfo(\$curl, CURLINFO\_HTTP\_CODE); }
+\DoxyCodeLine{147         \textcolor{keywordflow}{if}(\$code !== 200) \{}
+\DoxyCodeLine{148             curl\_close(\$curl);}
+\DoxyCodeLine{149             \textcolor{keywordflow}{if}(\$code === 401) \{}
+\DoxyCodeLine{150                 \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = json\_decode(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{151                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} UnauthorizedHTTPException(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'message'}], 401);}
+\DoxyCodeLine{152             \}}
+\DoxyCodeLine{153             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} HTTPException(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, \$code);}
+\DoxyCodeLine{154         \}}
+\DoxyCodeLine{155         curl\_close(\$curl);}
+\DoxyCodeLine{156         \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = json\_decode(\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{157         \textcolor{keywordflow}{return} [}
+\DoxyCodeLine{158             \textcolor{stringliteral}{'lat'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'latitude'}],}
+\DoxyCodeLine{159             \textcolor{stringliteral}{'lon'} => \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}[\textcolor{stringliteral}{'longitude'}]}
+\DoxyCodeLine{160         ];}
+\DoxyCodeLine{161     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a7d2243d9949236acc259adf2a32da40c}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a7d2243d9949236acc259adf2a32da40c}} 
+\index{Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}!\$apiKey@{\$apiKey}}
+\index{\$apiKey@{\$apiKey}!Météo\textbackslash{}Weather\textbackslash{}OpenWeather@{Météo\textbackslash{}Weather\textbackslash{}OpenWeather}}
+\doxysubsubsection{\texorpdfstring{\$apiKey}{$apiKey}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\+::\$api\+Key\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a21a9006515d6a8a17a41b5849ee40dc3}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}\+\_\+\+\_\+construct()}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+Weather/\mbox{\hyperlink{_open_weather_8php}{Open\+Weather.\+php}}\end{DoxyCompactItemize}

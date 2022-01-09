@@ -1,0 +1,9 @@
+digraph "Météo\User\UserTable"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Météo\\User\\UserTable\n|# $table\l# $class\l|+ findbyUsername()\l+ findbyMail()\l+ createUser()\l+ updateUser()\l+ updateUserProfile()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{Météo\\Table\\Table\n|# $pdo\l# $table\l# $class\l|+ __construct()\l+ find()\l+ exists()\l+ existsWith2Conditions()\l+ count()\l+ all()\l+ delete()\l+ deleteWith2Conditions()\l+ create()\l+ update()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table.html",tooltip=" "];
+}

@@ -1,0 +1,7 @@
+digraph "Météo\User\User"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Météo\\User\\User\n|- $id\l- $username\l- $password\l- $mail\l- $inscription_date\l- $activate\l- $code\l- $recuperation\l- $nom\l- $telephone\l- $adresse\l- $description\l|+ getUsername()\l+ setUsername()\l+ getPassword()\l+ setPassword()\l+ getMail()\l+ setMail()\l+ getId()\l+ setId()\l+ getInscription_date()\l+ getActivate()\let 13 de plus...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,38 @@
+\hypertarget{header_8inc_8php}{}\doxysection{Référence du fichier include/header.inc.\+php}
+\label{header_8inc_8php}\index{include/header.inc.php@{include/header.inc.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{header_8inc_8php_aa08a843ceeb9a0c3632d75cbd8ae535e}{if}} (session\+\_\+status()===PHP\+\_\+\+SESSION\+\_\+\+NONE)
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset(\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}auth\textquotesingle{}\mbox{]})) \mbox{\hyperlink{header_8inc_8php_af2b813dba13e5f2e2131d9746a91c0d1}{\$page}} = basename(\$\+\_\+\+SERVER\mbox{[}\char`\"{}PHP\+\_\+\+SELF\char`\"{}\mbox{]})
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(\$page==\char`\"{}index.\+php\char`\"{}) \mbox{\hyperlink{header_8inc_8php_a50a7f162debd3538bb31539c9fc908c4}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{header_8inc_8php_af2b813dba13e5f2e2131d9746a91c0d1}\label{header_8inc_8php_af2b813dba13e5f2e2131d9746a91c0d1}} 
+\index{header.inc.php@{header.inc.php}!\$page@{\$page}}
+\index{\$page@{\$page}!header.inc.php@{header.inc.php}}
+\doxysubsubsection{\texorpdfstring{\$page}{$page}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (isset( \$\+\_\+\+SESSION\mbox{[} \textquotesingle{}auth\textquotesingle{}\mbox{]})) \$page = basename(\$\+\_\+\+SERVER\mbox{[}\char`\"{}PHP\+\_\+\+SELF\char`\"{}\mbox{]})}
+
+\mbox{\Hypertarget{header_8inc_8php_a50a7f162debd3538bb31539c9fc908c4}\label{header_8inc_8php_a50a7f162debd3538bb31539c9fc908c4}} 
+\index{header.inc.php@{header.inc.php}!else@{else}}
+\index{else@{else}!header.inc.php@{header.inc.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(\$page==\textquotesingle{}index.\+php\textquotesingle{}) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}( \$page==\textquotesingle{}meteo.\+php\textquotesingle{}) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(\$page==\textquotesingle{}world.\+php\textquotesingle{}) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (isset( \$\+\_\+\+SESSION\mbox{[} \textquotesingle{}auth\textquotesingle{}\mbox{]})) else}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{                echo \textcolor{stringliteral}{"{}<nav class=\(\backslash\)"{}nav-\/bar\(\backslash\)"{}>\(\backslash\)n"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{header_8inc_8php_aa08a843ceeb9a0c3632d75cbd8ae535e}\label{header_8inc_8php_aa08a843ceeb9a0c3632d75cbd8ae535e}} 
+\index{header.inc.php@{header.inc.php}!if@{if}}
+\index{if@{if}!header.inc.php@{header.inc.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if(\$page==\textquotesingle{}login.\+php\textquotesingle{}) (\begin{DoxyParamCaption}\item[{session\+\_\+status()}]{ = {\ttfamily ==~PHP\+\_\+SESSION\+\_\+NONE} }\end{DoxyParamCaption})}
+

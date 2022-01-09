@@ -1,0 +1,15 @@
+digraph "Météo\Table\Table"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Météo\\Table\\Table\n|# $pdo\l# $table\l# $class\l|+ __construct()\l+ find()\l+ exists()\l+ existsWith2Conditions()\l+ count()\l+ all()\l+ delete()\l+ deleteWith2Conditions()\l+ create()\l+ update()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{Météo\\Calendar\\EventsTable\n|# $table\l# $class\l|+ getEventsBetween()\l+ getEventsBetweenByDay()\l+ getEventswithRappelandMail()\l+ createEvent()\l+ updateEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{Météo\\FavorisTable\n|# $table\l# $class\l|+ getUserFavoris()\l+ createFavoris()\l+ updateFavoris()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{Météo\\User\\UserImgTable\n|# $table\l# $class\l|+ getUserImg()\l+ createImg()\l+ updateImg()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{Météo\\User\\UserTable\n|# $table\l# $class\l|+ findbyUsername()\l+ findbyMail()\l+ createUser()\l+ updateUser()\l+ updateUserProfile()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table.html",tooltip=" "];
+}

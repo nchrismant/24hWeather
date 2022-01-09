@@ -1,0 +1,117 @@
+\hypertarget{editevent_8php}{}\doxysection{Référence du fichier editevent.\+php}
+\label{editevent_8php}\index{editevent.php@{editevent.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{editevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = Connection\+::get\+PDO()
+\item 
+\mbox{\hyperlink{editevent_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}{Auth}}(\$pdo)
+\item 
+\mbox{\hyperlink{editevent_8php_acf5d5c5f65c34b6dccfd30e0313c3a0b}{try}}
+\item 
+catch(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_exception_1_1_forbidden_exception}{Forbidden\+Exception}} \$e) \mbox{\hyperlink{editevent_8php_a76e17a49eed8b181d249158b213b48d6}{\$events}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table}{Events\+Table}}(\$pdo)
+\item 
+\mbox{\hyperlink{editevent_8php_ab24faf4aa647cdcee494fc48524ad4ff}{\$errors}} = \mbox{[}$\,$\mbox{]}
+\item 
+catch(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_exception_1_1_not_found_exception}{Not\+Found\+Exception}} \$e) catch(\textbackslash{}Error \$e) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!empty( \$event-\/$>$get\+Id\+\_\+ville())) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!empty(\$today\mbox{[}\textquotesingle{}name\textquotesingle{}\mbox{]})) \mbox{\hyperlink{editevent_8php_a0a8266cae74c08ad62945be390d2d455}{else}}
+\item 
+\mbox{\hyperlink{editevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!empty(\$\+\_\+\+POST)) \mbox{\hyperlink{editevent_8php_ae6c6dc9b738d983c3448d8d6d5653260}{\$title}} = \char`\"{}\char`\"{}. htmlspecialchars(\$event-\/$>$get\+Name()) . \char`\"{} -\/ 24h Weather\char`\"{}
+\item 
+\mbox{\hyperlink{editevent_8php_a87b032cba06009e3467abf1c8018d960}{\$description}} = \char`\"{}Modifiez l\textquotesingle{}évènement du calendrier de votre choix !\char`\"{}
+\item 
+\mbox{\hyperlink{editevent_8php_a9fbd95bfcdf27d802a8c7938529a61ba}{\$keywords}} = \char`\"{}weather meteo 24/24 7/7 event modify calendar\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{editevent_8php_a20d7415a9c3391b32d7fe2136fce6e2c}\label{editevent_8php_a20d7415a9c3391b32d7fe2136fce6e2c}} 
+\index{editevent.php@{editevent.php}!\$auth@{\$auth}}
+\index{\$auth@{\$auth}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{\$auth}{$auth}}
+{\footnotesize\ttfamily \$auth = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}{Auth}}(\$pdo)}
+
+\mbox{\Hypertarget{editevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}\label{editevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}} 
+\index{editevent.php@{editevent.php}!\$data@{\$data}}
+\index{\$data@{\$data}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{\$data}{$data}}
+{\footnotesize\ttfamily \$data}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{    \textcolor{stringliteral}{'name'} => \$event-\/>getName(),}
+\DoxyCodeLine{    \textcolor{stringliteral}{'date'} => \$event-\/>getStart()-\/>format(\textcolor{stringliteral}{'Y-\/m-\/d'}),}
+\DoxyCodeLine{    \textcolor{stringliteral}{'start'} => \$event-\/>getStart()-\/>format(\textcolor{stringliteral}{'H:i'}),}
+\DoxyCodeLine{    \textcolor{stringliteral}{'end'} => \$event-\/>getEnd()-\/>format(\textcolor{stringliteral}{'H:i'}),}
+\DoxyCodeLine{    \textcolor{stringliteral}{'villerappel'} => \$villerappel,}
+\DoxyCodeLine{    \textcolor{stringliteral}{'daterappel'} => \$event-\/>getDate\_rappel() ?? \textcolor{keyword}{null},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'motif'} => \$event-\/>getMotif()}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{editevent_8php_a87b032cba06009e3467abf1c8018d960}\label{editevent_8php_a87b032cba06009e3467abf1c8018d960}} 
+\index{editevent.php@{editevent.php}!\$description@{\$description}}
+\index{\$description@{\$description}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{\$description}{$description}}
+{\footnotesize\ttfamily \$description = \char`\"{}Modifiez l\textquotesingle{}évènement du calendrier de votre choix !\char`\"{}}
+
+\mbox{\Hypertarget{editevent_8php_ab24faf4aa647cdcee494fc48524ad4ff}\label{editevent_8php_ab24faf4aa647cdcee494fc48524ad4ff}} 
+\index{editevent.php@{editevent.php}!\$errors@{\$errors}}
+\index{\$errors@{\$errors}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{\$errors}{$errors}}
+{\footnotesize\ttfamily \$errors = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{editevent_8php_a76e17a49eed8b181d249158b213b48d6}\label{editevent_8php_a76e17a49eed8b181d249158b213b48d6}} 
+\index{editevent.php@{editevent.php}!\$events@{\$events}}
+\index{\$events@{\$events}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{\$events}{$events}}
+{\footnotesize\ttfamily catch (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_exception_1_1_forbidden_exception}{Forbidden\+Exception}} \$e) \$events = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table}{Events\+Table}}(\$pdo)}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table_aaa6d614d79672ae5427fb4afe35201d4}{Météo\textbackslash{}\+Calendar\textbackslash{}\+Events\+Table\textbackslash{}get\+Events\+Between\+By\+Day()}}.
+
+\mbox{\Hypertarget{editevent_8php_a9fbd95bfcdf27d802a8c7938529a61ba}\label{editevent_8php_a9fbd95bfcdf27d802a8c7938529a61ba}} 
+\index{editevent.php@{editevent.php}!\$keywords@{\$keywords}}
+\index{\$keywords@{\$keywords}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{\$keywords}{$keywords}}
+{\footnotesize\ttfamily \$keywords = \char`\"{}weather meteo 24/24 7/7 event modify calendar\char`\"{}}
+
+\mbox{\Hypertarget{editevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}\label{editevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}} 
+\index{editevent.php@{editevent.php}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily \$pdo = Connection\+::get\+PDO()}
+
+\mbox{\Hypertarget{editevent_8php_ae6c6dc9b738d983c3448d8d6d5653260}\label{editevent_8php_ae6c6dc9b738d983c3448d8d6d5653260}} 
+\index{editevent.php@{editevent.php}!\$title@{\$title}}
+\index{\$title@{\$title}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{\$title}{$title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (!empty( \$\+\_\+\+POST)) \$title = \char`\"{}\char`\"{}. htmlspecialchars(\$event-\/$>$get\+Name()) . \char`\"{} -\/ 24h Weather\char`\"{}}
+
+\mbox{\Hypertarget{editevent_8php_a0a8266cae74c08ad62945be390d2d455}\label{editevent_8php_a0a8266cae74c08ad62945be390d2d455}} 
+\index{editevent.php@{editevent.php}!else@{else}}
+\index{else@{else}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily catch(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_exception_1_1_not_found_exception}{Not\+Found\+Exception}} \$e) catch(\textbackslash{}Error \$e) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!empty(\$event-\/$>$get\+Id\+\_\+ville())) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (!empty( \$today\mbox{[} \textquotesingle{}name\textquotesingle{}\mbox{]})) else}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \$villerappel = \textcolor{keyword}{null}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{editevent_8php_acf5d5c5f65c34b6dccfd30e0313c3a0b}\label{editevent_8php_acf5d5c5f65c34b6dccfd30e0313c3a0b}} 
+\index{editevent.php@{editevent.php}!try@{try}}
+\index{try@{try}!editevent.php@{editevent.php}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}id\textquotesingle{}\mbox{]})) try}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{   \mbox{\hyperlink{editevent_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}}-\/>check()}
+
+\end{DoxyCode}

@@ -1,0 +1,7 @@
+digraph "Composer\Autoload\ClassLoader"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Composer\\Autoload\\ClassLoader\n|- $vendorDir\l- $prefixLengthsPsr4\l- $prefixDirsPsr4\l- $fallbackDirsPsr4\l- $prefixesPsr0\l- $fallbackDirsPsr0\l- $useIncludePath\l- $classMap\l- $classMapAuthoritative\l- $missingClasses\l- $apcuPrefix\l- $registeredLoaders\l|+ __construct()\l+ getPrefixes()\l+ getPrefixesPsr4()\l+ getFallbackDirs()\l+ getFallbackDirsPsr4()\l+ getClassMap()\l+ addClassMap()\l+ add()\l+ addPsr4()\l+ set()\let 11 de plus...\l+ getRegisteredLoaders()\l- findFileWithExtension()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

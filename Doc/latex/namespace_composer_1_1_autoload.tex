@@ -1,0 +1,46 @@
+\hypertarget{namespace_composer_1_1_autoload}{}\doxysection{Référence de l\textquotesingle{}espace de nommage Composer\textbackslash{}Autoload}
+\label{namespace_composer_1_1_autoload}\index{Composer\textbackslash{}Autoload@{Composer\textbackslash{}Autoload}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_composer_1_1_autoload_1_1_class_loader}{Class\+Loader}}
+\item 
+class \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660}{Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_composer_1_1_autoload_a578ac7c710d884fb0ec5a8e6fd14d79f}{include\+File}} (\$file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{namespace_composer_1_1_autoload_a578ac7c710d884fb0ec5a8e6fd14d79f}\label{namespace_composer_1_1_autoload_a578ac7c710d884fb0ec5a8e6fd14d79f}} 
+\index{Composer\textbackslash{}Autoload@{Composer\textbackslash{}Autoload}!includeFile@{includeFile}}
+\index{includeFile@{includeFile}!Composer\textbackslash{}Autoload@{Composer\textbackslash{}Autoload}}
+\doxysubsubsection{\texorpdfstring{includeFile()}{includeFile()}}
+{\footnotesize\ttfamily Composer\textbackslash{}\+Autoload\textbackslash{}include\+File (\begin{DoxyParamCaption}\item[{}]{\$file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Scope isolated include.
+
+Prevents access to \$this/self from included files.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+string & {\em \$file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{570 \{}
+\DoxyCodeLine{571     include \$file;}
+\DoxyCodeLine{572 \}}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_composer_1_1_autoload_1_1_class_loader_aee0b004fbf0743f16dab70f8a52f983e}{Composer\textbackslash{}\+Autoload\textbackslash{}\+Class\+Loader\textbackslash{}load\+Class()}}.
+

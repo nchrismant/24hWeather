@@ -1,0 +1,7 @@
+digraph "Météo\Favoris"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Météo\\Favoris\n|- $id_fav\l- $id_ville\l- $pays\l- $ville\l- $latitude\l- $longitude\l- $id\l|+ getId_fav()\l+ setId_fav()\l+ getId_ville()\l+ setId_ville()\l+ getPays()\l+ setPays()\l+ getVille()\l+ setVille()\l+ getLatitude()\l+ setLatitude()\l+ getLongitude()\l+ setLongitude()\l+ getId()\l+ setId()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

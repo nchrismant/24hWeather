@@ -1,0 +1,208 @@
+\hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth}{}\doxysection{Référence de la classe PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}
+\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth}\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+
+
+Graphe de collaboration de PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth\+:
+% FIG 0
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a58d10691ef6d5f8576b302ac11d39756}{\+\_\+\+\_\+construct}} (\$options)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a4a3f424167a7c1c4eb99068432045d5e}{get\+Oauth64}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a489d6e6f54e346e72b628be10863fd24}{get\+Grant}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_aca2254505ade7984c55d2fcdc1b2f44a}{get\+Token}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a15f2963f6283e29e91812e29ebcbe454}{\$provider}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_ad839c78824f7946f48c5f9c58f148ca5}{\$oauth\+Token}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a94fce4de59fbf69e28964144691f82dc}{\$oauth\+User\+Email}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a6aad19fe065250b5bd496ece9f414e2b}{\$oauth\+Client\+Secret}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_af3e5e31b8f85412de717c8ad27d91943}{\$oauth\+Client\+Id}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a84dc2ab02eca2d0aafcbb178a5a778e9}{\$oauth\+Refresh\+Token}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth}{OAuth}} -\/ OAuth2 authentication wrapper class. Uses the oauth2-\/client package from the League of Extraordinary Packages.
+
+\begin{DoxySeeAlso}{Voir également}
+\href{http://oauth2-client.thephpleague.com}{\texttt{ http\+://oauth2-\/client.\+thephpleague.\+com}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Auteur}
+Marcus Bointon (Synchro/coolbru) \href{mailto:phpmailer@synchromedia.co.uk}{\texttt{ phpmailer@synchromedia.\+co.\+uk}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a58d10691ef6d5f8576b302ac11d39756}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a58d10691ef6d5f8576b302ac11d39756}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$options }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth}{OAuth}} constructor.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+array & {\em \$options} & Associative array containing {\ttfamily provider}, {\ttfamily user\+Name}, {\ttfamily client\+Secret}, {\ttfamily client\+Id} and {\ttfamily refresh\+Token} elements \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{88     \{}
+\DoxyCodeLine{89         \$this-\/>provider = \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}{\$options}}[\textcolor{stringliteral}{'provider'}];}
+\DoxyCodeLine{90         \$this-\/>oauthUserEmail = \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}{\$options}}[\textcolor{stringliteral}{'userName'}];}
+\DoxyCodeLine{91         \$this-\/>oauthClientSecret = \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}{\$options}}[\textcolor{stringliteral}{'clientSecret'}];}
+\DoxyCodeLine{92         \$this-\/>oauthClientId = \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}{\$options}}[\textcolor{stringliteral}{'clientId'}];}
+\DoxyCodeLine{93         \$this-\/>oauthRefreshToken = \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}{\$options}}[\textcolor{stringliteral}{'refreshToken'}];}
+\DoxyCodeLine{94     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\$options}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a489d6e6f54e346e72b628be10863fd24}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a489d6e6f54e346e72b628be10863fd24}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!getGrant@{getGrant}}
+\index{getGrant@{getGrant}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{getGrant()}{getGrant()}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::get\+Grant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a new Refresh\+Token.
+
+\begin{DoxyReturn}{Renvoie}
+Refresh\+Token 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102     \{}
+\DoxyCodeLine{103         \textcolor{keywordflow}{return} \textcolor{keyword}{new} RefreshToken();}
+\DoxyCodeLine{104     \}}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_aca2254505ade7984c55d2fcdc1b2f44a}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\textbackslash{}get\+Token()}}.
+
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a4a3f424167a7c1c4eb99068432045d5e}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a4a3f424167a7c1c4eb99068432045d5e}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!getOauth64@{getOauth64}}
+\index{getOauth64@{getOauth64}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{getOauth64()}{getOauth64()}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::get\+Oauth64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generate a base64-\/encoded \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth}{OAuth}} token.
+
+\begin{DoxyReturn}{Renvoie}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{125     \{}
+\DoxyCodeLine{126         \textcolor{comment}{//Get a new token if it's not available or has expired}}
+\DoxyCodeLine{127         \textcolor{keywordflow}{if} (\textcolor{keyword}{null} === \$this-\/>oauthToken || \$this-\/>oauthToken-\/>hasExpired()) \{}
+\DoxyCodeLine{128             \$this-\/>oauthToken = \$this-\/>\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_aca2254505ade7984c55d2fcdc1b2f44a}{getToken}}();}
+\DoxyCodeLine{129         \}}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131         \textcolor{keywordflow}{return} base64\_encode(}
+\DoxyCodeLine{132             \textcolor{stringliteral}{'user='} .}
+\DoxyCodeLine{133             \$this-\/>oauthUserEmail .}
+\DoxyCodeLine{134             \textcolor{stringliteral}{"{}\(\backslash\)001auth=Bearer "{}} .}
+\DoxyCodeLine{135             \$this-\/>oauthToken .}
+\DoxyCodeLine{136             \textcolor{stringliteral}{"{}\(\backslash\)001\(\backslash\)001"{}}}
+\DoxyCodeLine{137         );}
+\DoxyCodeLine{138     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_aca2254505ade7984c55d2fcdc1b2f44a}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\textbackslash{}get\+Token()}}.
+
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_aca2254505ade7984c55d2fcdc1b2f44a}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_aca2254505ade7984c55d2fcdc1b2f44a}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!getToken@{getToken}}
+\index{getToken@{getToken}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{getToken()}{getToken()}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::get\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a new Access\+Token.
+
+\begin{DoxyReturn}{Renvoie}
+Access\+Token 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112     \{}
+\DoxyCodeLine{113         \textcolor{keywordflow}{return} \$this-\/>provider-\/>getAccessToken(}
+\DoxyCodeLine{114             \$this-\/>\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a489d6e6f54e346e72b628be10863fd24}{getGrant}}(),}
+\DoxyCodeLine{115             [\textcolor{stringliteral}{'refresh\_token'} => \$this-\/>oauthRefreshToken]}
+\DoxyCodeLine{116         );}
+\DoxyCodeLine{117     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a489d6e6f54e346e72b628be10863fd24}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\textbackslash{}get\+Grant()}}.
+
+
+
+Référencé par \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a4a3f424167a7c1c4eb99068432045d5e}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\textbackslash{}get\+Oauth64()}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_af3e5e31b8f85412de717c8ad27d91943}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_af3e5e31b8f85412de717c8ad27d91943}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!\$oauthClientId@{\$oauthClientId}}
+\index{\$oauthClientId@{\$oauthClientId}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{\$oauthClientId}{$oauthClientId}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::\$oauth\+Client\+Id = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a6aad19fe065250b5bd496ece9f414e2b}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a6aad19fe065250b5bd496ece9f414e2b}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!\$oauthClientSecret@{\$oauthClientSecret}}
+\index{\$oauthClientSecret@{\$oauthClientSecret}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{\$oauthClientSecret}{$oauthClientSecret}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::\$oauth\+Client\+Secret = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a84dc2ab02eca2d0aafcbb178a5a778e9}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a84dc2ab02eca2d0aafcbb178a5a778e9}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!\$oauthRefreshToken@{\$oauthRefreshToken}}
+\index{\$oauthRefreshToken@{\$oauthRefreshToken}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{\$oauthRefreshToken}{$oauthRefreshToken}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::\$oauth\+Refresh\+Token = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_ad839c78824f7946f48c5f9c58f148ca5}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_ad839c78824f7946f48c5f9c58f148ca5}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!\$oauthToken@{\$oauthToken}}
+\index{\$oauthToken@{\$oauthToken}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{\$oauthToken}{$oauthToken}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::\$oauth\+Token\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a94fce4de59fbf69e28964144691f82dc}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a94fce4de59fbf69e28964144691f82dc}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!\$oauthUserEmail@{\$oauthUserEmail}}
+\index{\$oauthUserEmail@{\$oauthUserEmail}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{\$oauthUserEmail}{$oauthUserEmail}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::\$oauth\+User\+Email = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a15f2963f6283e29e91812e29ebcbe454}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a15f2963f6283e29e91812e29ebcbe454}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}!\$provider@{\$provider}}
+\index{\$provider@{\$provider}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}OAuth}}
+\doxysubsubsection{\texorpdfstring{\$provider}{$provider}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\+::\$provider\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+Mail/\+PHPMailer/src/\mbox{\hyperlink{_o_auth_8php}{OAuth.\+php}}\end{DoxyCompactItemize}

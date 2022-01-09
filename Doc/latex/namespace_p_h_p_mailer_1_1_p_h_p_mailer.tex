@@ -1,0 +1,242 @@
+\hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer}{}\doxysection{Référence de l\textquotesingle{}espace de nommage PHPMailer\textbackslash{}PHPMailer}
+\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer}\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception}{Exception}}
+\item 
+class \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth}{OAuth}}
+\item 
+class \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}}
+\item 
+class \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3}{POP3}}
+\item 
+class \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p}{SMTP}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{if}} (!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}code\textquotesingle{}\mbox{]}) \&\&!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}provider\textquotesingle{}\mbox{]}))
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_ada87c468b30991892ebe71b6500c87b3}{\$provider\+Name}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{if}}(array\+\_\+key\+\_\+exists(\textquotesingle{}provider\textquotesingle{}, \$\+\_\+\+GET)) elseif(array\+\_\+key\+\_\+exists( \textquotesingle{}provider\textquotesingle{}, \$\+\_\+\+SESSION)) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{if}}(!in\+\_\+array(\$provider\+Name, \mbox{[}\textquotesingle{}Google\textquotesingle{}, \textquotesingle{}Microsoft\textquotesingle{}, \textquotesingle{}Yahoo\textquotesingle{}\mbox{]})) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_a3839f8d22c0570b8b2f4d300e298c581}{\$client\+Id}} = \textquotesingle{}RANDOMCHARS-\/-\/-\/-\/-\/duv1n2.\+apps.\+googleusercontent.\+com\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af482db451ee45911e1b54ce698ecb03e}{\$client\+Secret}} = \textquotesingle{}RANDOMCHARS-\/-\/-\/-\/-\/l\+Gyj\+Pc\+RtvP\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af79f83de423b4f9261189cbe9783cfe5}{\$redirect\+Uri}} = (isset(\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}HTTPS\textquotesingle{}\mbox{]}) ? \textquotesingle{}https\+://\textquotesingle{} \+: \textquotesingle{}http\+://\textquotesingle{}) . \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}HTTP\+\_\+\+HOST\textquotesingle{}\mbox{]} . \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}PHP\+\_\+\+SELF\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_ad663f2715dfb40365dfb0053698a60f7}{\$params}}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}{\$options}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af804adbb612579f4ecd8817bf4a76cef}{\$provider}} = null
+\item 
+switch( \$provider\+Name) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{if}}(null===\$provider) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{if}}(!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}code\textquotesingle{}\mbox{]})) elseif(empty(\$\+\_\+\+GET\mbox{[}\textquotesingle{}state\textquotesingle{}\mbox{]})$\vert$$\vert$(\$\+\_\+\+GET\mbox{[}\textquotesingle{}state\textquotesingle{}\mbox{]} !==\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}oauth2state\textquotesingle{}\mbox{]})) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aebed84322c7489eb053bf89ff705d881}{else}}
+\item 
+\mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_a212e357213ce9cac83ffe491ce5a461a}{\$token}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Get an OAuth2 token from an OAuth2 provider.
+\begin{DoxyItemize}
+\item Install this script on your server so that it\textquotesingle{}s accessible as \mbox{[}https/http\mbox{]}\+://$<$yourdomain$>$/$<$folder$>$/get\+\_\+oauth\+\_\+token.php e.\+g.\+: \href{http://localhost/phpmailer/get_oauth_token.php}{\texttt{ http\+://localhost/phpmailer/get\+\_\+oauth\+\_\+token.\+php}}
+\item Ensure dependencies are installed with \textquotesingle{}composer install\textquotesingle{}
+\item Set up an app in your Google/\+Yahoo/\+Microsoft account
+\item Set the script address as the app\textquotesingle{}s redirect URL If no refresh token is obtained when running this file, revoke access to your app and run the script again.
+\end{DoxyItemize}
+
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}} \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception}{Exception}} class. PHP Version 5.\+5.
+
+\begin{DoxySeeAlso}{Voir également}
+\href{https://github.com/PHPMailer/PHPMailer/}{\texttt{ https\+://github.\+com/\+PHPMailer/\+PHPMailer/}} The \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}} Git\+Hub project
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Auteur}
+Marcus Bointon (Synchro/coolbru) \href{mailto:phpmailer@synchromedia.co.uk}{\texttt{ phpmailer@synchromedia.\+co.\+uk}} 
+
+Jim Jagielski (jimjag) \href{mailto:jimjag@gmail.com}{\texttt{ jimjag@gmail.\+com}} 
+
+Andy Prevost (codeworxtech) \href{mailto:codeworxtech@users.sourceforge.net}{\texttt{ codeworxtech@users.\+sourceforge.\+net}} 
+
+Brent R. Matzelle (original founder) 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+2012 -\/ 2020 Marcus Bointon 
+
+2010 -\/ 2012 Jim Jagielski 
+
+2004 -\/ 2009 Andy Prevost @license \href{http://www.gnu.org/copyleft/lesser.html}{\texttt{ http\+://www.\+gnu.\+org/copyleft/lesser.\+html}} GNU Lesser General Public License 
+\end{DoxyCopyright}
+\begin{DoxyNote}{Note}
+This program is distributed in the hope that it will be useful -\/ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+\end{DoxyNote}
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}} -\/ PHP email creation and transport class. PHP Version 5.\+5.
+
+\begin{DoxySeeAlso}{Voir également}
+\href{https://github.com/PHPMailer/PHPMailer/}{\texttt{ https\+://github.\+com/\+PHPMailer/\+PHPMailer/}} The \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}} Git\+Hub project
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Auteur}
+Marcus Bointon (Synchro/coolbru) \href{mailto:phpmailer@synchromedia.co.uk}{\texttt{ phpmailer@synchromedia.\+co.\+uk}} 
+
+Jim Jagielski (jimjag) \href{mailto:jimjag@gmail.com}{\texttt{ jimjag@gmail.\+com}} 
+
+Andy Prevost (codeworxtech) \href{mailto:codeworxtech@users.sourceforge.net}{\texttt{ codeworxtech@users.\+sourceforge.\+net}} 
+
+Brent R. Matzelle (original founder) 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+2012 -\/ 2020 Marcus Bointon 
+
+2010 -\/ 2012 Jim Jagielski 
+
+2004 -\/ 2009 Andy Prevost @license \href{http://www.gnu.org/copyleft/lesser.html}{\texttt{ http\+://www.\+gnu.\+org/copyleft/lesser.\+html}} GNU Lesser General Public License 
+\end{DoxyCopyright}
+\begin{DoxyNote}{Note}
+This program is distributed in the hope that it will be useful -\/ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+\end{DoxyNote}
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}} POP-\/\+Before-\/\+SMTP Authentication Class. PHP Version 5.\+5.
+
+\begin{DoxySeeAlso}{Voir également}
+\href{https://github.com/PHPMailer/PHPMailer/}{\texttt{ https\+://github.\+com/\+PHPMailer/\+PHPMailer/}} The \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}} Git\+Hub project
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Auteur}
+Marcus Bointon (Synchro/coolbru) \href{mailto:phpmailer@synchromedia.co.uk}{\texttt{ phpmailer@synchromedia.\+co.\+uk}} 
+
+Jim Jagielski (jimjag) \href{mailto:jimjag@gmail.com}{\texttt{ jimjag@gmail.\+com}} 
+
+Andy Prevost (codeworxtech) \href{mailto:codeworxtech@users.sourceforge.net}{\texttt{ codeworxtech@users.\+sourceforge.\+net}} 
+
+Brent R. Matzelle (original founder) 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+2012 -\/ 2020 Marcus Bointon 
+
+2010 -\/ 2012 Jim Jagielski 
+
+2004 -\/ 2009 Andy Prevost @license \href{http://www.gnu.org/copyleft/lesser.html}{\texttt{ http\+://www.\+gnu.\+org/copyleft/lesser.\+html}} GNU Lesser General Public License 
+\end{DoxyCopyright}
+\begin{DoxyNote}{Note}
+This program is distributed in the hope that it will be useful -\/ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+\end{DoxyNote}
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}} RFC821 \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p}{SMTP}} email transport class. PHP Version 5.\+5.
+
+\begin{DoxySeeAlso}{Voir également}
+\href{https://github.com/PHPMailer/PHPMailer/}{\texttt{ https\+://github.\+com/\+PHPMailer/\+PHPMailer/}} The \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}} Git\+Hub project
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Auteur}
+Marcus Bointon (Synchro/coolbru) \href{mailto:phpmailer@synchromedia.co.uk}{\texttt{ phpmailer@synchromedia.\+co.\+uk}} 
+
+Jim Jagielski (jimjag) \href{mailto:jimjag@gmail.com}{\texttt{ jimjag@gmail.\+com}} 
+
+Andy Prevost (codeworxtech) \href{mailto:codeworxtech@users.sourceforge.net}{\texttt{ codeworxtech@users.\+sourceforge.\+net}} 
+
+Brent R. Matzelle (original founder) 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+2012 -\/ 2020 Marcus Bointon 
+
+2010 -\/ 2012 Jim Jagielski 
+
+2004 -\/ 2009 Andy Prevost @license \href{http://www.gnu.org/copyleft/lesser.html}{\texttt{ http\+://www.\+gnu.\+org/copyleft/lesser.\+html}} GNU Lesser General Public License 
+\end{DoxyCopyright}
+\begin{DoxyNote}{Note}
+This program is distributed in the hope that it will be useful -\/ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+\end{DoxyNote}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_a3839f8d22c0570b8b2f4d300e298c581}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_a3839f8d22c0570b8b2f4d300e298c581}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!\$clientId@{\$clientId}}
+\index{\$clientId@{\$clientId}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{\$clientId}{$clientId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{if}}(array\+\_\+key\+\_\+exists( \textquotesingle{}provider\textquotesingle{}, \$\+\_\+\+GET)) elseif(array\+\_\+key\+\_\+exists(\textquotesingle{}provider\textquotesingle{}, \$\+\_\+\+SESSION)) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{if}} (!in\+\_\+array( \$provider\+Name,\mbox{[} \textquotesingle{}Google\textquotesingle{}, \textquotesingle{}Microsoft\textquotesingle{}, \textquotesingle{}Yahoo\textquotesingle{}\mbox{]})) PHPMailer\+::\+PHPMailer\textbackslash{}\$client\+Id = \textquotesingle{}RANDOMCHARS-\/-\/-\/-\/-\/duv1n2.\+apps.\+googleusercontent.\+com\textquotesingle{}}
+
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af482db451ee45911e1b54ce698ecb03e}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af482db451ee45911e1b54ce698ecb03e}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!\$clientSecret@{\$clientSecret}}
+\index{\$clientSecret@{\$clientSecret}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{\$clientSecret}{$clientSecret}}
+{\footnotesize\ttfamily PHPMailer\+::\+PHPMailer\textbackslash{}\$client\+Secret = \textquotesingle{}RANDOMCHARS-\/-\/-\/-\/-\/l\+Gyj\+Pc\+RtvP\textquotesingle{}}
+
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aa24c00bc636667f397afa7a7e67fca79}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!\$options@{\$options}}
+\index{\$options@{\$options}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{\$options}{$options}}
+{\footnotesize\ttfamily PHPMailer\+::\+PHPMailer\textbackslash{}\$options = \mbox{[}$\,$\mbox{]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_a58d10691ef6d5f8576b302ac11d39756}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+OAuth\textbackslash{}\+\_\+\+\_\+construct()}}, \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a67c7eef2c32d3ef26b6eb28afca3820b}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+SMTP\textbackslash{}connect()}}, \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac323a39de60b32fcd8182f2d499b3bd8}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+SMTP\textbackslash{}get\+SMTPConnection()}}, \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_a0715e35925a83d7dc049847b6307002e}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}mb\+\_\+pathinfo()}}, et \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_a2629420e899a9191658e7a041e7d447c}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}smtp\+Connect()}}.
+
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_ad663f2715dfb40365dfb0053698a60f7}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_ad663f2715dfb40365dfb0053698a60f7}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!\$params@{\$params}}
+\index{\$params@{\$params}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{\$params}{$params}}
+{\footnotesize\ttfamily PHPMailer\+::\+PHPMailer\textbackslash{}\$params}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{    \textcolor{stringliteral}{'clientId'} => \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_a3839f8d22c0570b8b2f4d300e298c581}{\$clientId}},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'clientSecret'} => \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af482db451ee45911e1b54ce698ecb03e}{\$clientSecret}},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'redirectUri'} => \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af79f83de423b4f9261189cbe9783cfe5}{\$redirectUri}},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'accessType'} => \textcolor{stringliteral}{'offline'}}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_aa86fcba6dc090d7d0993051b05401833}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}add\+Or\+Enqueue\+An\+Address()}}, \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_a91abc4336a9ab3eef7fad234694fb052}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}clear\+Queued\+Addresses()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a499c7d62125dff813796f5cb316b9957}{Météo\textbackslash{}\+Table\textbackslash{}\+Table\textbackslash{}exists()}}, \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_a6d7856ac6e61d7f2aab9e6593431e9d9}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}mail\+Passthru()}}, et \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_a5380946f99759aa0cd61066638f8ba27}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}mail\+Send()}}.
+
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af804adbb612579f4ecd8817bf4a76cef}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af804adbb612579f4ecd8817bf4a76cef}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!\$provider@{\$provider}}
+\index{\$provider@{\$provider}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{\$provider}{$provider}}
+{\footnotesize\ttfamily PHPMailer\+::\+PHPMailer\textbackslash{}\$provider = null}
+
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_ada87c468b30991892ebe71b6500c87b3}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_ada87c468b30991892ebe71b6500c87b3}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!\$providerName@{\$providerName}}
+\index{\$providerName@{\$providerName}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{\$providerName}{$providerName}}
+{\footnotesize\ttfamily PHPMailer\+::\+PHPMailer\textbackslash{}\$provider\+Name = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af79f83de423b4f9261189cbe9783cfe5}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af79f83de423b4f9261189cbe9783cfe5}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!\$redirectUri@{\$redirectUri}}
+\index{\$redirectUri@{\$redirectUri}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{\$redirectUri}{$redirectUri}}
+{\footnotesize\ttfamily PHPMailer\+::\+PHPMailer\textbackslash{}\$redirect\+Uri = (isset(\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}HTTPS\textquotesingle{}\mbox{]}) ? \textquotesingle{}https\+://\textquotesingle{} \+: \textquotesingle{}http\+://\textquotesingle{}) . \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}HTTP\+\_\+\+HOST\textquotesingle{}\mbox{]} . \$\+\_\+\+SERVER\mbox{[}\textquotesingle{}PHP\+\_\+\+SELF\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_a212e357213ce9cac83ffe491ce5a461a}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_a212e357213ce9cac83ffe491ce5a461a}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!\$token@{\$token}}
+\index{\$token@{\$token}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{\$token}{$token}}
+{\footnotesize\ttfamily PHPMailer\+::\+PHPMailer\textbackslash{}\$token}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_af804adbb612579f4ecd8817bf4a76cef}{\$provider}}-\/>getAccessToken(}
+\DoxyCodeLine{        \textcolor{stringliteral}{'authorization\_code'},}
+\DoxyCodeLine{        [}
+\DoxyCodeLine{            \textcolor{stringliteral}{'code'} => \$\_GET[\textcolor{stringliteral}{'code'}]}
+\DoxyCodeLine{        ]}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aebed84322c7489eb053bf89ff705d881}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aebed84322c7489eb053bf89ff705d881}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!else@{else}}
+\index{else@{else}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily switch(\$provider\+Name) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{if}}(null===\$provider) \mbox{\hyperlink{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}{if}}(!isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}code\textquotesingle{}\mbox{]})) elseif (empty( \$\+\_\+\+GET\mbox{[} \textquotesingle{}state\textquotesingle{}\mbox{]})$\vert$$\vert$( \$\+\_\+\+GET\mbox{[} \textquotesingle{}state\textquotesingle{}\mbox{]} !==\$\+\_\+\+SESSION\mbox{[} \textquotesingle{}oauth2state\textquotesingle{}\mbox{]})) PHPMailer\+::\+PHPMailer\textbackslash{}else}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    unset(\$\_SESSION[\textcolor{stringliteral}{'provider'}])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}\label{namespace_p_h_p_mailer_1_1_p_h_p_mailer_aeb86f91a38bbc5b1ae2c621271d8b6fb}} 
+\index{PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}!if@{if}}
+\index{if@{if}!PHPMailer\textbackslash{}PHPMailer@{PHPMailer\textbackslash{}PHPMailer}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily PHPMailer\+::\+PHPMailer\textbackslash{}if(!isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}code\textquotesingle{}\mbox{]}) \&\&!isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}provider\textquotesingle{}\mbox{]})) (\begin{DoxyParamCaption}\item[{!}]{isset \$\+\_\+\+GET\mbox{[} \textquotesingle{}code\textquotesingle{}\mbox{]}) \&\&!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}provider\textquotesingle{}\mbox{]} }\end{DoxyParamCaption})}
+

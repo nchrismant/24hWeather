@@ -1,0 +1,16 @@
+digraph "Graphe hiérarchique des classes"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Météo\\Table\\Table",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Météo\\Calendar\\EventsTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_events_table.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Météo\\FavorisTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Météo\\User\\UserImgTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table.html",tooltip=" "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Météo\\User\\UserTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table.html",tooltip=" "];
+}

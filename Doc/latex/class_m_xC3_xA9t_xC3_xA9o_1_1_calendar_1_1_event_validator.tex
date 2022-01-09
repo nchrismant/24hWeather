@@ -1,0 +1,59 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_validator}{}\doxysection{Référence de la classe Météo\textbackslash{}Calendar\textbackslash{}Event\+Validator}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_validator}\index{Météo\textbackslash{}Calendar\textbackslash{}EventValidator@{Météo\textbackslash{}Calendar\textbackslash{}EventValidator}}
+
+
+Graphe d\textquotesingle{}héritage de Météo\textbackslash{}Calendar\textbackslash{}Event\+Validator\+:
+% FIG 0
+
+
+Graphe de collaboration de Météo\textbackslash{}Calendar\textbackslash{}Event\+Validator\+:
+% FIG 1
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_validator_ad61dd827fc9ba5de274decc92bbc49b0}{validates}} (array \$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_validator_ad61dd827fc9ba5de274decc92bbc49b0}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_calendar_1_1_event_validator_ad61dd827fc9ba5de274decc92bbc49b0}} 
+\index{Météo\textbackslash{}Calendar\textbackslash{}EventValidator@{Météo\textbackslash{}Calendar\textbackslash{}EventValidator}!validates@{validates}}
+\index{validates@{validates}!Météo\textbackslash{}Calendar\textbackslash{}EventValidator@{Météo\textbackslash{}Calendar\textbackslash{}EventValidator}}
+\doxysubsubsection{\texorpdfstring{validates()}{validates()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Calendar\textbackslash{}\+Event\+Validator\+::validates (\begin{DoxyParamCaption}\item[{array}]{\$data }\end{DoxyParamCaption})}
+
+Récupère les données et vérifie les erreurs.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+array & {\em \$data} & Données à traiter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a7c16fa16991ed190add5b4aaadc4ddae}{Météo\textbackslash{}\+Validator}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                            \{}
+\DoxyCodeLine{9         parent::validates(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_aa51cb48e2142ccba6bd89d65a1689d3b}{\$data}});}
+\DoxyCodeLine{10         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a15c5cefe29d218e4c450461d4411d8b5}{validate}}(\textcolor{stringliteral}{'name'}, \textcolor{stringliteral}{'minLength'}, \textcolor{charliteral}{'3'});}
+\DoxyCodeLine{11         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a15c5cefe29d218e4c450461d4411d8b5}{validate}}(\textcolor{stringliteral}{'date'}, \textcolor{stringliteral}{'date'});}
+\DoxyCodeLine{12         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a15c5cefe29d218e4c450461d4411d8b5}{validate}}(\textcolor{stringliteral}{'start'}, \textcolor{stringliteral}{'beforeTime'}, \textcolor{stringliteral}{'end'});}
+\DoxyCodeLine{13         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a60fb195f03ffdb1e4950edcf62b0a98b}{\$this-\/>errors}};}
+\DoxyCodeLine{14     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_aa51cb48e2142ccba6bd89d65a1689d3b}{Météo\textbackslash{}\+Validator\textbackslash{}\$data}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a60fb195f03ffdb1e4950edcf62b0a98b}{Météo\textbackslash{}\+Validator\textbackslash{}\$errors}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a15c5cefe29d218e4c450461d4411d8b5}{Météo\textbackslash{}\+Validator\textbackslash{}validate()}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+Calendar/\mbox{\hyperlink{_event_validator_8php}{Event\+Validator.\+php}}\end{DoxyCompactItemize}

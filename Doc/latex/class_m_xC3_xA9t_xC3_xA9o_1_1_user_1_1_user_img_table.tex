@@ -1,0 +1,141 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table}{}\doxysection{Référence de la classe Météo\textbackslash{}User\textbackslash{}User\+Img\+Table}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table}\index{Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}}
+
+
+Graphe d\textquotesingle{}héritage de Météo\textbackslash{}User\textbackslash{}User\+Img\+Table\+:
+% FIG 0
+
+
+Graphe de collaboration de Météo\textbackslash{}User\textbackslash{}User\+Img\+Table\+:
+% FIG 1
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_a44e09e1f8cf45861a64b8fbb41948ed0}{get\+User\+Img}} (int \$id)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_ab0774b15e82f7db704eee25770d8dee4}{create\+Img}} (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img}{User\+Img}} \$userimg)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_ae1cd7783c79a7c557645f435023d40b4}{update\+Img}} (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img}{User\+Img}} \$userimg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_afbebdad8ead8d49a18fb15e397db443c}{\$table}} = \char`\"{}images\+\_\+utilisateurs\char`\"{}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_ab505dc40ddbf986ba27586716e626eaa}{\$class}} = User\+Img\+::class
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_ab0774b15e82f7db704eee25770d8dee4}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_ab0774b15e82f7db704eee25770d8dee4}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}!createImg@{createImg}}
+\index{createImg@{createImg}!Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}}
+\doxysubsubsection{\texorpdfstring{createImg()}{createImg()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\+Table\+::create\+Img (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img}{User\+Img}}}]{\$userimg }\end{DoxyParamCaption})}
+
+Ajoute un enregistrement dans la table images utilisateur.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img}{User\+Img}} & {\em \$userimg} & Données de l\textquotesingle{}image de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                                                 : \textcolor{keywordtype}{void}}
+\DoxyCodeLine{33     \{}
+\DoxyCodeLine{34         \$id\_img = \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a9a2eccc0920c94045c4d97fd4d103816}{create}}([}
+\DoxyCodeLine{35             \textcolor{stringliteral}{'img\_name'} => \$userimg-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a88750e5428c7da8dbbd03aaad04ea625}{getImg\_name}}(),}
+\DoxyCodeLine{36             \textcolor{stringliteral}{'img'} => \$userimg-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a2157f7a00964adf2e4bb2b7f8c120de6}{getImg}}(),}
+\DoxyCodeLine{37             \textcolor{stringliteral}{'id'} => \$userimg-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a2358b1cad6203552dfa3baf00a971a25}{getId}}()}
+\DoxyCodeLine{38         ]);}
+\DoxyCodeLine{39         \$userimg-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_add7f3b04ab7bd1afa91502e28c1fd944}{setId\_img}}(\$id\_img);}
+\DoxyCodeLine{40     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a9a2eccc0920c94045c4d97fd4d103816}{Météo\textbackslash{}\+Table\textbackslash{}\+Table\textbackslash{}create()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a2358b1cad6203552dfa3baf00a971a25}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\textbackslash{}get\+Id()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a2157f7a00964adf2e4bb2b7f8c120de6}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\textbackslash{}get\+Img()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a88750e5428c7da8dbbd03aaad04ea625}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\textbackslash{}get\+Img\+\_\+name()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_add7f3b04ab7bd1afa91502e28c1fd944}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\textbackslash{}set\+Id\+\_\+img()}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_a44e09e1f8cf45861a64b8fbb41948ed0}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_a44e09e1f8cf45861a64b8fbb41948ed0}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}!getUserImg@{getUserImg}}
+\index{getUserImg@{getUserImg}!Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}}
+\doxysubsubsection{\texorpdfstring{getUserImg()}{getUserImg()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\+Table\+::get\+User\+Img (\begin{DoxyParamCaption}\item[{int}]{\$id }\end{DoxyParamCaption})}
+
+Récupère l\textquotesingle{}image de l\textquotesingle{}utilisateur.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+int & {\em \$id} & Id de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18     \{}
+\DoxyCodeLine{19         \$query = \$this-\/>pdo-\/>prepare(\textcolor{stringliteral}{"{}SELECT * FROM \{\$this-\/>table\} WHERE id = :id"{}});}
+\DoxyCodeLine{20         \$query-\/>execute([\textcolor{stringliteral}{'id'} => \mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}}]);}
+\DoxyCodeLine{21         \$query-\/>setFetchMode(PDO::FETCH\_CLASS, \$this-\/>\textcolor{keyword}{class});}
+\DoxyCodeLine{22         \$result = \$query-\/>fetch();}
+\DoxyCodeLine{23         \textcolor{keywordflow}{return} \$result;}
+\DoxyCodeLine{24     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_ae1cd7783c79a7c557645f435023d40b4}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_ae1cd7783c79a7c557645f435023d40b4}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}!updateImg@{updateImg}}
+\index{updateImg@{updateImg}!Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}}
+\doxysubsubsection{\texorpdfstring{updateImg()}{updateImg()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\+Table\+::update\+Img (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img}{User\+Img}}}]{\$userimg }\end{DoxyParamCaption})}
+
+Modifie un eregistrement dans la table images utilisateur.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img}{User\+Img}} & {\em \$userimg} & Données à modifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                                 : \textcolor{keywordtype}{void}}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a5c73c2248dafe93d8819efe4ca24058f}{update}}([}
+\DoxyCodeLine{51             \textcolor{stringliteral}{'img\_name'} => \$userimg-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a88750e5428c7da8dbbd03aaad04ea625}{getImg\_name}}(),}
+\DoxyCodeLine{52             \textcolor{stringliteral}{'img'} => \$userimg-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a2157f7a00964adf2e4bb2b7f8c120de6}{getImg}}()}
+\DoxyCodeLine{53         ], \$userimg-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_af50fe1ee1ecc06bacea953c22bcf80de}{getId\_img}}(), \textcolor{stringliteral}{'id\_img'});}
+\DoxyCodeLine{54     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_af50fe1ee1ecc06bacea953c22bcf80de}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\textbackslash{}get\+Id\+\_\+img()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a2157f7a00964adf2e4bb2b7f8c120de6}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\textbackslash{}get\+Img()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_a88750e5428c7da8dbbd03aaad04ea625}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\textbackslash{}get\+Img\+\_\+name()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a5c73c2248dafe93d8819efe4ca24058f}{Météo\textbackslash{}\+Table\textbackslash{}\+Table\textbackslash{}update()}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_ab505dc40ddbf986ba27586716e626eaa}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_ab505dc40ddbf986ba27586716e626eaa}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}!\$class@{\$class}}
+\index{\$class@{\$class}!Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}}
+\doxysubsubsection{\texorpdfstring{\$class}{$class}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\+Table\+::\$class = User\+Img\+::class\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_afbebdad8ead8d49a18fb15e397db443c}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table_afbebdad8ead8d49a18fb15e397db443c}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}!\$table@{\$table}}
+\index{\$table@{\$table}!Météo\textbackslash{}User\textbackslash{}UserImgTable@{Météo\textbackslash{}User\textbackslash{}UserImgTable}}
+\doxysubsubsection{\texorpdfstring{\$table}{$table}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Img\+Table\+::\$table = \char`\"{}images\+\_\+utilisateurs\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+User/\mbox{\hyperlink{_user_img_table_8php}{User\+Img\+Table.\+php}}\end{DoxyCompactItemize}

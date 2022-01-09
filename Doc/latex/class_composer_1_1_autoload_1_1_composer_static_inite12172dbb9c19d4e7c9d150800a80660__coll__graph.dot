@@ -1,0 +1,7 @@
+digraph "Composer\Autoload\ComposerStaticInite12172dbb9c19d4e7c9d150800a80660"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Composer\\Autoload\\Composer\lStaticInite12172dbb9c19d4e7c9d150800a80660\n|+ $prefixLengthsPsr4\l+ $prefixDirsPsr4\l+ $classMap\l|+ getInitializer()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

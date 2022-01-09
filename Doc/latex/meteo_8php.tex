@@ -1,0 +1,141 @@
+\hypertarget{meteo_8php}{}\doxysection{Référence du fichier meteo.\+php}
+\label{meteo_8php}\index{meteo.php@{meteo.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{meteo_8php_a7c88c8dfcf14e98d581073a25966ec09}{\$weather}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather}{Open\+Weather}}(\textquotesingle{}94c6cf0868fa5cb930a5e2d71baf0dbf\textquotesingle{})
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset( \$\+\_\+\+GET\mbox{[}\char`\"{}ville\char`\"{}\mbox{]}) \&\&!empty( \$\+\_\+\+GET\mbox{[}\char`\"{}ville\char`\"{}\mbox{]})) else \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset(\$\+\_\+\+GET\mbox{[}\char`\"{}lat\char`\"{}\mbox{]}) \&\&isset(\$\+\_\+\+GET\mbox{[}\char`\"{}lon\char`\"{}\mbox{]})) \mbox{\hyperlink{meteo_8php_a492aa92f32f81704d9d165a47d2d2770}{else}}
+\item 
+\mbox{\hyperlink{meteo_8php_af498b42b83afed4dfe0af05fd802776c}{\$lat}} = \$user\+Coord\mbox{[}\textquotesingle{}lat\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{meteo_8php_a03836509761c0935d0c55370b184ccd6}{\$lon}} = \$user\+Coord\mbox{[}\textquotesingle{}lon\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{meteo_8php_a34a17039defc0fb6017128350a10ba33}{try}}
+\item 
+\mbox{\hyperlink{meteo_8php_af1b7fb9d06cdc6d22c14741fc3cc185a}{\$today}} = \$weather-\/$>$get\+Today(\$id)
+\item 
+\mbox{\hyperlink{meteo_8php_aa14277438c2c2290064e04d3d6dfd8c2}{\$sunrise}} = \$today\mbox{[}\textquotesingle{}sunrise\textquotesingle{}\mbox{]}-\/$>$set\+Timezone(new \textbackslash{}Date\+Time\+Zone(\textquotesingle{}Europe/Paris\textquotesingle{}))-\/$>$format(\char`\"{}H\+:i\+:s\char`\"{})
+\item 
+\mbox{\hyperlink{meteo_8php_ac3e15e8bd53a470b59cc400b317bf4df}{\$sunset}} = \$today\mbox{[}\textquotesingle{}sunset\textquotesingle{}\mbox{]}-\/$>$set\+Timezone(new \textbackslash{}Date\+Time\+Zone(\textquotesingle{}Europe/Paris\textquotesingle{}))-\/$>$format(\char`\"{}H\+:i\+:s\char`\"{})
+\item 
+\mbox{\hyperlink{meteo_8php_a6b723264be01765f3ccba87a83f48915}{\$hourly}} = \$weather-\/$>$get\+Hourly(\$today\mbox{[}\textquotesingle{}lat\textquotesingle{}\mbox{]}, \$today\mbox{[}\textquotesingle{}lon\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{meteo_8php_a573cbeb59eef5d4429ef90b688085a01}{\$citypos}} \mbox{[}$\,$\mbox{]} = \mbox{[}\textquotesingle{}lat\textquotesingle{} =$>$ \$today\mbox{[}\textquotesingle{}lat\textquotesingle{}\mbox{]}, \textquotesingle{}lon\textquotesingle{} =$>$ \$today\mbox{[}\textquotesingle{}lon\textquotesingle{}\mbox{]}\mbox{]}
+\item 
+catch(Exception \$e) \mbox{\hyperlink{meteo_8php_aa372340499d3fa0853c9fc28420b6af4}{\$title}} = \char`\"{}Météo en temps réel -\/ 24h Weather\char`\"{}
+\item 
+\mbox{\hyperlink{meteo_8php_a87b032cba06009e3467abf1c8018d960}{\$description}} = \char`\"{}Retrouvez la météo où vous voulez et quand vous le souhaitez !\char`\"{}
+\item 
+\mbox{\hyperlink{meteo_8php_a9fbd95bfcdf27d802a8c7938529a61ba}{\$keywords}} = \char`\"{}weather meteo 24/24 7/7\char`\"{}
+\item 
+foreach(\$hourly as \$key=$>$ \$hour) foreach( \$hourly as \$key=$>$ \$hour) foreach(\$hourly as \$key=$>$ \$hour) foreach( \$hourly as \$key=$>$ \$hour) \mbox{\hyperlink{meteo_8php_a1de0dc9eec8f660dc69ad81eae3fce14}{foreach}} ( \$forecast as \$day)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{meteo_8php_a573cbeb59eef5d4429ef90b688085a01}\label{meteo_8php_a573cbeb59eef5d4429ef90b688085a01}} 
+\index{meteo.php@{meteo.php}!\$citypos@{\$citypos}}
+\index{\$citypos@{\$citypos}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$citypos}{$citypos}}
+{\footnotesize\ttfamily \$citypos\mbox{[}$\,$\mbox{]} = \mbox{[}\textquotesingle{}lat\textquotesingle{} =$>$ \$today\mbox{[}\textquotesingle{}lat\textquotesingle{}\mbox{]}, \textquotesingle{}lon\textquotesingle{} =$>$ \$today\mbox{[}\textquotesingle{}lon\textquotesingle{}\mbox{]}\mbox{]}}
+
+\mbox{\Hypertarget{meteo_8php_a87b032cba06009e3467abf1c8018d960}\label{meteo_8php_a87b032cba06009e3467abf1c8018d960}} 
+\index{meteo.php@{meteo.php}!\$description@{\$description}}
+\index{\$description@{\$description}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$description}{$description}}
+{\footnotesize\ttfamily \$description = \char`\"{}Retrouvez la météo où vous voulez et quand vous le souhaitez !\char`\"{}}
+
+\mbox{\Hypertarget{meteo_8php_a6b723264be01765f3ccba87a83f48915}\label{meteo_8php_a6b723264be01765f3ccba87a83f48915}} 
+\index{meteo.php@{meteo.php}!\$hourly@{\$hourly}}
+\index{\$hourly@{\$hourly}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$hourly}{$hourly}}
+{\footnotesize\ttfamily \$hourly = \$weather-\/$>$get\+Hourly(\$today\mbox{[}\textquotesingle{}lat\textquotesingle{}\mbox{]}, \$today\mbox{[}\textquotesingle{}lon\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{meteo_8php_a9fbd95bfcdf27d802a8c7938529a61ba}\label{meteo_8php_a9fbd95bfcdf27d802a8c7938529a61ba}} 
+\index{meteo.php@{meteo.php}!\$keywords@{\$keywords}}
+\index{\$keywords@{\$keywords}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$keywords}{$keywords}}
+{\footnotesize\ttfamily \$keywords = \char`\"{}weather meteo 24/24 7/7\char`\"{}}
+
+\mbox{\Hypertarget{meteo_8php_af498b42b83afed4dfe0af05fd802776c}\label{meteo_8php_af498b42b83afed4dfe0af05fd802776c}} 
+\index{meteo.php@{meteo.php}!\$lat@{\$lat}}
+\index{\$lat@{\$lat}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$lat}{$lat}}
+{\footnotesize\ttfamily \$lat = \$user\+Coord\mbox{[}\textquotesingle{}lat\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{meteo_8php_a03836509761c0935d0c55370b184ccd6}\label{meteo_8php_a03836509761c0935d0c55370b184ccd6}} 
+\index{meteo.php@{meteo.php}!\$lon@{\$lon}}
+\index{\$lon@{\$lon}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$lon}{$lon}}
+{\footnotesize\ttfamily \$lon = \$user\+Coord\mbox{[}\textquotesingle{}lon\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{meteo_8php_aa14277438c2c2290064e04d3d6dfd8c2}\label{meteo_8php_aa14277438c2c2290064e04d3d6dfd8c2}} 
+\index{meteo.php@{meteo.php}!\$sunrise@{\$sunrise}}
+\index{\$sunrise@{\$sunrise}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$sunrise}{$sunrise}}
+{\footnotesize\ttfamily \$sunrise = \$today\mbox{[}\textquotesingle{}sunrise\textquotesingle{}\mbox{]}-\/$>$set\+Timezone(new \textbackslash{}Date\+Time\+Zone(\textquotesingle{}Europe/Paris\textquotesingle{}))-\/$>$format(\char`\"{}H\+:i\+:s\char`\"{})}
+
+\mbox{\Hypertarget{meteo_8php_ac3e15e8bd53a470b59cc400b317bf4df}\label{meteo_8php_ac3e15e8bd53a470b59cc400b317bf4df}} 
+\index{meteo.php@{meteo.php}!\$sunset@{\$sunset}}
+\index{\$sunset@{\$sunset}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$sunset}{$sunset}}
+{\footnotesize\ttfamily \$sunset = \$today\mbox{[}\textquotesingle{}sunset\textquotesingle{}\mbox{]}-\/$>$set\+Timezone(new \textbackslash{}Date\+Time\+Zone(\textquotesingle{}Europe/Paris\textquotesingle{}))-\/$>$format(\char`\"{}H\+:i\+:s\char`\"{})}
+
+\mbox{\Hypertarget{meteo_8php_aa372340499d3fa0853c9fc28420b6af4}\label{meteo_8php_aa372340499d3fa0853c9fc28420b6af4}} 
+\index{meteo.php@{meteo.php}!\$title@{\$title}}
+\index{\$title@{\$title}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$title}{$title}}
+{\footnotesize\ttfamily catch (Exception \$e) \$title = \char`\"{}Météo en temps réel -\/ 24h Weather\char`\"{}}
+
+\mbox{\Hypertarget{meteo_8php_af1b7fb9d06cdc6d22c14741fc3cc185a}\label{meteo_8php_af1b7fb9d06cdc6d22c14741fc3cc185a}} 
+\index{meteo.php@{meteo.php}!\$today@{\$today}}
+\index{\$today@{\$today}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$today}{$today}}
+{\footnotesize\ttfamily \$today = \$weather-\/$>$get\+Today(\$id)}
+
+\mbox{\Hypertarget{meteo_8php_a7c88c8dfcf14e98d581073a25966ec09}\label{meteo_8php_a7c88c8dfcf14e98d581073a25966ec09}} 
+\index{meteo.php@{meteo.php}!\$weather@{\$weather}}
+\index{\$weather@{\$weather}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{\$weather}{$weather}}
+{\footnotesize\ttfamily \$weather = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather}{Open\+Weather}}(\textquotesingle{}94c6cf0868fa5cb930a5e2d71baf0dbf\textquotesingle{})}
+
+\mbox{\Hypertarget{meteo_8php_a492aa92f32f81704d9d165a47d2d2770}\label{meteo_8php_a492aa92f32f81704d9d165a47d2d2770}} 
+\index{meteo.php@{meteo.php}!else@{else}}
+\index{else@{else}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset( \$today\mbox{[} \textquotesingle{}name\textquotesingle{}\mbox{]})) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset(\$\+\_\+\+SESSION\mbox{[}\textquotesingle{}auth\textquotesingle{}\mbox{]})) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (isset( \$\+\_\+\+SESSION\mbox{[} \textquotesingle{}auth\textquotesingle{}\mbox{]}) \&\&\$favoris\+Table-\/$>$exists\+With2\+Conditions( \textquotesingle{}id\+\_\+ville\textquotesingle{}, \textquotesingle{}id\textquotesingle{}, \$id, \$\+\_\+\+SESSION\mbox{[} \textquotesingle{}auth\textquotesingle{}\mbox{]}, \textquotesingle{}id\+\_\+ville\textquotesingle{})) else}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if}(!empty(\$\_SERVER[\textcolor{stringliteral}{'HTTP\_CLIENT\_IP'}])) \{}
+\DoxyCodeLine{        \$ip = \$\_SERVER[\textcolor{stringliteral}{'HTTP\_CLIENT\_IP'}];}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    elseif(!empty(\$\_SERVER[\textcolor{stringliteral}{'HTTP\_X\_FORWARDED\_FOR'}])) \{}
+\DoxyCodeLine{        \$ip = \$\_SERVER[\textcolor{stringliteral}{'HTTP\_X\_FORWARDED\_FOR'}];}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{        \$ip = \$\_SERVER[\textcolor{stringliteral}{'REMOTE\_ADDR'}];}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \$userCoord = \mbox{\hyperlink{meteo_8php_a7c88c8dfcf14e98d581073a25966ec09}{\$weather}}-\/>getUserCoord(\$ip)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{meteo_8php_a1de0dc9eec8f660dc69ad81eae3fce14}\label{meteo_8php_a1de0dc9eec8f660dc69ad81eae3fce14}} 
+\index{meteo.php@{meteo.php}!foreach@{foreach}}
+\index{foreach@{foreach}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{foreach}{foreach}}
+{\footnotesize\ttfamily foreach( \$hourly as \$key=$>$ \$hour) foreach(\$hourly as \$key=$>$ \$hour) foreach( \$hourly as \$key=$>$ \$hour) foreach(\$hourly as \$key=$>$ \$hour) foreach(\$forecast as \$day) (\begin{DoxyParamCaption}\item[{}]{\$forecast as }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{meteo_8php_a34a17039defc0fb6017128350a10ba33}\label{meteo_8php_a34a17039defc0fb6017128350a10ba33}} 
+\index{meteo.php@{meteo.php}!try@{try}}
+\index{try@{try}!meteo.php@{meteo.php}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily catch (Exception \$e) try}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        \mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}} = \mbox{\hyperlink{meteo_8php_a7c88c8dfcf14e98d581073a25966ec09}{\$weather}}-\/>getIDByCoordinate(\mbox{\hyperlink{meteo_8php_af498b42b83afed4dfe0af05fd802776c}{\$lat}}, \mbox{\hyperlink{meteo_8php_a03836509761c0935d0c55370b184ccd6}{\$lon}})}
+
+\end{DoxyCode}

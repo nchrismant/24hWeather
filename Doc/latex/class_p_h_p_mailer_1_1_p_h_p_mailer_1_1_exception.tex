@@ -1,0 +1,49 @@
+\hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception}{}\doxysection{Référence de la classe PHPMailer\textbackslash{}PHPMailer\textbackslash{}Exception}
+\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception}\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}Exception@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}Exception}}
+
+
+Est dérivée de Exception.
+
+
+
+Graphe de collaboration de PHPMailer\textbackslash{}PHPMailer\textbackslash{}Exception\+:
+% FIG 0
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception_aad2f4255c5653a2073812f40733ded4e}{error\+Message}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer}} exception handler.
+
+\begin{DoxyAuthor}{Auteur}
+Marcus Bointon \href{mailto:phpmailer@synchromedia.co.uk}{\texttt{ phpmailer@synchromedia.\+co.\+uk}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception_aad2f4255c5653a2073812f40733ded4e}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception_aad2f4255c5653a2073812f40733ded4e}} 
+\index{PHPMailer\textbackslash{}PHPMailer\textbackslash{}Exception@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}Exception}!errorMessage@{errorMessage}}
+\index{errorMessage@{errorMessage}!PHPMailer\textbackslash{}PHPMailer\textbackslash{}Exception@{PHPMailer\textbackslash{}PHPMailer\textbackslash{}Exception}}
+\doxysubsubsection{\texorpdfstring{errorMessage()}{errorMessage()}}
+{\footnotesize\ttfamily PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+Exception\+::error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prettify error message output.
+
+\begin{DoxyReturn}{Renvoie}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37     \{}
+\DoxyCodeLine{38         \textcolor{keywordflow}{return} \textcolor{stringliteral}{'<strong>'} . htmlspecialchars(\$this-\/>getMessage(), ENT\_COMPAT | ENT\_HTML401) . \textcolor{stringliteral}{"{}</strong><br />\(\backslash\)n"{}};}
+\DoxyCodeLine{39     \}}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+Mail/\+PHPMailer/src/\mbox{\hyperlink{_exception_8php}{Exception.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,151 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table}{}\doxysection{Référence de la classe Météo\textbackslash{}Favoris\+Table}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table}\index{Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}}
+
+
+Graphe d\textquotesingle{}héritage de Météo\textbackslash{}Favoris\+Table\+:
+% FIG 0
+
+
+Graphe de collaboration de Météo\textbackslash{}Favoris\+Table\+:
+% FIG 1
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a6ea0943ac552ae3949700d57e1e10604}{get\+User\+Favoris}} (int \$id)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a0d82bcd4e8773f8afddc217c4b6c93cd}{create\+Favoris}} (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris}{Favoris}} \$favoris)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_adfcf18ef623e08e2e9639f2a3c178637}{update\+Favoris}} (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris}{Favoris}} \$favoris)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_acf15025579fcfcca6d92e22b85be5654}{\$table}} = \char`\"{}favoris\char`\"{}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a2a14341fc9d9798f403d4e69de920a69}{\$class}} = Favoris\+::class
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a0d82bcd4e8773f8afddc217c4b6c93cd}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a0d82bcd4e8773f8afddc217c4b6c93cd}} 
+\index{Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}!createFavoris@{createFavoris}}
+\index{createFavoris@{createFavoris}!Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}}
+\doxysubsubsection{\texorpdfstring{createFavoris()}{createFavoris()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Favoris\+Table\+::create\+Favoris (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris}{Favoris}}}]{\$favoris }\end{DoxyParamCaption})}
+
+Ajoute un favoris pour un utilisateur.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris}{Favoris}} & {\em \$favoris} & Données du favoris \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                                     : \textcolor{keywordtype}{void}}
+\DoxyCodeLine{34     \{}
+\DoxyCodeLine{35         \$id\_fav = \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a9a2eccc0920c94045c4d97fd4d103816}{create}}([}
+\DoxyCodeLine{36             \textcolor{stringliteral}{'id\_ville'} => \$favoris-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_a0ab96c1913051478eb6b5290e4deffb0}{getId\_ville}}(),}
+\DoxyCodeLine{37             \textcolor{stringliteral}{'pays'} => \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getPays(),}
+\DoxyCodeLine{38             \textcolor{stringliteral}{'ville'} => \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getVille(),}
+\DoxyCodeLine{39             \textcolor{stringliteral}{'latitude'} => \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getLatitude(),}
+\DoxyCodeLine{40             \textcolor{stringliteral}{'longitude'} => \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getLongitude(),}
+\DoxyCodeLine{41             \textcolor{stringliteral}{'id'} => \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getId()}
+\DoxyCodeLine{42         ]);}
+\DoxyCodeLine{43         \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>setId\_fav(\$id\_fav);}
+\DoxyCodeLine{44     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a6ea0943ac552ae3949700d57e1e10604}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a6ea0943ac552ae3949700d57e1e10604}} 
+\index{Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}!getUserFavoris@{getUserFavoris}}
+\index{getUserFavoris@{getUserFavoris}!Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}}
+\doxysubsubsection{\texorpdfstring{getUserFavoris()}{getUserFavoris()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Favoris\+Table\+::get\+User\+Favoris (\begin{DoxyParamCaption}\item[{int}]{\$id }\end{DoxyParamCaption})}
+
+Récupère les favoris d\textquotesingle{}un utilisateur.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+int & {\em \$id} & Id de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                                             : array}
+\DoxyCodeLine{19     \{}
+\DoxyCodeLine{20         \$query = \$this-\/>pdo-\/>prepare(\textcolor{stringliteral}{"{}SELECT * FROM \{\$this-\/>table\} WHERE id = :id"{}});}
+\DoxyCodeLine{21         \$query-\/>execute([\textcolor{stringliteral}{'id'} => \mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}}]);}
+\DoxyCodeLine{22         \$query-\/>setFetchMode(PDO::FETCH\_CLASS, \$this-\/>\textcolor{keyword}{class});}
+\DoxyCodeLine{23         \$result = \$query-\/>fetchAll();}
+\DoxyCodeLine{24         \textcolor{keywordflow}{return} \$result;}
+\DoxyCodeLine{25     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}}.
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_adfcf18ef623e08e2e9639f2a3c178637}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_adfcf18ef623e08e2e9639f2a3c178637}} 
+\index{Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}!updateFavoris@{updateFavoris}}
+\index{updateFavoris@{updateFavoris}!Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}}
+\doxysubsubsection{\texorpdfstring{updateFavoris()}{updateFavoris()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Favoris\+Table\+::update\+Favoris (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris}{Favoris}}}]{\$favoris }\end{DoxyParamCaption})}
+
+Modifie un favoris d\textquotesingle{}un utilisateur.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris}{Favoris}} & {\em \$favoris} & Données du favoris \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                                                     : \textcolor{keywordtype}{void}}
+\DoxyCodeLine{53     \{}
+\DoxyCodeLine{54         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a5c73c2248dafe93d8819efe4ca24058f}{update}}([}
+\DoxyCodeLine{55             \textcolor{stringliteral}{'id\_ville'} => \$favoris-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_a0ab96c1913051478eb6b5290e4deffb0}{getId\_ville}}(),}
+\DoxyCodeLine{56             \textcolor{stringliteral}{'pays'} => \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getPays(),}
+\DoxyCodeLine{57             \textcolor{stringliteral}{'ville'} => \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getVille(),}
+\DoxyCodeLine{58             \textcolor{stringliteral}{'latitude'} => \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getLatitude(),}
+\DoxyCodeLine{59             \textcolor{stringliteral}{'longitude'} => \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getLongitude()}
+\DoxyCodeLine{60         ], \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}-\/>getId\_fav(), \textcolor{stringliteral}{'id\_fav'});}
+\DoxyCodeLine{61     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{profil_8php_a4e4a69280563056d11101b25ed00ac6d}{\$favoris}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a2a14341fc9d9798f403d4e69de920a69}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_a2a14341fc9d9798f403d4e69de920a69}} 
+\index{Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}!\$class@{\$class}}
+\index{\$class@{\$class}!Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}}
+\doxysubsubsection{\texorpdfstring{\$class}{$class}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Favoris\+Table\+::\$class = Favoris\+::class\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_acf15025579fcfcca6d92e22b85be5654}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_favoris_table_acf15025579fcfcca6d92e22b85be5654}} 
+\index{Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}!\$table@{\$table}}
+\index{\$table@{\$table}!Météo\textbackslash{}FavorisTable@{Météo\textbackslash{}FavorisTable}}
+\doxysubsubsection{\texorpdfstring{\$table}{$table}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+Favoris\+Table\+::\$table = \char`\"{}favoris\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\mbox{\hyperlink{_favoris_table_8php}{Favoris\+Table.\+php}}\end{DoxyCompactItemize}

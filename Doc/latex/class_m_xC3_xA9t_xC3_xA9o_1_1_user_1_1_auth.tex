@@ -1,0 +1,119 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}{}\doxysection{Référence de la classe Météo\textbackslash{}User\textbackslash{}Auth}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}\index{Météo\textbackslash{}User\textbackslash{}Auth@{Météo\textbackslash{}User\textbackslash{}Auth}}
+
+
+Graphe de collaboration de Météo\textbackslash{}User\textbackslash{}Auth\+:
+% FIG 0
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_a2147d6dcfce2e76d8bc64809c33fe295}{\+\_\+\+\_\+construct}} (PDO \$pdo)
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_abb46653daf5d525a75f9d61541f5bfea}{user}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_aa6b5dc5331c0ef445412bf995fb43691}{check}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_af632368ac376f1a09c31938cecc0e7c3}{\$pdo}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_a2147d6dcfce2e76d8bc64809c33fe295}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_a2147d6dcfce2e76d8bc64809c33fe295}} 
+\index{Météo\textbackslash{}User\textbackslash{}Auth@{Météo\textbackslash{}User\textbackslash{}Auth}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Météo\textbackslash{}User\textbackslash{}Auth@{Météo\textbackslash{}User\textbackslash{}Auth}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+Auth\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{PDO}]{\$pdo }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13     \{}
+\DoxyCodeLine{14         \$this-\/>pdo = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_af632368ac376f1a09c31938cecc0e7c3}{\$pdo}};}
+\DoxyCodeLine{15     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_af632368ac376f1a09c31938cecc0e7c3}{Météo\textbackslash{}\+User\textbackslash{}\+Auth\textbackslash{}\$pdo}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_aa6b5dc5331c0ef445412bf995fb43691}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_aa6b5dc5331c0ef445412bf995fb43691}} 
+\index{Météo\textbackslash{}User\textbackslash{}Auth@{Météo\textbackslash{}User\textbackslash{}Auth}!check@{check}}
+\index{check@{check}!Météo\textbackslash{}User\textbackslash{}Auth@{Météo\textbackslash{}User\textbackslash{}Auth}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily static Météo\textbackslash{}\+User\textbackslash{}\+Auth\+::check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Vérifie si une session existe et en démarre une si il n\textquotesingle{}y en a pas.
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                    : \textcolor{keywordtype}{void}}
+\DoxyCodeLine{41     \{}
+\DoxyCodeLine{42         \textcolor{keywordflow}{if}(session\_status() === PHP\_SESSION\_NONE) \{}
+\DoxyCodeLine{43             session\_start();}
+\DoxyCodeLine{44         \}}
+\DoxyCodeLine{45         \textcolor{keywordflow}{if}(!isset(\$\_SESSION[\textcolor{stringliteral}{'auth'}])) \{}
+\DoxyCodeLine{46             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ForbiddenException();}
+\DoxyCodeLine{47         \}}
+\DoxyCodeLine{48     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_abb46653daf5d525a75f9d61541f5bfea}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_abb46653daf5d525a75f9d61541f5bfea}} 
+\index{Météo\textbackslash{}User\textbackslash{}Auth@{Météo\textbackslash{}User\textbackslash{}Auth}!user@{user}}
+\index{user@{user}!Météo\textbackslash{}User\textbackslash{}Auth@{Météo\textbackslash{}User\textbackslash{}Auth}}
+\doxysubsubsection{\texorpdfstring{user()}{user()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+Auth\+::user (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retourne les informations concernant un utilisateur.
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}} 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                            : \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user}{User}}}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24         \mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}} = \$\_SESSION[\textcolor{stringliteral}{'auth'}] ?? \textcolor{keyword}{null};}
+\DoxyCodeLine{25         \textcolor{keywordflow}{if}(\mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}} === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{26             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{27         \}}
+\DoxyCodeLine{28         \$query = \$this-\/>pdo-\/>prepare(\textcolor{stringliteral}{'SELECT * FROM utilisateurs WHERE id = ?'});}
+\DoxyCodeLine{29         \$query-\/>execute([\mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}}]);}
+\DoxyCodeLine{30         \$query-\/>setFetchMode(PDO::FETCH\_CLASS, User::class);}
+\DoxyCodeLine{31         \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}} = \$query-\/>fetch();}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}} ?: \textcolor{keyword}{null};}
+\DoxyCodeLine{33     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{editpass_8php_a9628c0818462f872349fcadf4b5e0926}{\$id}}, et \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_af632368ac376f1a09c31938cecc0e7c3}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_af632368ac376f1a09c31938cecc0e7c3}} 
+\index{Météo\textbackslash{}User\textbackslash{}Auth@{Météo\textbackslash{}User\textbackslash{}Auth}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!Météo\textbackslash{}User\textbackslash{}Auth@{Météo\textbackslash{}User\textbackslash{}Auth}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+Auth\+::\$pdo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_a2147d6dcfce2e76d8bc64809c33fe295}{Météo\textbackslash{}\+User\textbackslash{}\+Auth\textbackslash{}\+\_\+\+\_\+construct()}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+User/\mbox{\hyperlink{_auth_8php}{Auth.\+php}}\end{DoxyCompactItemize}

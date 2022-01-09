@@ -1,0 +1,60 @@
+\hypertarget{upload_8php}{}\doxysection{Référence du fichier upload.\+php}
+\label{upload_8php}\index{upload.php@{upload.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{upload_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = Connection\+::get\+PDO()
+\item 
+\mbox{\hyperlink{upload_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}{Auth}}(\$pdo)
+\item 
+\mbox{\hyperlink{upload_8php_acd996952a57e422a7a396c792ff0c862}{\$user\+Img\+Table}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table}{User\+Img\+Table}}(\$pdo)
+\item 
+\mbox{\hyperlink{upload_8php_abe4cc9788f52e49485473dc699537388}{try}}
+\item 
+catch(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_exception_1_1_forbidden_exception}{Forbidden\+Exception}} \$e) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(isset(\$\+\_\+\+FILES\mbox{[}\textquotesingle{}file\textquotesingle{}\mbox{]})) \mbox{\hyperlink{upload_8php_ac5d58687cf85cf0c046f4fbe005b04df}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{upload_8php_a20d7415a9c3391b32d7fe2136fce6e2c}\label{upload_8php_a20d7415a9c3391b32d7fe2136fce6e2c}} 
+\index{upload.php@{upload.php}!\$auth@{\$auth}}
+\index{\$auth@{\$auth}!upload.php@{upload.php}}
+\doxysubsubsection{\texorpdfstring{\$auth}{$auth}}
+{\footnotesize\ttfamily \$auth = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}{Auth}}(\$pdo)}
+
+\mbox{\Hypertarget{upload_8php_a5766efd703cef0e00bfc06b3f3acbe0e}\label{upload_8php_a5766efd703cef0e00bfc06b3f3acbe0e}} 
+\index{upload.php@{upload.php}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!upload.php@{upload.php}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily \$pdo = Connection\+::get\+PDO()}
+
+\mbox{\Hypertarget{upload_8php_acd996952a57e422a7a396c792ff0c862}\label{upload_8php_acd996952a57e422a7a396c792ff0c862}} 
+\index{upload.php@{upload.php}!\$userImgTable@{\$userImgTable}}
+\index{\$userImgTable@{\$userImgTable}!upload.php@{upload.php}}
+\doxysubsubsection{\texorpdfstring{\$userImgTable}{$userImgTable}}
+{\footnotesize\ttfamily \$user\+Img\+Table = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_img_table}{User\+Img\+Table}}(\$pdo)}
+
+\mbox{\Hypertarget{upload_8php_ac5d58687cf85cf0c046f4fbe005b04df}\label{upload_8php_ac5d58687cf85cf0c046f4fbe005b04df}} 
+\index{upload.php@{upload.php}!else@{else}}
+\index{else@{else}!upload.php@{upload.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily catch(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_exception_1_1_forbidden_exception}{Forbidden\+Exception}} \$e) \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (isset( \$\+\_\+\+FILES\mbox{[} \textquotesingle{}file\textquotesingle{}\mbox{]})) else}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    header(\textcolor{stringliteral}{'Location: 404.php'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{upload_8php_abe4cc9788f52e49485473dc699537388}\label{upload_8php_abe4cc9788f52e49485473dc699537388}} 
+\index{upload.php@{upload.php}!try@{try}}
+\index{try@{try}!upload.php@{upload.php}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily try}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{upload_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}}-\/>check()}
+
+\end{DoxyCode}

@@ -1,0 +1,110 @@
+\hypertarget{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660}{}\doxysection{Référence de la classe Composer\textbackslash{}Autoload\textbackslash{}Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660}
+\label{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660}\index{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660@{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660}}
+
+
+Graphe de collaboration de Composer\textbackslash{}Autoload\textbackslash{}Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\+:
+% FIG 0
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_ae30cac6d759144a882b7b1e1897ddb59}{get\+Initializer}} (\mbox{\hyperlink{class_composer_1_1_autoload_1_1_class_loader}{Class\+Loader}} \$loader)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a74e1f4f62625b6af6886f2e647effb8e}{\$prefix\+Lengths\+Psr4}}
+\item 
+static \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_adc76b5b43099b43d6d9f3071c9725982}{\$prefix\+Dirs\+Psr4}}
+\item 
+static \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a82c783425d26109edec2b726c078e235}{\$class\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_ae30cac6d759144a882b7b1e1897ddb59}\label{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_ae30cac6d759144a882b7b1e1897ddb59}} 
+\index{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660@{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660}!getInitializer@{getInitializer}}
+\index{getInitializer@{getInitializer}!Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660@{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660}}
+\doxysubsubsection{\texorpdfstring{getInitializer()}{getInitializer()}}
+{\footnotesize\ttfamily static Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\+::get\+Initializer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_composer_1_1_autoload_1_1_class_loader}{Class\+Loader}}}]{\$loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28     \{}
+\DoxyCodeLine{29         return \(\backslash\)Closure::bind(\textcolor{keyword}{function} () use (\$loader) \{}
+\DoxyCodeLine{30             \$loader-\/>prefixLengthsPsr4 = \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a74e1f4f62625b6af6886f2e647effb8e}{ComposerStaticInite12172dbb9c19d4e7c9d150800a80660::\$prefixLengthsPsr4}};}
+\DoxyCodeLine{31             \$loader-\/>prefixDirsPsr4 = \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_adc76b5b43099b43d6d9f3071c9725982}{ComposerStaticInite12172dbb9c19d4e7c9d150800a80660::\$prefixDirsPsr4}};}
+\DoxyCodeLine{32             \$loader-\/>classMap = \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a82c783425d26109edec2b726c078e235}{ComposerStaticInite12172dbb9c19d4e7c9d150800a80660::\$classMap}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \}, \textcolor{keyword}{null}, ClassLoader::class);}
+\DoxyCodeLine{35     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a82c783425d26109edec2b726c078e235}{Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\textbackslash{}\$class\+Map}}, \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_adc76b5b43099b43d6d9f3071c9725982}{Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\textbackslash{}\$prefix\+Dirs\+Psr4}}, et \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a74e1f4f62625b6af6886f2e647effb8e}{Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\textbackslash{}\$prefix\+Lengths\+Psr4}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a82c783425d26109edec2b726c078e235}\label{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a82c783425d26109edec2b726c078e235}} 
+\index{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660@{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660}!\$classMap@{\$classMap}}
+\index{\$classMap@{\$classMap}!Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660@{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660}}
+\doxysubsubsection{\texorpdfstring{\$classMap}{$classMap}}
+{\footnotesize\ttfamily Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\+::\$class\+Map\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= array (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Composer\(\backslash\)\(\backslash\)InstalledVersions'} => \_\_DIR\_\_ . \textcolor{stringliteral}{'/..'} . \textcolor{stringliteral}{'/composer/InstalledVersions.php'},}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_ae30cac6d759144a882b7b1e1897ddb59}{Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\textbackslash{}get\+Initializer()}}.
+
+\mbox{\Hypertarget{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_adc76b5b43099b43d6d9f3071c9725982}\label{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_adc76b5b43099b43d6d9f3071c9725982}} 
+\index{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660@{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660}!\$prefixDirsPsr4@{\$prefixDirsPsr4}}
+\index{\$prefixDirsPsr4@{\$prefixDirsPsr4}!Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660@{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660}}
+\doxysubsubsection{\texorpdfstring{\$prefixDirsPsr4}{$prefixDirsPsr4}}
+{\footnotesize\ttfamily Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\+::\$prefix\+Dirs\+Psr4\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= array (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'Météo\(\backslash\)\(\backslash\)'} => }
+\DoxyCodeLine{        array (}
+\DoxyCodeLine{            0 => \_\_DIR\_\_ . \textcolor{stringliteral}{'/../..'} . \textcolor{stringliteral}{'/class'},}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_ae30cac6d759144a882b7b1e1897ddb59}{Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\textbackslash{}get\+Initializer()}}.
+
+\mbox{\Hypertarget{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a74e1f4f62625b6af6886f2e647effb8e}\label{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_a74e1f4f62625b6af6886f2e647effb8e}} 
+\index{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660@{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660}!\$prefixLengthsPsr4@{\$prefixLengthsPsr4}}
+\index{\$prefixLengthsPsr4@{\$prefixLengthsPsr4}!Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660@{Composer\textbackslash{}Autoload\textbackslash{}ComposerStaticInite12172dbb9c19d4e7c9d150800a80660}}
+\doxysubsubsection{\texorpdfstring{\$prefixLengthsPsr4}{$prefixLengthsPsr4}}
+{\footnotesize\ttfamily Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\+::\$prefix\+Lengths\+Psr4\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= array (}
+\DoxyCodeLine{        \textcolor{charliteral}{'M'} => }
+\DoxyCodeLine{        array (}
+\DoxyCodeLine{            \textcolor{stringliteral}{'Météo\(\backslash\)\(\backslash\)'} => 8,}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_composer_1_1_autoload_1_1_composer_static_inite12172dbb9c19d4e7c9d150800a80660_ae30cac6d759144a882b7b1e1897ddb59}{Composer\textbackslash{}\+Autoload\textbackslash{}\+Composer\+Static\+Inite12172dbb9c19d4e7c9d150800a80660\textbackslash{}get\+Initializer()}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+vendor/composer/\mbox{\hyperlink{autoload__static_8php}{autoload\+\_\+static.\+php}}\end{DoxyCompactItemize}

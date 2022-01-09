@@ -1,0 +1,131 @@
+\hypertarget{addevent_8php}{}\doxysection{Référence du fichier addevent.\+php}
+\label{addevent_8php}\index{addevent.php@{addevent.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{addevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = Connection\+::get\+PDO()
+\item 
+\mbox{\hyperlink{addevent_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}{Auth}}(\$pdo)
+\item 
+\mbox{\hyperlink{addevent_8php_ae8876a14058f368335baccf35af4a22b}{\$table}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}{User\+Table}}(\$pdo)
+\item 
+\mbox{\hyperlink{addevent_8php_abe4cc9788f52e49485473dc699537388}{try}}
+\item 
+catch(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_exception_1_1_forbidden_exception}{Forbidden\+Exception}} \$e) \mbox{\hyperlink{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}{\$user}} = \$auth-\/$>$user()
+\item 
+\mbox{\hyperlink{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}
+\item 
+\mbox{\hyperlink{addevent_8php_aa4e00b38f53ef571bf77fc9c3e882972}{\$validator}} = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator}{Validator}}(\$data)
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(! \$validator-\/$>$validate(\textquotesingle{}date\textquotesingle{}, \textquotesingle{}date\textquotesingle{})) \mbox{\hyperlink{addevent_8php_a610dbee8210c7a6bf6028d7195e4bdb3}{\$errors}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}}(!empty(\$\+\_\+\+POST)) \mbox{\hyperlink{addevent_8php_ae6c6dc9b738d983c3448d8d6d5653260}{\$title}} = \char`\"{}Ajouter un évènement -\/ 24h Weather\char`\"{}
+\item 
+\mbox{\hyperlink{addevent_8php_a87b032cba06009e3467abf1c8018d960}{\$description}} = \char`\"{}Ajoutez un évènement à votre calendrier !\char`\"{}
+\item 
+\mbox{\hyperlink{addevent_8php_a9fbd95bfcdf27d802a8c7938529a61ba}{\$keywords}} = \char`\"{}weather meteo 24/24 7/7 calendar event\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{addevent_8php_a20d7415a9c3391b32d7fe2136fce6e2c}\label{addevent_8php_a20d7415a9c3391b32d7fe2136fce6e2c}} 
+\index{addevent.php@{addevent.php}!\$auth@{\$auth}}
+\index{\$auth@{\$auth}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$auth}{$auth}}
+{\footnotesize\ttfamily \$auth = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth}{Auth}}(\$pdo)}
+
+\mbox{\Hypertarget{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}\label{addevent_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}} 
+\index{addevent.php@{addevent.php}!\$data@{\$data}}
+\index{\$data@{\$data}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$data}{$data}}
+{\footnotesize\ttfamily \$data}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{    \textcolor{stringliteral}{'date'} => \$\_GET[\textcolor{stringliteral}{'date'}] ?? date(\textcolor{stringliteral}{'Y-\/m-\/d'}),}
+\DoxyCodeLine{    \textcolor{stringliteral}{'start'} => date(\textcolor{stringliteral}{'H:i'}),}
+\DoxyCodeLine{    \textcolor{stringliteral}{'end'} => date(\textcolor{stringliteral}{'H:i'})}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a9393acae0838139b8bf2d21740e053fa}{Météo\textbackslash{}\+Validator\textbackslash{}\+\_\+\+\_\+construct()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa4b4cbdee70af70ed150b1089a752ee7}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}call\+API()}}, \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a63f42774132e8a1f6c6fa2b7da6a91b0}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+SMTP\textbackslash{}client\+\_\+send()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a9a2eccc0920c94045c4d97fd4d103816}{Météo\textbackslash{}\+Table\textbackslash{}\+Table\textbackslash{}create()}}, \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_af3814642674acf0fa2703269b41e502e}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+SMTP\textbackslash{}get\+\_\+lines()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a1a6cb2961c88a7b3a4972bfb8337e270}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+Flag()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a9e89755dd194ac2b40fde67b95933e54}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+Forecast()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_af3becb564a0fbb51f74348f1dbacb11b}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+Hourly()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a8de5da227255dfcab01b5e48b76f4d62}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+IDBy\+Coordinate()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a6312a36a327bab86e3f74dde165ac1ab}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+IDBy\+Name()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_a541a0a9065003f455014aa8465e5674a}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+Today()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_weather_1_1_open_weather_aa181bfa71a517c5ecf8377cb4fa5dcc5}{Météo\textbackslash{}\+Weather\textbackslash{}\+Open\+Weather\textbackslash{}get\+User\+Coord()}}, \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae097c9420480708994efc030d1dddef1}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+SMTP\textbackslash{}hmac()}}, \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_a5755ed6db2b8f2d3eff1f2ff1c89dd70}{PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}\+PHPMailer\textbackslash{}msg\+HTML()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_table_1_1_table_a5c73c2248dafe93d8819efe4ca24058f}{Météo\textbackslash{}\+Table\textbackslash{}\+Table\textbackslash{}update()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a7c16fa16991ed190add5b4aaadc4ddae}{Météo\textbackslash{}\+Validator\textbackslash{}validates()}}.
+
+\mbox{\Hypertarget{addevent_8php_a87b032cba06009e3467abf1c8018d960}\label{addevent_8php_a87b032cba06009e3467abf1c8018d960}} 
+\index{addevent.php@{addevent.php}!\$description@{\$description}}
+\index{\$description@{\$description}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$description}{$description}}
+{\footnotesize\ttfamily \$description = \char`\"{}Ajoutez un évènement à votre calendrier !\char`\"{}}
+
+\mbox{\Hypertarget{addevent_8php_a610dbee8210c7a6bf6028d7195e4bdb3}\label{addevent_8php_a610dbee8210c7a6bf6028d7195e4bdb3}} 
+\index{addevent.php@{addevent.php}!\$errors@{\$errors}}
+\index{\$errors@{\$errors}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$errors}{$errors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (! \$validator-\/$>$validate( \textquotesingle{}date\textquotesingle{}, \textquotesingle{}date\textquotesingle{})) \$errors = \mbox{[}$\,$\mbox{]}}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a7c16fa16991ed190add5b4aaadc4ddae}{Météo\textbackslash{}\+Validator\textbackslash{}validates()}}.
+
+\mbox{\Hypertarget{addevent_8php_a9fbd95bfcdf27d802a8c7938529a61ba}\label{addevent_8php_a9fbd95bfcdf27d802a8c7938529a61ba}} 
+\index{addevent.php@{addevent.php}!\$keywords@{\$keywords}}
+\index{\$keywords@{\$keywords}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$keywords}{$keywords}}
+{\footnotesize\ttfamily \$keywords = \char`\"{}weather meteo 24/24 7/7 calendar event\char`\"{}}
+
+\mbox{\Hypertarget{addevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}\label{addevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}} 
+\index{addevent.php@{addevent.php}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily \$pdo = Connection\+::get\+PDO()}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_validator_af476b61ae2aa0804fc106a76127e64e3}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Validator\textbackslash{}validates()}}.
+
+\mbox{\Hypertarget{addevent_8php_ae8876a14058f368335baccf35af4a22b}\label{addevent_8php_ae8876a14058f368335baccf35af4a22b}} 
+\index{addevent.php@{addevent.php}!\$table@{\$table}}
+\index{\$table@{\$table}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$table}{$table}}
+{\footnotesize\ttfamily \$table = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}{User\+Table}}(\$pdo)}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a5e2d3e765cea7049eb4ea59a19a7f686}{Météo\textbackslash{}\+Validator\textbackslash{}exist\+Mail()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a9ec397aebf48580647789c8bc463c1ac}{Météo\textbackslash{}\+Validator\textbackslash{}exist\+Tel()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a1318560ae87d96796c01b9f1a1888ea0}{Météo\textbackslash{}\+Validator\textbackslash{}exist\+User()}}.
+
+\mbox{\Hypertarget{addevent_8php_ae6c6dc9b738d983c3448d8d6d5653260}\label{addevent_8php_ae6c6dc9b738d983c3448d8d6d5653260}} 
+\index{addevent.php@{addevent.php}!\$title@{\$title}}
+\index{\$title@{\$title}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$title}{$title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{world_8php_aeca04c7ec3d3a3bf259d6d3d55f30dd5}{if}} (!empty( \$\+\_\+\+POST)) \$title = \char`\"{}Ajouter un évènement -\/ 24h Weather\char`\"{}}
+
+\mbox{\Hypertarget{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}\label{addevent_8php_a882546ef01c6d1a322046c5ace1d991b}} 
+\index{addevent.php@{addevent.php}!\$user@{\$user}}
+\index{\$user@{\$user}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily catch (\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_exception_1_1_forbidden_exception}{Forbidden\+Exception}} \$e) \$user = \$auth-\/$>$user()}
+
+
+
+Référencé par \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_aba3852d40f9cea30f1e2be45243b0def}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\textbackslash{}create\+User()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a36bde857041812f5b20640491e21dc8e}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\textbackslash{}update\+User()}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table_a47303d3ee09a0dae7c5e51d0a0ae780e}{Météo\textbackslash{}\+User\textbackslash{}\+User\+Table\textbackslash{}update\+User\+Profile()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_auth_abb46653daf5d525a75f9d61541f5bfea}{Météo\textbackslash{}\+User\textbackslash{}\+Auth\textbackslash{}user()}}.
+
+\mbox{\Hypertarget{addevent_8php_aa4e00b38f53ef571bf77fc9c3e882972}\label{addevent_8php_aa4e00b38f53ef571bf77fc9c3e882972}} 
+\index{addevent.php@{addevent.php}!\$validator@{\$validator}}
+\index{\$validator@{\$validator}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{\$validator}{$validator}}
+{\footnotesize\ttfamily \$validator = new \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator}{Validator}}(\$data)}
+
+\mbox{\Hypertarget{addevent_8php_abe4cc9788f52e49485473dc699537388}\label{addevent_8php_abe4cc9788f52e49485473dc699537388}} 
+\index{addevent.php@{addevent.php}!try@{try}}
+\index{try@{try}!addevent.php@{addevent.php}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily try}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{   \mbox{\hyperlink{addevent_8php_a20d7415a9c3391b32d7fe2136fce6e2c}{\$auth}}-\/>check()}
+
+\end{DoxyCode}

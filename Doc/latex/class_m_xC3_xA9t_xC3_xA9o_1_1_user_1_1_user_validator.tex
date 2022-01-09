@@ -1,0 +1,60 @@
+\hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_validator}{}\doxysection{Référence de la classe Météo\textbackslash{}User\textbackslash{}User\+Validator}
+\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_validator}\index{Météo\textbackslash{}User\textbackslash{}UserValidator@{Météo\textbackslash{}User\textbackslash{}UserValidator}}
+
+
+Graphe d\textquotesingle{}héritage de Météo\textbackslash{}User\textbackslash{}User\+Validator\+:
+% FIG 0
+
+
+Graphe de collaboration de Météo\textbackslash{}User\textbackslash{}User\+Validator\+:
+% FIG 1
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_validator_af476b61ae2aa0804fc106a76127e64e3}{validates}} (array \$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_validator_af476b61ae2aa0804fc106a76127e64e3}\label{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_validator_af476b61ae2aa0804fc106a76127e64e3}} 
+\index{Météo\textbackslash{}User\textbackslash{}UserValidator@{Météo\textbackslash{}User\textbackslash{}UserValidator}!validates@{validates}}
+\index{validates@{validates}!Météo\textbackslash{}User\textbackslash{}UserValidator@{Météo\textbackslash{}User\textbackslash{}UserValidator}}
+\doxysubsubsection{\texorpdfstring{validates()}{validates()}}
+{\footnotesize\ttfamily Météo\textbackslash{}\+User\textbackslash{}\+User\+Validator\+::validates (\begin{DoxyParamCaption}\item[{array}]{\$data }\end{DoxyParamCaption})}
+
+Récupère les données et vérifie les erreurs.
+
+
+\begin{DoxyParams}[1]{Paramètres}
+array & {\em \$data} & Données à traiter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+array 
+\end{DoxyReturn}
+
+
+Réimplémentée à partir de \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a7c16fa16991ed190add5b4aaadc4ddae}{Météo\textbackslash{}\+Validator}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                                            \{}
+\DoxyCodeLine{11         \mbox{\hyperlink{addevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_connection_af8a0e570749484d9d1431eb247d8c30f}{Connection::getPDO}}();}
+\DoxyCodeLine{12         parent::validates(\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_aa51cb48e2142ccba6bd89d65a1689d3b}{\$data}});}
+\DoxyCodeLine{13         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a15c5cefe29d218e4c450461d4411d8b5}{validate}}(\textcolor{stringliteral}{'newmail'}, \textcolor{stringliteral}{'isMail'});}
+\DoxyCodeLine{14         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a15c5cefe29d218e4c450461d4411d8b5}{validate}}(\textcolor{stringliteral}{'newmail'}, \textcolor{stringliteral}{'existMail'}, \textcolor{keyword}{new} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}{UserTable}}(\mbox{\hyperlink{addevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}}));}
+\DoxyCodeLine{15         \$this-\/>\mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a15c5cefe29d218e4c450461d4411d8b5}{validate}}(\textcolor{stringliteral}{'newuser'}, \textcolor{stringliteral}{'existUser'}, \textcolor{keyword}{new} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_user_1_1_user_table}{UserTable}}(\mbox{\hyperlink{addevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}}));}
+\DoxyCodeLine{16         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a60fb195f03ffdb1e4950edcf62b0a98b}{\$this-\/>errors}};}
+\DoxyCodeLine{17     \}}
+
+\end{DoxyCode}
+
+
+Références \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_aa51cb48e2142ccba6bd89d65a1689d3b}{Météo\textbackslash{}\+Validator\textbackslash{}\$data}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a60fb195f03ffdb1e4950edcf62b0a98b}{Météo\textbackslash{}\+Validator\textbackslash{}\$errors}}, \mbox{\hyperlink{addevent_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}}, \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_connection_af8a0e570749484d9d1431eb247d8c30f}{Météo\textbackslash{}\+Connection\textbackslash{}get\+PDO()}}, et \mbox{\hyperlink{class_m_xC3_xA9t_xC3_xA9o_1_1_validator_a15c5cefe29d218e4c450461d4411d8b5}{Météo\textbackslash{}\+Validator\textbackslash{}validate()}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+class/\+User/\mbox{\hyperlink{_user_validator_8php}{User\+Validator.\+php}}\end{DoxyCompactItemize}
