@@ -36,6 +36,6 @@ Lien du site : https://24hweather.alwaysdata.net/
 - License Open Source Libre
 
 ## Auteur
-- CHRIQUI NATHAN Etudiant L3 INFORMATIQUE
+- CHRISMANT NATHAN Etudiant L3 INFORMATIQUE
 
 Cergy Paris Université
