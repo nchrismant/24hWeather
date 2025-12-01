@@ -63,13 +63,16 @@ if(isset($_FILES['file'])) {
                     exit();
                 }
             } else {
-                echo "<p>Votre fichier est trop gros !</p>";
+                header('Location: modifier-profil.html?upload=2');
+                exit();
             }
         } else {
-            echo "<p>Il y a eu une erreur.</p>";
+            header('Location: modifier-profil.html?upload=0');
+            exit();
         }
     } else {
-        echo "<p>Vous ne pouvez pas ajouter un fichier de ce type !</p>";
+        header('Location: modifier-profil.html?upload=3');
+        exit();
     }
 } else {
     header('Location: 404.php');

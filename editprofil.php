@@ -132,6 +132,19 @@ $keywords = "weather meteo 24/24 7/7";
                             <div class="main-body">
                             <form id="file-form" action="upload.php" method="POST" enctype="multipart/form-data">
                                 <div class="form-group">
+                                    <?php
+                                    if(!empty($_GET["upload"]) && $_GET["upload"]!= 1) {
+                                        if($_GET["upload"] == '0') {
+                                            echo "<div class=\"text-danger\" style=\"width: 60%;\"><small>Il y a eu une erreur.</small></div>";
+                                        }
+                                        if($_GET["upload"] == '2') {
+                                            echo "<div class=\"text-danger\" style=\"width: 60%;\"><small>Votre fichier est trop gros !</small></div>";
+                                        }
+                                        if($_GET["upload"] === '3') {
+                                            echo "<div class=\"text-danger\" style=\"width: 60%;\"><small>Vous ne pouvez pas ajouter un fichier de ce type !</small></div>";
+                                        }
+                                    }
+                                    ?>
                                     <label for="file" class="sr-only">Changer l'avatar</label>
                                     <input type="file" id="file" name="file" required="required"/>
                                 </div>

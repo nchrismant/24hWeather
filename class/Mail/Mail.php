@@ -30,7 +30,7 @@ class Mail {
     {
 
         $this->mail->IsSMTP();
-        $this->mail->Host = 'smtp.gmail.com';               //Adresse IP ou DNS du serveur SMTP
+        $this->mail->Host = 'smtp-24hweather.alwaysdata.net';               //Adresse IP ou DNS du serveur SMTP
         $this->mail->Port = 465;                          //Port TCP du serveur SMTP
         $this->mail->SMTPAuth = 1;                        //Utiliser l'identification
         $this->mail->CharSet = 'UTF-8';
@@ -41,8 +41,11 @@ class Mail {
             $this->mail->Password   =  WeatherConf::$smtpPassword;         //Mot de passe de l'adresse email à utiliser
         }
         
-     /*A modifier afin de mettre avec la bd ou non*/   
-        $this->mail->setFrom(trim($from), $fromName);                //L'email à afficher pour l'envoi
+        /*A modifier afin de mettre avec la bd ou non*/   
+        //$this->mail->setFrom(trim($from), $fromName);                //L'email à afficher pour l'envoi
+
+        $this->mail->setFrom('no-reply@24hweather.alwaysdata.net', $fromName);
+        $this->mail->addReplyTo(trim($from), $fromName);
         
         $this->mail->AddAddress($to);
 

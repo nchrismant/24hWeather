@@ -1,6 +1,7 @@
 <?php
 
 require_once "vendor/autoload.php";
+require_once "class/WeatherConf.conf.php";
 
 require_once "./class/Mail/PHPMailer/src/Exception.php";
 require_once "./class/Mail/PHPMailer/src/PHPMailer.php";
@@ -19,6 +20,7 @@ use Météo\User\UserImgTable;
 use Météo\User\UserTable;
 use Météo\Weather\Exception\HTTPException;
 use Météo\Weather\OpenWeather;
+use Météo\WeatherConf;
 use PHPMailer\PHPMailer\PHPMailer;
 
 $pdo = Connection::getPDO();
@@ -27,7 +29,7 @@ $table = new UserTable($pdo);
 $userImgTable = new UserImgTable($pdo);
 $userTable = new UserTable($pdo);
 $favorisTable = new FavorisTable($pdo);
-$weather = new OpenWeather('94c6cf0868fa5cb930a5e2d71baf0dbf');
+$weather = new OpenWeather(WeatherConf::$openweatherKey);
 
 try {
    $auth->check();
@@ -51,7 +53,7 @@ $end = $start->modify('+' . (6 + 7 * ($weeks - 1)) . ' days');
 if(!empty($eventsWithRappel)) {
    foreach($eventsWithRappel as $eventWithRappel) {
       if(!empty($eventWithRappel['date_rappel']) && !empty($eventWithRappel['id_ville']) && !empty($eventWithRappel['mail'])) {
-         $weather = new OpenWeather('94c6cf0868fa5cb930a5e2d71baf0dbf');
+         $weather = new OpenWeather(WeatherConf::$openweatherKey);
          try {
             $today = $weather->getToday($eventWithRappel['id_ville']);
             $forecast = $weather->getForecast($eventWithRappel['id_ville']);
@@ -136,6 +138,7 @@ if(isset($_GET['addlat'], $_GET['addlon'])) {
 }
 
 if(!empty($_POST)) {
+   $userImgTable->delete($_SESSION['auth']);
    $userTable->delete($_SESSION['auth']);
    session_destroy();
    header('Location: login.php');

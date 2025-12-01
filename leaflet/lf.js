@@ -33,33 +33,30 @@ setTimeout(function() {
     control.setQuery('');
 }, 12000);
 
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+L.tileLayer('../proxy.php?service=mapbox&z={z}&x={x}&y={y}', {
     maxZoom: 18,
-    id: 'mapbox/streets-v11',
     tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibmF0aGFuLS0iLCJhIjoiY2t3NnY0a2dxMHRwNjJ4cWxyOXB2eDVtaSJ9.0Dji_rE_4lPmnIgOAOwm9Q'
+    zoomOffset: -1
 }).addTo(map);
 
-var Temp = L.tileLayer('https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=94c6cf0868fa5cb930a5e2d71baf0dbf', {
+var Temp = L.tileLayer('../proxy.php?service=openweather&z={z}&x={x}&y={y}', {
             maxZoom: 18,
             id: 'temp'
         }),
 
-        Precipitation = L.tileLayer('https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=94c6cf0868fa5cb930a5e2d71baf0dbf', {
+        Precipitation = L.tileLayer('../proxy.php?service=openweather&z={z}&x={x}&y={y}', {
             maxZoom: 18
         }),
 
-        Wind = L.tileLayer('https://tile.openweathermap.org/map/wind_new/{z}/{x}/{y}.png?appid=94c6cf0868fa5cb930a5e2d71baf0dbf', {
+        Wind = L.tileLayer('../proxy.php?service=openweather&z={z}&x={x}&y={y}', {
             maxZoom: 18
         }),
 
-        Pressure = L.tileLayer('https://tile.openweathermap.org/map/pressure_new/{z}/{x}/{y}.png?appid=94c6cf0868fa5cb930a5e2d71baf0dbf', {
+        Pressure = L.tileLayer('../proxy.php?service=openweather&z={z}&x={x}&y={y}', {
             maxZoom: 18
         }),
 
-        Clouds = L.tileLayer('https://tile.openweathermap.org/map/clouds_new/{z}/{x}/{y}.png?appid=94c6cf0868fa5cb930a5e2d71baf0dbf', {
+        Clouds = L.tileLayer('../proxy.php?service=openweather&z={z}&x={x}&y={y}', {
             maxZoom: 18
         });
         Temp.addTo(map);

@@ -1,6 +1,7 @@
 <?php
 
 require_once "vendor/autoload.php";
+require_once "class/WeatherConf.conf.php";
 
 use Météo\Calendar\EventsTable;
 use Météo\Calendar\EventValidator;
@@ -9,6 +10,7 @@ use Météo\Table\Exception\NotFoundException;
 use Météo\User\Auth;
 use Météo\User\Exception\ForbiddenException;
 use Météo\Weather\OpenWeather;
+use Météo\WeatherConf;
 
 $pdo = Connection::getPDO();
 $auth = new Auth($pdo);
@@ -38,7 +40,7 @@ try {
 }
 
 if(!empty($event->getId_ville())) {
-    $weather = new OpenWeather('94c6cf0868fa5cb930a5e2d71baf0dbf');
+    $weather = new OpenWeather(WeatherConf::$openweatherKey);
     try {
         $today = $weather->getToday($event->getId_ville());
     } catch (Exception $e) {
@@ -73,7 +75,7 @@ if(!empty($_POST)) {
         $event->setStart(DateTime::createFromFormat('Y-m-d H:i', $data['date'] . ' ' . $data['start'])->format('Y-m-d H:i:s'));
         $event->setEnd(DateTime::createFromFormat('Y-m-d H:i', $data['date'] . ' ' . $data['end'])->format('Y-m-d H:i:s'));
         if(!empty($data['daterappel']) && !empty($data['villerappel']) && !empty($data['addrappel'])) {
-            $weather = new OpenWeather('94c6cf0868fa5cb930a5e2d71baf0dbf');
+            $weather = new OpenWeather(WeatherConf::$openweatherKey);
             $city = htmlspecialchars($data["villerappel"]);
             try {
                 $id_ville = $weather->getIDByName($city);

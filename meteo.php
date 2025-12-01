@@ -1,12 +1,14 @@
 <?php
 
 require_once "vendor/autoload.php";
+require_once "class/WeatherConf.conf.php";
 
 use Météo\Connection;
 use Météo\FavorisTable;
 use Météo\Weather\OpenWeather;
+use Météo\WeatherConf;
 
-$weather = new OpenWeather('94c6cf0868fa5cb930a5e2d71baf0dbf');
+$weather = new OpenWeather(WeatherConf::$openweatherKey);
 
 if(isset($_GET["ville"]) && !empty($_GET["ville"])) {
     $city = htmlspecialchars($_GET["ville"]);

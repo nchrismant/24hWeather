@@ -1,6 +1,7 @@
 <?php
 
 require_once "vendor/autoload.php";
+require_once "class/WeatherConf.conf.php";
 
 use Météo\Calendar\EventsTable;
 use Météo\Connection;
@@ -9,6 +10,7 @@ use Météo\User\Auth;
 use Météo\User\Exception\ForbiddenException;
 use Météo\User\UserTable;
 use Météo\Weather\OpenWeather;
+use Météo\WeatherConf;
 
 $pdo = Connection::getPDO();
 $auth = new Auth($pdo);
@@ -97,7 +99,7 @@ $keywords = "weather meteo 24/24 7/7 calendar event";
                             <li>Heure de démarrage: {$event->getStart()->format('H:i')}</li>
                             <li>Heure de fin: {$event->getEnd()->format('H:i')}</li>";
                             if(!empty($event->getId_ville() && !empty($event->getDate_rappel()))) {
-                                $weather = new OpenWeather('94c6cf0868fa5cb930a5e2d71baf0dbf');
+                                $weather = new OpenWeather(WeatherConf::$openweatherKey);
                                 try {
                                     $today = $weather->getToday($event->getId_ville());
                                 } catch (Exception $e) {

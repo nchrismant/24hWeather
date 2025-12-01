@@ -1,5 +1,6 @@
 <?php
 require_once "vendor/autoload.php";
+require_once "class/WeatherConf.conf.php";
 
 use Météo\Connection;
 use Météo\Favoris;
@@ -7,6 +8,7 @@ use Météo\FavorisTable;
 use Météo\User\UserTable;
 use Météo\Weather\Exception\HTTPException;
 use Météo\Weather\OpenWeather;
+use Météo\WeatherConf;
 
 if(isset($_POST['newuser'])) {
     $username = $_POST['newuser'];
@@ -37,7 +39,7 @@ if(isset($_POST['newmail'])) {
 }
 
 if(isset($_GET['lat'], $_GET['lng'])) {
-    $weather = new OpenWeather('94c6cf0868fa5cb930a5e2d71baf0dbf');
+    $weather = new OpenWeather(WeatherConf::$openweatherKey);
     try {
         $id = $weather->getIDByCoordinate($_GET['lat'], $_GET['lng']);
         $today = $weather->getToday($id);
@@ -65,7 +67,7 @@ if(isset($_GET['lat'], $_GET['lng'])) {
 
 if(isset($_GET['latitude'], $_GET['longitude'], $_GET['id'])) {
     $pdo = Connection::getPDO();
-    $weather = new OpenWeather('94c6cf0868fa5cb930a5e2d71baf0dbf');
+    $weather = new OpenWeather(WeatherConf::$openweatherKey);
     $favoris = new Favoris();
     $favorisTable = new FavorisTable($pdo);
     try {
@@ -100,7 +102,7 @@ if(isset($_GET['latitude'], $_GET['longitude'], $_GET['id'])) {
 
 if(isset($_GET['suplatitude'], $_GET['suplongitude'], $_GET['id'])) {
     $pdo = Connection::getPDO();
-    $weather = new OpenWeather('94c6cf0868fa5cb930a5e2d71baf0dbf');
+    $weather = new OpenWeather(WeatherConf::$openweatherKey);
     $favorisTable = new FavorisTable($pdo);
     try {
         $id_ville = $weather->getIDByCoordinate($_GET['suplatitude'], $_GET['suplongitude']);
