@@ -104,6 +104,8 @@ Cette structure sépare la **logique serveur (PHP, base de données)**, la **pr�
 | **HTML / CSS**      | Interface web (avec deux feuilles de style : standard & alternatif) |
 | **Hébergement web** | Déploiement du site |
 
+---
+
 ## 👥 Auteur & Licence
 
 - **Auteur** : Nathan Chrismant — Étudiant L3 Informatique, Cergy Paris Université.
