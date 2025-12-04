@@ -9,15 +9,15 @@ Site en ligne : [https://24hweather.alwaysdata.net/](https://24hweather.alwaysda
 ## 📌 Sommaire
 
 - [24hWeather — Site météo en ligne](#24hweather--site-météo-en-ligne)
-	- [📌 Sommaire](#-sommaire)
-	- [🎯 Objectif du projet](#-objectif-du-projet)
-	- [✨ Fonctionnalités](#-fonctionnalités)
-	- [🧩 Structure du projet / Architecture](#-structure-du-projet--architecture)
-	- [🚀 Installation \& Déploiement](#-installation--déploiement)
-		- [Prérequis](#prérequis)
-		- [Étapes d’installation](#étapes-dinstallation)
-	- [🛠️ Technologies \& Outils utilisés](#️-technologies--outils-utilisés)
-	- [👥 Auteur \& Licence](#-auteur--licence)
+  - [📌 Sommaire](#-sommaire)
+  - [🎯 Objectif du projet](#-objectif-du-projet)
+  - [✨ Fonctionnalités](#-fonctionnalités)
+  - [🧩 Structure du projet / Architecture](#-structure-du-projet--architecture)
+  - [🚀 Installation \& Déploiement](#-installation--déploiement)
+    - [Prérequis](#prérequis)
+    - [Étapes d’installation](#étapes-dinstallation)
+  - [🛠️ Technologies \& Outils utilisés](#️-technologies--outils-utilisés)
+  - [👥 Auteur \& Licence](#-auteur--licence)
 
 ---
 
